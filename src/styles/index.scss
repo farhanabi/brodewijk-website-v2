@@ -13,3 +13,7 @@ code {
 
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
+
+// import styles
+@import './pages/home/desktop';
+@import './containers/headerDesktop';

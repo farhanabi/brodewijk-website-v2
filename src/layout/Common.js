@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Header from 'containers/Header'
-import Footer from 'containers/Footer'
+import Header from 'containers/commons/HeaderDesktop'
+// import Footer from 'containers/Footer'
 import { withRouter } from 'react-router-dom'
 
 const CommonLayout = (props) => {
@@ -9,7 +9,7 @@ const CommonLayout = (props) => {
     <div>
       <Header/>
       {props.children}
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }

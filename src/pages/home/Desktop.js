@@ -1,19 +1,13 @@
 import React, { useEffect } from 'react'
 import Layout from 'layout/Common'
-import HighlightsPanel from 'containers/Home/HighlightsPanel'
-import HeroShotPanel from 'containers/Home/HeroShotPanel'
 import { withRouter } from 'react-router-dom'
+import MainSlider from 'containers/home/MainSlider'
 
-const Home = () => {
-  useEffect(() => {
-    document.title = "Home | FD Works"
-  }, [])
-
+function Home (){
   return (
     <Layout>
       <div id="page-home">
-        <HeroShotPanel/>
-        <HighlightsPanel/>
+        <MainSlider/>
       </div>
     </Layout>
   )
