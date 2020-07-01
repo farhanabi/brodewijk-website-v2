@@ -16,4 +16,6 @@ code {
 
 // import styles
 @import './pages/home/desktop';
-@import './containers/headerDesktop';
+@import './containers/commons/header/desktop';
+@import './containers/commons/footer/desktop';
+@import './containers/home/main-slider/desktop';

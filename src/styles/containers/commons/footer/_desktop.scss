@@ -1,0 +1,98 @@
+.section-footer {
+	background-color: #2f2f2f;
+	color: #ffffff;
+  font-size: 13px;
+
+	.row {
+		margin-bottom: 0 !important;
+	}
+
+	.footer-top {
+    padding: 50px 0;
+
+		.footer-links {
+      .wrapper-img{
+        .footer-logo{
+          text-decoration: none;
+          display: inline-block;
+
+          .img-logo{
+            width: 100px;
+            height: auto;
+          }
+        }
+      }
+			h5 {
+        margin-bottom: 15px;
+				color: #ffffff;
+				font-size: 11pt;
+				line-height: 1.2;
+				font-weight: 500;
+				text-align: left;
+			}
+
+			.list-unstyled {
+				line-height: 1.15;
+        text-align: left;
+        
+        .menu-item {
+          margin-bottom: 10px;
+          font-size: 10pt;
+  
+          .link-item {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 400;
+            opacity: 1;
+          }
+        }
+			}
+		}
+
+		.footer-icon{
+			padding-bottom: 5%;
+		}
+
+		.btn-just-icon {
+      min-width: 35px;
+      padding: 8px;
+			margin: auto 2px;
+			color:#fff !important;
+			opacity: 1 !important;
+			padding-left: 0 !important;
+			padding-top: 0 !important;
+			text-align: left !important;
+
+			i {
+        font-size: 16px;
+        padding: 2px 0;
+				color:#fff !important;
+			}
+
+			.fab {
+				font-family: "Font Awesome\ 5 Brands" !important;
+			}
+		}
+
+		.btn-just-icon:hover, .btn-just-icon:focus, .btn-just-icon:active {
+			color:#fff !important;
+		}
+	}
+
+	.footer-credit {
+		padding: 15px 0;
+    font-size: 10pt;
+    letter-spacing: 0.44px;
+    color: #ffff;
+    
+    .menu-item {
+      display: inline;
+
+      .link-item{
+        color: #ffff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+    }
+	}
+}
