@@ -15,11 +15,11 @@ const styles = {
   },
 };
 
-const Page = ({ text = true }) => (
+const Loading = ({ text = true }) => (
   <React.Fragment>
     <Spinner color="primary"/>
     {text ? (<span className="loading-text" style={styles.text}>loading...</span>) : null}
   </React.Fragment>
 );
 
-export default Page;
+export default Loading;

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import { Container, Button, Row, Col, Nav, NavItem } from 'reactstrap'
+import React from 'react'
+import { Container, Row, Col } from 'reactstrap'
 import { Link } from 'react-router-dom'
-import Loading from 'components/Loading'
+import DropdownLang from 'components/DropdownLang'
 
-const logo = require('assets/images/Brodewijk-white.png')
+const logo = require('assets/images/Logo-horizontal.svg')
 const links = [
   {
     label: 'Home',
@@ -44,17 +44,17 @@ const features = [
 
 const contacts = [
   {
-    icon: 'fas fa-mail',
+    icon: 'fas fa-envelope',
     label: 'contact@brodewijk.com',
     link: '/mail'
   },
   {
-    icon: 'fas fa-instagram',
+    icon: 'fab fa-instagram',
     label: '@brodewijk.id',
     link: '/ig'
   },
   {
-    icon: 'fas fa-phone',
+    icon: 'fas fa-phone-alt',
     label: '+1 (917) 900-9571 (Call Only)',
     link: '/phone'
   },
@@ -83,7 +83,7 @@ const linkCredits = [
   }
 ]
 
-function HeaderDesktop() {
+function Footer() {
   return(
     <footer className="section-footer">
       <Container className="footer-top">
@@ -96,6 +96,12 @@ function HeaderDesktop() {
                     <img src={logo} alt="Logo" className="img-logo"/>
                   </a>
                 </div>
+                <div className="wrapper-lang">
+                  <p className="text-lang">Language</p>
+                </div>
+                <div className="wrapper-lang">
+                  <DropdownLang/>
+                </div>
               </Col>
               <Col md={4} className="footer-links">
                 <h5>LINKS</h5>
@@ -103,7 +109,7 @@ function HeaderDesktop() {
                   <ul className="list-unstyled">
                     {links.map((v, k) => (
                       <li className="menu-item" key={k}>
-                        <a href={v.link} className='link-item'>{v.label}</a>
+                        <Link to={v.link} className='link-item'>{v.label}</Link>
                       </li>
                     ))}
                   </ul>
@@ -119,7 +125,7 @@ function HeaderDesktop() {
                   <ul className="list-unstyled">
                     {features.map((v, k) => (
                       <li className="menu-item" key={k}>
-                        <a href={v.link} className='link-item'>{v.label}</a>
+                        <Link to={v.link} className='link-item'>{v.label}</Link>
                       </li>
                     ))}
                   </ul>
@@ -129,9 +135,20 @@ function HeaderDesktop() {
                 <h5>CONTACT</h5>
                 <div>
                   <p>Jl. Ganesha No. 15F, Kel. Lebak Siliwangi, Kec. Coblong, Bandung, Jawa Barat 40132 </p>
+                  <ul className="list-unstyled">
                   {contacts.map((v, k) => (
-                    <i className={v.icon +" icon-link"} aria-hidden="true"/>
+                    <li className="menu-item" key={k}>
+                      <a href={v.link} className="link-item">
+                        {v.icon.length > 0 ? (
+                          <i className={v.icon + " icon-item"} aria-hidden="true"/>
+                        ) : (
+                          <span style={{ marginRight: '14px' }}>&nbsp;</span>
+                        )}
+                        <p className="d-inline">{v.label}</p>
+                      </a>
+                    </li>
                   ))}
+                  </ul>
                 </div>
               </Col>
             </Row>
@@ -158,4 +175,4 @@ function HeaderDesktop() {
   )
 }
 
-export default HeaderDesktop
+export default Footer;

@@ -3,15 +3,15 @@ import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCa
 
 const items = [
   {
-    src: require('assets/images/carousel-1.jpg'),
+    src: require('assets/images/carousel-1-desktop.jpg'),
     altText: 'Slide 1',
     caption: 'Slide 1'
   },
-  {
-    src: require('assets/images/carousel-2.png'),
-    altText: 'Slide 2',
-    caption: 'Slide 2'
-  },
+  // {
+  //   src: require('assets/images/carousel-2.png'),
+  //   altText: 'Slide 2',
+  //   caption: 'Slide 2'
+  // },
 ];
 
 const MainSlider = (props) => {
@@ -43,13 +43,12 @@ const MainSlider = (props) => {
         key={item.src}
       >
         <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     );
   });
 
   return (
-    <div id="home-slider">
+    <div id="home-slider-section">
       <Carousel
         activeIndex={activeIndex}
         next={next}

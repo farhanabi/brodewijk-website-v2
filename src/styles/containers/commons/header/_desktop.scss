@@ -19,8 +19,14 @@
       text-decoration: none;
       padding: 5px 0;
 
-      .img-logo {
-        width: 100px;
+      .img-logogram {
+        width: 35px;
+        height: auto;
+        margin-right: 5px;
+      }
+
+      .img-logotext {
+        width: 90px;
         height: auto;
       }
 
@@ -33,10 +39,16 @@
     }
 
     .nav-menu{
+      padding: 7px 0;
+
+      .nav-item{
+        font-size: 10pt;
+        margin-left: 10px;
+      }
+
       .btn-outlinewhite {
         background: transparent;
         border: none;
-        margin-left: 10px;
         color: #fff;
         height: 35px;
         width: auto;

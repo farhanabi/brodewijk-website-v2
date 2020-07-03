@@ -14,8 +14,14 @@ code {
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
+// Fontawesome
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
 // import styles
 @import './pages/home/desktop';
+
 @import './containers/commons/header/desktop';
 @import './containers/commons/footer/desktop';
 @import './containers/home/main-slider/desktop';
+@import './containers/home/how-it-works/desktop';
+@import './containers/home/features/desktop';
