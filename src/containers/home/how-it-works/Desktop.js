@@ -24,7 +24,7 @@ function HowItWorks() {
   return(
     <div id="how-it-works-section">
       <Container>
-        <h5 className="title">How it works</h5>
+        <h5 className="title-how">How it works</h5>
         <Row className="data-list">
           {data.map((v, k) => (
             <Col md={4} key={k} className="data-item">

@@ -1,0 +1,57 @@
+#best-collections-section{
+  padding: 40px 0;
+  background: #ffffff;
+
+  .info-section {
+    margin: 20px -15px;
+
+    .left-section {
+      color: #0C172F;
+      padding: 19% 15px;
+
+      .tag-collection {
+        font-size: 20px;
+        letter-spacing: 0.4rem;
+      }
+
+      .title-collection {
+        font-size: 48px;
+      }
+
+      .text-collection {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+
+    .right-section {
+      .img-collection {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .data-section {
+    margin: 40px -15px;
+
+    .data-item {
+      .item-img {
+        width: 100%;
+      }
+    }
+  }
+
+  .more-section {
+    margin: 20px -15px;
+    justify-content: center;
+
+    .btn-see-more {
+      background: #ffffff;
+      color: #0C172F;
+      font-size: 16px;
+      width: 257px;
+      height: 52px;
+    }
+  }
+  
+}

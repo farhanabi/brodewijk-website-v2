@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
+import { Carousel, CarouselItem, CarouselControl, CarouselIndicators } from 'reactstrap';
 
 const items = [
   {
     src: require('assets/images/carousel-1-desktop.jpg'),
     altText: 'Slide 1',
-    caption: 'Slide 1'
   },
   // {
   //   src: require('assets/images/carousel-2.png'),

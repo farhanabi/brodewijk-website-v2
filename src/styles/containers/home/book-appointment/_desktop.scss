@@ -1,0 +1,40 @@
+#book-appointment-section{
+  padding: 40px 0;
+  background: url('../../../../assets/images/bg-book-appointment-desktop.jpg') no-repeat;
+  background-size: cover;
+
+  .data {
+    margin: 20px -15px;
+
+    .left-section {
+      color: #0C172F;
+      padding: 19% 15px;
+
+      .title-book {
+        font-size: 48px;
+      }
+
+      .text-book {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+
+      .btn-book {
+        width: 210px;
+        padding: 10px;
+        background: #0C172F;
+        color: #ffffff;
+        font-size: 16px;
+      }
+    }
+
+    .right-section {
+      text-align: right;
+
+      .img-book {
+        max-width: 600px;
+      }
+    }
+  }
+  
+}
