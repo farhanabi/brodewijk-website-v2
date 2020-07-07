@@ -1,5 +1,6 @@
 .section-footer {
 	background: url('../../../../assets/images/bg-footer-desktop.jpg') no-repeat left;
+	background-size: cover;
 	color: #ffffff;
   font-size: 13px;
 
@@ -12,6 +13,8 @@
     padding-bottom: 50px;
 
 		.footer-links {
+			margin-bottom: 20px;
+			
       .wrapper-img{
 				margin-bottom: 20px;
         .footer-logo{

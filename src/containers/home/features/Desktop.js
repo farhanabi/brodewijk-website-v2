@@ -31,16 +31,16 @@ function Features() {
     <div id="features-section">
       <Container>
         <Row>
-          <Col md={4} className="left-section">
+          <Col lg={4} className="left-section">
             <div className="wrapper-text">
               <h4 className="title">Premium Made to Measure Online Suit Maker</h4>
               <p className="text">Make your made-to-measure formal wear for any events.</p>
             </div>
           </Col>
-          <Col md={8} className="right-section">
+          <Col lg={8} className="right-section">
             <Row className="data-list">
               {data.map((v, k) => (
-                <Col md={12 / data.length} key={k} className="data-item">
+                <Col md={3} xs={6} key={k} className="data-item">
                   <div className="wrapper-btn">
                     <Link to={v.link}><Button size="sm" className="btn-outlinewhite all">{v.label}</Button></Link>
                   </div>

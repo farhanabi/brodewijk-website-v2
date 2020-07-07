@@ -46,30 +46,11 @@
         margin-left: 10px;
       }
 
-      .btn-outlinewhite {
-        background: transparent;
-        border: none;
-        color: #fff;
+      .btn {
         height: 35px;
         width: auto;
-        font-size: 10pt;
-
-        &.all {
-          border: 1px solid #fff;
-        }
+        font-size: 14px;
       }
-
-      .btn-outlinewhite:focus {
-        box-shadow: none;
-      }
-
-      .btn-outlinewhite:hover {
-        &.all:hover {
-          background: #fff;
-          color: #2f2f2f;
-        }
-      }
-
     }
   }
 }

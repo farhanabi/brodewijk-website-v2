@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
+import { BrowserView, MobileView } from 'react-device-detect';
 import Loading from 'components/Loading';
 
-const PageHome = Loadable({ loading: () => <Loading text={false}/>, loader: () => import('pages/home/Desktop') })
+const RouterDesktop = Loadable({ loading: () => <Loading text={true} />, loader: () => import('./RouterDesktop') });
+const RouterMobile = Loadable({ loading: () => <Loading text={true} />, loader: () => import('./RouterMobile') });
 
 function App (){
   useEffect(() => {
@@ -12,10 +14,11 @@ function App (){
   
   return (
     <Router>
-      <Switch>
-        <Route exact={true} path="/" component={PageHome} />
-      </Switch>
-    </Router>
+      <>
+        <BrowserView><RouterDesktop /></BrowserView>
+        <MobileView><RouterMobile /></MobileView>
+      </>
+  </Router>
   );
 }
 

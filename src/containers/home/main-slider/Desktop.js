@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
-import { Carousel, CarouselItem, CarouselControl, CarouselIndicators } from 'reactstrap';
+import { Carousel, CarouselItem, CarouselControl, Button, Container } from 'reactstrap';
 
 const items = [
   {
     src: require('assets/images/carousel-1-desktop.jpg'),
     altText: 'Slide 1',
+    contain: {
+      title: "Create Your Own Formal Wear",
+      subtitle: "Using our customization feature, you can express yourself by creating your own Suit, Shirt, and Pants!",
+      button: [
+        { label: "CUSTOMIZE", link: "/customize", icon: "" },
+        { label: "CONSULT NOW", link: "/contact", icon: "fab fa-whatsapp" }
+      ]
+    }
   },
-  // {
-  //   src: require('assets/images/carousel-2.png'),
-  //   altText: 'Slide 2',
-  //   caption: 'Slide 2'
-  // },
 ];
 
 const MainSlider = (props) => {
@@ -29,11 +32,6 @@ const MainSlider = (props) => {
     setActiveIndex(nextIndex);
   }
 
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
-
   const slides = items.map((item) => {
     return (
       <CarouselItem
@@ -41,6 +39,26 @@ const MainSlider = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
+        {item.contain ? (
+          <div className="section-absolute">
+            <Container>
+              <div className="item-text">
+                {item.contain.title ? <h2 className="title">{item.contain.title}</h2> : null}
+                {item.contain.subtitle ? <p className="subtitle">{item.contain.subtitle}</p> : null }
+                {item.contain.button ? (
+                <div className="wrapper-btn">
+                  {item.contain.button.map((v, k) => (
+                    <Button size="sm" key={k} className="btn-outline-white all">
+                      {v.icon.length > 0 ? <i className={v.icon} /> : null }
+                      &nbsp;{v.label}
+                    </Button>
+                  ))}
+                </div>
+                ) : null}
+              </div>
+            </Container>
+          </div>
+        ) : null}
         <img src={item.src} alt={item.altText} />
       </CarouselItem>
     );
@@ -53,7 +71,6 @@ const MainSlider = (props) => {
         next={next}
         previous={previous}
       >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
         {slides}
         <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
         <CarouselControl direction="next" directionText="Next" onClickHandler={next} />

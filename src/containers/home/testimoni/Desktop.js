@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Container, Row, Col, Carousel, CarouselItem, CarouselControl, CarouselIndicators } from 'reactstrap'
-import { Link } from 'react-router-dom'
 import faker from 'faker'
 
 const data = [
@@ -81,7 +80,6 @@ function Testimoni() {
     );
   });
 
-  console.log(data)
   return(
     <div id="testimoni-section">
       <Container>

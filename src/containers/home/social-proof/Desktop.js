@@ -38,7 +38,7 @@ function SocialProof() {
         <p className="subtitle-proof">Here are some of the advantages that we proud of having</p>
         <Row className="data-list justify-content-center">
           {data.map((v, k) => (
-            <Col md={2} key={k} className="data-item">
+            <Col lg={2} xs={12} key={k} className="data-item">
               <img src={v.image} alt={v.title} className="item-img" />
               <h6 className="item-title">{v.title}</h6>
               <p className="item-text">{v.text}</p>

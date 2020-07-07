@@ -23,26 +23,26 @@ function BestCollections() {
     <div id="best-collections-section">
       <Container>
         <Row className="info-section">
-          <Col md={4} className="left-section">
+          <Col lg={4} xs={12} className="left-section">
             <h6 className="tag-collection">PREMIUM</h6>
             <h2 className="title-collection">Our best collections</h2>
             <p className="text-collection">
               Looking for inspiration? Check our best collection this season! You can also customize the looks after you select our collection
             </p>
           </Col>
-          <Col md={8} className="right-section">
+          <Col lg={8} xs={12} className="right-section">
             <img src={imgInfo} alt="best collection" className="img-collection" />
           </Col>
         </Row>
         <Row className="data-section">
           {data.map((v, k) => (
-            <Col md={4} key={k} className="data-item">
+            <Col md={4} xs={12} key={k} className="data-item">
               <Link to="/collection"><img src={v.image} className="item-img"/></Link>
             </Col>
           ))}
         </Row>
         <Row className="more-section">
-          <Button className="btn-see-more" size="sm">SEE MORE COLLECTIONS</Button>
+          <Button className="btn-outline-black">SEE MORE COLLECTIONS</Button>
         </Row>
       </Container>
     </div>

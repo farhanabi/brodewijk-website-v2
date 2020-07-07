@@ -19,11 +19,8 @@
         font-size: 16px;
       }
 
-      .btn-book {
-        width: 210px;
-        padding: 10px;
-        background: #0C172F;
-        color: #ffffff;
+      .btn {
+        width: 100%;
         font-size: 16px;
       }
     }
@@ -32,7 +29,28 @@
       text-align: right;
 
       .img-book {
-        max-width: 600px;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .data {
+      .left-section {
+        .btn {
+          width: 257px;
+          height: 52px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .data {
+      .right-section {
+        .img-book {
+          max-width: 600px;
+        }
       }
     }
   }

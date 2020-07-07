@@ -1,7 +1,7 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 
-import Layout from 'layout/CommonDesktop'
+import Layout from 'layout/CommonMobile'
 
 import MainSlider from 'containers/home/main-slider/Desktop'
 import HowItWorks from 'containers/home/HowItWorks'
@@ -13,7 +13,7 @@ import Testimoni from 'containers/home/testimoni/Desktop'
 import Contact from 'containers/home/Contact'
 
 function Home (){
-  console.log('desktop')
+  console.log('mobile')
   return (
     <Layout>
       <div id="page-home">

@@ -88,9 +88,9 @@ function Footer() {
     <footer className="section-footer">
       <Container className="footer-top">
         <Row className="align-item-center">
-          <Col md={12} lg={6}>
+          <Col md={12} lg={6} xs={12}>
             <Row>
-              <Col md={8} className="footer-links">
+              <Col lg={8} xs={12} className="footer-links">
                 <div className="wrapper-img">
                   <a href="/" className="footer-logo">
                     <img src={logo} alt="Logo" className="img-logo"/>
@@ -103,7 +103,7 @@ function Footer() {
                   <DropdownLang/>
                 </div>
               </Col>
-              <Col md={4} className="footer-links">
+              <Col lg={4} xs={12} className="footer-links">
                 <h5>LINKS</h5>
                 <div>
                   <ul className="list-unstyled">
@@ -117,9 +117,9 @@ function Footer() {
               </Col>
             </Row>
           </Col>
-          <Col md={12} lg={6}>
+          <Col md={12} lg={6} xs={12}>
             <Row>
-              <Col md={5} className="footer-links">
+              <Col lg={5} xs={12} className="footer-links">
                 <h5>FEATURES</h5>
                 <div>
                   <ul className="list-unstyled">
@@ -131,7 +131,7 @@ function Footer() {
                   </ul>
                 </div>
               </Col>
-              <Col md={7} className="footer-links">
+              <Col lg={7} xs={12} className="footer-links">
                 <h5>CONTACT</h5>
                 <div>
                   <p>Jl. Ganesha No. 15F, Kel. Lebak Siliwangi, Kec. Coblong, Bandung, Jawa Barat 40132 </p>
@@ -159,10 +159,10 @@ function Footer() {
       {/* footer credit */}
       <Container className="footer-credit">
         <Row>
-          <Col md={6}>
+          <Col lg={6} xs={12}>
             <span className="footer-copyright">Copyright © 2019 - 2020 Brodewijk Inc. All Right Reserved</span>
           </Col>
-          <Col md={6} style={{ textAlign: 'right' }}>
+          <Col lg={6} xs={12} style={{ textAlign: 'right' }}>
             {linkCredits.map((v, k) => (
               <div key={k} className={v.border_right ? 'menu-item border-right' : 'menu-item'}>
                 <a href={v.link} className="link-item">{v.label}</a>
