@@ -1,0 +1,43 @@
+{
+  "customize": "CUSTOMIZE",
+  "suit": "SUIT",
+  "shirt": "SHIRT",
+  "vest": "VEST",
+  "pants": "PANTS",
+  "book-appointment": "BOOK APPOINTMENT",
+  "collections": "COLLECTIONS",
+  "login-button": "SIGN UP / LOGIN",
+
+  "language": "Language",
+  
+  "links": {
+    "heading": "LINKS", 
+    "home": "Home",
+    "collections": "Collections",
+    "about-us": "About Us",
+    "contact-us": "Contact Us",
+    "partnership": "Partnership"
+  },
+
+  "features": {
+    "heading": "FEATURES",
+    "customize": "Customize",
+    "book-appointment": "Book Appointment",
+    "size-guide": "Size Guide"
+  },
+
+  "contact": {
+    "heading": "CONTACT",
+    "address": "Jl. Ganesha No. 15F, Kel. Lebak Siliwangi, Kec. Coblong, Bandung, Jawa Barat 40132",
+    "mail": "contact@brodewijk.com",
+    "instagram": "@brodewijk.id",
+    "call-only": "+1 (917) 900-9571 (Call)",
+    "call-or-wa": "+62 8156051373 (Call or Whatsapp)"
+  },
+
+  "copyright": "Copyright © 2020 Brodewijk. All Rights Reserved",
+
+  "privacy-policy": "Privacy Policy",
+  "terms-conditions": "Terms & Conditions",
+  "faq": "FAQ"
+}

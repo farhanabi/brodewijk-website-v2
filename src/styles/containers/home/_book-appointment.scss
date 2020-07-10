@@ -1,27 +1,30 @@
 #book-appointment-section{
   padding: 40px 0;
-  background: url('../../../../assets/images/bg-book-appointment-desktop.jpg') no-repeat;
+  background: url('../../../assets/images/bg-book-appointment-desktop.jpg') no-repeat;
   background-size: cover;
+  font-family: Open Sans;
 
   .data {
     margin: 20px -15px;
 
     .left-section {
       color: #0C172F;
-      padding: 19% 15px;
+      padding-top: 25px;      
 
       .title-book {
-        font-size: 48px;
+        font-size: 34px;
+        font-family: Playfair Display;
       }
 
       .text-book {
         margin-top: 20px;
-        font-size: 16px;
+        font-size: 14px;
       }
 
       .btn {
         width: 100%;
         font-size: 16px;
+        font-family: Open Sans;
       }
     }
 
@@ -37,6 +40,13 @@
   @media (min-width: 768px) {
     .data {
       .left-section {
+        .title-book {
+          font-size: 48px;
+        }
+        .text-book {
+          font-size: 16px;
+        }
+
         .btn {
           width: 257px;
           height: 52px;
@@ -47,6 +57,9 @@
 
   @media (min-width: 992px) {
     .data {
+      .left-section {
+        padding: 19% 15px;
+      }
       .right-section {
         .img-book {
           max-width: 600px;

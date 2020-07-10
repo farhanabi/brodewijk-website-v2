@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
 import { Carousel, CarouselItem, CarouselControl, Button, Container } from 'reactstrap';
-
-const items = [
-  {
-    src: require('assets/images/carousel-1-desktop.jpg'),
-    altText: 'Slide 1',
-    contain: {
-      title: "Create Your Own Formal Wear",
-      subtitle: "Using our customization feature, you can express yourself by creating your own Suit, Shirt, and Pants!",
-      button: [
-        { label: "CUSTOMIZE", link: "/customize", icon: "" },
-        { label: "CONSULT NOW", link: "/contact", icon: "fab fa-whatsapp" }
-      ]
-    }
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 const MainSlider = (props) => {
+  const { t } = useTranslation("homepage")
+  const items = [
+    {
+      src: require('assets/images/carousel-1-desktop.jpg'),
+      altText: 'Slide 1',
+      contain: {
+        title: t("main-slider-section.slide-1.title"),
+        subtitle: t("main-slider-section.slide-1.subtitle"),
+        button: [
+          { label: t("main-slider-section.slide-1.button-1"), link: "/customize", icon: "" },
+          { label: t("main-slider-section.slide-1.button-2"), link: "/contact", icon: "fab fa-whatsapp" }
+        ]
+      }
+    },
+  ];
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -48,7 +49,7 @@ const MainSlider = (props) => {
                 {item.contain.button ? (
                 <div className="wrapper-btn">
                   {item.contain.button.map((v, k) => (
-                    <Button size="sm" key={k} className="btn-outline-white all">
+                    <Button key={k} className="btn-outline-white all">
                       {v.icon.length > 0 ? <i className={v.icon} /> : null }
                       &nbsp;{v.label}
                     </Button>
@@ -65,7 +66,7 @@ const MainSlider = (props) => {
   });
 
   return (
-    <div id="home-slider-section">
+    <div id="desktop-slider-section">
       <Carousel
         activeIndex={activeIndex}
         next={next}

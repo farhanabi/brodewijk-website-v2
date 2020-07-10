@@ -1,71 +1,79 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('Playfair Display'), url('../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'), url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+}
+
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: Open Sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-    .btn {
-      border-radius: 0;
+  .btn {
+    border-radius: 0;
+  }
+
+  .btn-outline-black {
+    background: #ffffff;
+    color: #0C172F;
+    border: 1px solid #0C172F;
+
+    &:hover, &:active, &:focus {
+      background: #ffffff !important;
+      border: 1px solid #0C172F !important;
+      color: #0C172F !important;
     }
 
-    .btn-outline-black {
-      background: #ffffff;
-      color: #0C172F;
-      border: 1px solid #0C172F;
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
 
-      &:hover, &:active, &:focus {
+  .btn-black {
+    background: #0C172F;
+    color: #ffffff;
+
+    &:hover, &:active, &:focus {
+      background: #0C172F !important;
+      border: none !important;
+      color: #ffffff !important;
+    }
+
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+
+  .btn-outline-white {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+
+    &:hover, &:active, &:focus {
+      background: transparent !important;
+      border: none !important;
+      color: #ffffff !important;
+    }
+
+    &:focus {
+      box-shadow: none !important;
+    }
+
+    &.all {
+      border: 1px solid #ffffff;
+
+      &:hover {
+        border: 1px solid #ffffff !important;
         background: #ffffff !important;
-        border: 1px solid #0C172F !important;
-        color: #0C172F !important;
-      }
-
-      &:focus {
-        box-shadow: none !important;
+        color: #2f2f2f !important;
       }
     }
-
-    .btn-black {
-      background: #0C172F;
-      color: #ffffff;
-
-      &:hover, &:active, &:focus {
-        background: #0C172F !important;
-        border: none !important;
-        color: #ffffff !important;
-      }
-
-      &:focus {
-        box-shadow: none !important;
-      }
-    }
-
-    .btn-outline-white {
-      background: transparent;
-      border: none;
-      color: #ffffff;
-
-      &:hover, &:active, &:focus {
-        background: transparent !important;
-        border: none !important;
-        color: #ffffff !important;
-      }
-
-      &:focus {
-        box-shadow: none !important;
-      }
-
-      &.all {
-        border: 1px solid #ffffff;
-
-        &:hover {
-          border: 1px solid #ffffff !important;
-          background: #ffffff !important;
-          color: #2f2f2f !important;
-        }
-      }
-    }
+  }
 }
   
 code {
@@ -82,12 +90,15 @@ code {
 @import './pages/home/desktop';
 
 @import './containers/commons/header/desktop';
-@import './containers/commons/footer/desktop';
+@import './containers/commons/header/mobile';
+@import './containers/commons/footer';
 @import './containers/home/main-slider/desktop';
+@import './containers/home/main-slider/mobile';
 @import './containers/home/how-it-works';
 @import './containers/home/features';
-@import './containers/home/book-appointment/desktop';
+@import './containers/home/book-appointment';
 @import './containers/home/social-proof';
 @import './containers/home/best-collections/desktop';
+@import './containers/home/best-collections/mobile';
 @import './containers/home/testimoni';
 @import './containers/home/contact';

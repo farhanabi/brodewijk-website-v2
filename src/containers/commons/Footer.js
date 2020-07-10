@@ -1,89 +1,93 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+
 import DropdownLang from 'components/DropdownLang'
 
 const logo = require('assets/images/Logo-horizontal.svg')
-const links = [
-  {
-    label: 'Home',
-    link: '/'
-  },
-  {
-    label: 'Collections',
-    link: '/collections'
-  },
-  {
-    label: 'About Us',
-    link: '/about'
-  },
-  {
-    label: 'Contact Us',
-    link: '/contact'
-  },
-  {
-    label: 'Partnership',
-    link: '/partnership'
-  }
-]
-
-const features = [
-  {
-    label: 'Customize',
-    link: '/customize'
-  },
-  {
-    label: 'Book Appointment',
-    link: '/book-appointment'
-  },
-  {
-    label: 'Size Guides',
-    link: '/size-guides'
-  }
-]
-
-const contacts = [
-  {
-    icon: 'fas fa-envelope',
-    label: 'contact@brodewijk.com',
-    link: '/mail'
-  },
-  {
-    icon: 'fab fa-instagram',
-    label: '@brodewijk.id',
-    link: '/ig'
-  },
-  {
-    icon: 'fas fa-phone-alt',
-    label: '+1 (917) 900-9571 (Call Only)',
-    link: '/phone'
-  },
-  {
-    icon: '',
-    label: '+62 8156051373 (Call or Whatsapp)',
-    link: '/phone'
-  }
-]
-
-const linkCredits = [
-  {
-    label: 'Privacy Policy',
-    link: '/privacy-policy',
-    border_right: true
-  },
-  {
-    label: 'Term & Condition',
-    link: '/term-condition',
-    border_right: true
-  },
-  {
-    label: 'FAQ',
-    link: '/faq',
-    border_right: false
-  }
-]
 
 function Footer() {
+  const { t } = useTranslation("translation");
+  const links = [
+    {
+      label: t("links.home"),
+      link: '/'
+    },
+    {
+      label: t("links.collections"),
+      link: '/collections'
+    },
+    {
+      label: t("links.about-us"),
+      link: '/about'
+    },
+    {
+      label: t("links.contact-us"),
+      link: '/contact'
+    },
+    {
+      label: t("links.partnership"),
+      link: '/partnership'
+    }
+  ]
+  
+  const features = [
+    {
+      label: t("features.customize"),
+      link: '/customize'
+    },
+    {
+      label: t("features.book-appointment"),
+      link: '/book-appointment'
+    },
+    {
+      label: t("features.size-guide"),
+      link: '/size-guide'
+    }
+  ]
+  
+  const contacts = [
+    {
+      icon: 'fas fa-envelope',
+      label: t("contact.mail"),
+      link: '/mail'
+    },
+    {
+      icon: 'fab fa-instagram',
+      label: t("contact.instagram"),
+      link: '/ig'
+    },
+    {
+      icon: 'fas fa-phone-alt',
+      label: t("contact.call-only"),
+      link: '/phone'
+    },
+    {
+      icon: '',
+      label: t("contact.call-or-wa"),
+      link: '/phone'
+    }
+  ]
+  
+  const linkCredits = [
+    {
+      label: t("privacy-policy"),
+      link: '/privacy-policy',
+      border_right: true
+    },
+    {
+      label: t("terms-conditions"),
+      link: '/terms-conditions',
+      border_right: true
+    },
+    {
+      label: t("faq"),
+      link: '/faq',
+      border_right: false
+    }
+  ]
+
   return(
     <footer className="section-footer">
       <Container className="footer-top">
@@ -91,20 +95,20 @@ function Footer() {
           <Col md={12} lg={6} xs={12}>
             <Row>
               <Col lg={8} xs={12} className="footer-links">
-                <div className="wrapper-img">
-                  <a href="/" className="footer-logo">
-                    <img src={logo} alt="Logo" className="img-logo"/>
-                  </a>
-                </div>
-                <div className="wrapper-lang">
-                  <p className="text-lang">Language</p>
-                </div>
-                <div className="wrapper-lang">
-                  <DropdownLang/>
-                </div>
+                <Row>
+                  <Col xs={5} lg={12} className="wrapper-img">
+                    <a href="/" className="footer-logo">
+                      <img src={logo} alt="Logo" className="img-logo"/>
+                    </a>
+                  </Col>
+                  <Col xs={7} lg={12} className="wrapper-lang">
+                    <p className="text-lang">{t("language")}</p>
+                    <DropdownLang/>
+                  </Col>
+                </Row>
               </Col>
               <Col lg={4} xs={12} className="footer-links">
-                <h5>LINKS</h5>
+                <h5>{t("links.heading")}</h5>
                 <div>
                   <ul className="list-unstyled">
                     {links.map((v, k) => (
@@ -120,7 +124,7 @@ function Footer() {
           <Col md={12} lg={6} xs={12}>
             <Row>
               <Col lg={5} xs={12} className="footer-links">
-                <h5>FEATURES</h5>
+                <h5>{t("features.heading")}</h5>
                 <div>
                   <ul className="list-unstyled">
                     {features.map((v, k) => (
@@ -132,9 +136,9 @@ function Footer() {
                 </div>
               </Col>
               <Col lg={7} xs={12} className="footer-links">
-                <h5>CONTACT</h5>
+                <h5>{t("contact.heading")}</h5>
                 <div>
-                  <p>Jl. Ganesha No. 15F, Kel. Lebak Siliwangi, Kec. Coblong, Bandung, Jawa Barat 40132 </p>
+                  <p>{t("contact.address")}</p>
                   <ul className="list-unstyled">
                   {contacts.map((v, k) => (
                     <li className="menu-item" key={k}>
@@ -159,10 +163,10 @@ function Footer() {
       {/* footer credit */}
       <Container className="footer-credit">
         <Row>
-          <Col lg={6} xs={12}>
-            <span className="footer-copyright">Copyright © 2019 - 2020 Brodewijk Inc. All Right Reserved</span>
+          <Col lg={6} xs={12} className="copyright">
+            <span className="text">{t("copyright")}</span>
           </Col>
-          <Col lg={6} xs={12} style={{ textAlign: 'right' }}>
+          <Col lg={6} xs={12} className="credit">
             {linkCredits.map((v, k) => (
               <div key={k} className={v.border_right ? 'menu-item border-right' : 'menu-item'}>
                 <a href={v.link} className="link-item">{v.label}</a>

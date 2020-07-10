@@ -1,0 +1,43 @@
+{
+  "customize": "KUSTOMISASI",
+  "suit": "JAS",
+  "shirt": "KEMEJA",
+  "vest": "ROMPI",
+  "pants": "CELANA",
+  "book-appointment": "BUAT JANJI",
+  "collections": "KOLEKSI",
+  "login-button": "DAFTAR / MASUK",
+  
+  "language": "Bahasa",
+  
+  "links": {
+    "heading": "LINKS",
+    "home": "Beranda",
+    "collections": "Koleksi",
+    "about-us": "Tentang Kami",
+    "contact-us": "Kontak Kami",
+    "partnership": "Bermitra"
+  },
+
+  "features": {
+    "heading": "FITUR",
+    "customize": "Kustomisasi",
+    "book-appointment": "Buat Janji",
+    "size-guide": "Panduan Ukuran"
+  },
+
+  "contact": {
+    "heading": "KONTAK",
+    "address": "Jl. Ganesha No. 15F, Kel. Lebak Siliwangi, Kec. Coblong, Bandung, Jawa Barat 40132",
+    "mail": "contact@brodewijk.com",
+    "instagram": "@brodewijk.id",
+    "call-only": "+1 (917) 900-9571 (Telepon)",
+    "call-or-wa": "+62 8156051373 (Telepon atau Whatsapp)"
+  },
+
+  "copyright": "Hak Cipta © 2020 Brodewijk. Semua Hak Dilindungi Undang-Undang",
+
+  "privacy-policy": "Kebijakan Privasi",
+  "terms-conditions": "Syarat & Ketentuan",
+  "faq": "FAQ"
+}

@@ -1,6 +1,7 @@
 #contact-section{
   padding: 50px 0;
   background: #ffffff;
+  font-family: Open Sans;
 
   .wrapper-text {
     .text {
@@ -10,6 +11,7 @@
         font-weight: bold;
         color:#0C172F;
         font-size: 32px;
+        font-family: Playfair Display;
       }
 
       .subtitle-contact {
@@ -27,6 +29,7 @@
       margin-top: 10px;
       width: 100%;
       font-size: 16px;
+      font-family: Open Sans;
     }
   }
 
@@ -50,10 +53,12 @@
 
   @media (min-width: 768px) {
     .wrapper-btn {
+      padding: 2.5% 5px;
+      
       .btn {
         margin-right: 15px;
         height: 48px;
-        width: 200px;
+        width: 265px;
       }
     }
   }

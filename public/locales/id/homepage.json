@@ -1,95 +1,96 @@
 {
-  "customize": "KUSTOMISASI",
-  "suit": "JAS",
-  "shirt": "KEMEJA",
-  "vest": "ROMPI",
-  "pants": "CELANA",
-  "book-appointment": "BUAT JANJI",
-  "collections": "KOLEKSI",
-  "login-button": "DAFTAR / MASUK",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Buat Pakaian Resmi-mu Sendiri",
+      "subtitle": "Dengan menggunakan fitur kustomisasi kami, anda dapat mengekspresikan diri dengan membuat Jas, Kemeja, dan Celana mu sendiri!",
+      "button-1": "KUSTOMISASI",
+      "button-2": "KONSULTASI SEKARANG"
+    },
+    "slide-2": {
+      "title": "Nikmati Diskon Hingga Rp200.000",
+      "subtitle": "Dengan pembelian diatas Rp2.000.000",
+      "button-1": "DAPATKAN SEKARANG!"
+    }
+  },
 
-  "title-1": "Buat Pakaian Resmi-mu Sendiri",
-  "subtitle-1": "Dengan menggunakan fitur kustomisasi kami, anda dapat mengekspresikan diri dengan membuat Jas, Kemeja, dan Celana mu sendiri!",
-  "button-1-1": "KUSTOMISASI",
-  "button-1-2": "KONSULTASI SEKARANG",
+  "hiw-section": {
+    "title": "Bagaimana cara kerjanya",
+    "fabric": "Pilih kainmu dan buat pakaianmu",
+    "measure": "Pilih cara pengukuran",
+    "cart": "Produkmu akan dikirim secara gratis dan siap pakai"
+  },
 
-  "title-2": "Nikmati Diskon Hingga Rp200.000",
-  "subtitle-2": "Dengan pembelian diatas Rp2.000.000",
-  "button-2-1": "DAPATKAN SEKARANG!",
+  "features-section": {
+    "title": "Pembuat Jas Made to Measure Premium",
+    "subtitle": "Buat pakaian formal buatanmu untuk segala acara.",
+    "button-suit": "JAS",
+    "button-shirt": "KEMEJA",
+    "button-vest": "ROMPI",
+    "button-pants": "CELANA"
+  },
 
-  "hiw-heading": "Bagaimana cara kerjanya",
-  "hiw-label-1": "Pilih kainmu dan buat pakaianmu",
-  "hiw-label-2": "Pilih cara pengukuran",
-  "hiw-label-3": "Produkmu akan dikirim secara gratis dan siap pakai",
+  "book-section": {
+    "title": "Kami datang kepada Anda",
+    "subtitle": "Jadikan pakaian formal Anda untuk segala acara. Dibuat khusus untuk Anda, langsung diukur oleh penjahit bertalenta kami. Buat janji sekarang!",
+    "button": "BUAT JANJI"
+  },
 
-  "sec3-title": "Pembuat Jas Made to Measure Premium",
-  "sec3-subtitle": "Buat pakaian formal buatanmu untuk segala acara.",
-  "sec3-label-1": "JAS",
-  "sec3-label-2": "KEMEJA",
-  "sec3-label-3": "ROMPI",
-  "sec3-label-4": "CELANA",
+  "social-proof-section": {
+    "title": "Mengapa menggunakan layanan kami?",
+    "subtitle": "Inilah beberapa kelebihan yang kami banggakan",
+    "advantages": {
+      "shipping": {
+        "title": "Gratis Pengiriman Seluruh Indonesia",
+        "subtitle": "Kami mengirimkan ke seluruh Indonesia tanpa pembelian minimum."
+      },
+      "fabric": {
+        "title": "Kain Premium",
+        "subtitle": "Kami hanya menawarkan kain terbaik untuk membuatnya nyaman di atas kulit dan membuat Anda tetap bergaya."
+      },
+      "customize": {
+        "title": "Kustomisasi yang mudah",
+        "subtitle": "Anda dapat melakukan kustomisasi pada setelan Anda sesuai keinginan Anda."
+      },
+      "measure": {
+        "title": "Perfect Fit",
+        "subtitle": "Kami melakukan pengukuran online atau pengukuran langsung dan membuatnya sempurna untuk tubuh Anda."
+      },
+      "guarantee": {
+        "title": "Garansi 1 Tahun",
+        "subtitle": "Kami menerima pengembalian produk jika ada kerusakan."
+      }
+    }
+  },
   
-  "sec4-title": "Kami datang kepada Anda",
-  "sec4-subtitle": "Jadikan pakaian formal Anda untuk segala acara. Dibuat khusus untuk Anda, langsung diukur oleh penjahit bertalenta kami. Buat janji sekarang!",
-  "sec4-button": "BUAT JANJI",
+  "best-collections-section": {
+    "category": "PREMIUM",
+    "title": "Koleksi terbaik kami",
+    "subtitle": "Mencari inspirasi? Periksa koleksi terbaik kami musim ini! Anda juga dapat menyesuaikan penampilan setelah memilih koleksi kami",
+    "button": "LIHAT KOLEKSI LAIN"
+  },
 
-  "sec5-heading": "Mengapa menggunakan layanan kami?",
-  "sec5-subheading": "Inilah beberapa kelebihan yang kami banggakan",
-  
-  "sec5-label-1": "Gratis Pengiriman Seluruh Indonesia",
-  "sec5-sublabel-1": "Kami mengirimkan ke seluruh Indonesia tanpa pembelian minimum.",
-  "sec5-label-2": "Kain Premium",
-  "sec5-sublabel-2": "Kami hanya menawarkan kain terbaik untuk membuatnya nyaman di atas kulit dan membuat Anda tetap bergaya.",
-  "sec5-label-3": "Kustomisasi yang mudah",
-  "sec5-sublabel-3": "Anda dapat melakukan kustomisasi pada setelan Anda sesuai keinginan Anda.",
-  "sec5-label-4": "Perfect Fit",
-  "sec5-sublabel-4": "Kami melakukan pengukuran online atau pengukuran langsung dan membuatnya sempurna untuk tubuh Anda.",
-  "sec5-label-5": "Garansi 1 Tahun",
-  "sec5-sublabel-5": "Kami menerima pengembalian produk jika ada kerusakan.",
+  "testimoni-section": {
+    "title": "Apa kata pelanggan kami",
+    "sliders": {
+      "slider-1": {
+        "quote": "",
+        "person": ""
+      },
+      "slider-2": {
+        "quote": "",
+        "person": ""
+      },
+      "slider-3": {
+        "quote": "",
+        "person": ""
+      }
+    }
+  },
 
-  "collections-category": "PREMIUM",
-  "collections-title": "Koleksi terbaik kami",
-  "collections-subtitle": "Mencari inspirasi? Periksa koleksi terbaik kami musim ini! Anda juga dapat menyesuaikan penampilan setelah memilih koleksi kami",
-  "collections-button": "LIHAT KOLEKSI LAIN",
-
-  "testimonial-heading": "Apa kata pelanggan kami",
-  "testimonial-quote-1": "",
-  "testimonial-person-1": "",
-  "testimonial-quote-2": "",
-  "testimonial-person-2": "",
-  "testimonial-quote-3": "",
-  "testimonial-person-3": "",
-  "testimonial-quote-4": "",
-  "testimonial-person-4": "",
-  "testimonial-quote-5": "",
-  "testimonial-person-5": "",
-
-  "contact-title": "Tunggu apa lagi",
-  "contact-subtitle": "Daftar atau konsultasikan sekarang",
-  "contact-button-1": "DAFTAR",
-  "contact-button-2": "KONSULTASIKAN SEKARANG",
-
-  "language": "Bahasa",
-  
-  "links": "LINKS",
-  "links-home": "Beranda",
-  "links-collections": "Koleksi",
-  "links-aboutus": "Tentang Kami",
-  "links-contactus": "Kontak Kami",
-  "links-partnership": "Bermitra",
-
-  "features": "FITUR",
-  "features-customize": "Kustomisasi",
-  "features-bookappointment": "Buat Janji",
-  "features-sizeguide": "Panduan Ukuran",
-
-  "contact": "KONTAK",
-  "contact-call": "Telepon",
-  "contact-or": "atau",
-
-  "copyright": "Hak Cipta © 2020 Brodewijk. Semua Hak Dilindungi Undang-Undang",
-
-  "privacy-policy": "Kebijakan Privasi",
-  "terms-conditions": "Syarat & Ketentuan",
-  "FAQ": "FAQ"
+  "contact-section": {
+    "title": "Tunggu apa lagi",
+    "subtitle": "Daftar atau konsultasikan sekarang",
+    "button-register": "DAFTAR",
+    "button-consult": "KONSULTASIKAN SEKARANG"
+  }
 }

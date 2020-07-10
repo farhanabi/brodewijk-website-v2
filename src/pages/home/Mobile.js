@@ -3,13 +3,13 @@ import { withRouter } from 'react-router-dom'
 
 import Layout from 'layout/CommonMobile'
 
-import MainSlider from 'containers/home/main-slider/Desktop'
+import MainSlider from 'containers/home/main-slider/Mobile'
 import HowItWorks from 'containers/home/HowItWorks'
-import Features from 'containers/home/features/Desktop'
-import BookAppointment from 'containers/home/book-appointment/Desktop'
-import SocialProof from 'containers/home/social-proof/Desktop'
-import BestCollections from 'containers/home/best-collections/Desktop'
-import Testimoni from 'containers/home/testimoni/Desktop'
+import Features from 'containers/home/Features'
+import BookAppointment from 'containers/home/BookAppointment'
+import SocialProof from 'containers/home/SocialProof'
+import BestCollections from 'containers/home/best-collections/Mobile'
+import Testimoni from 'containers/home/Testimoni'
 import Contact from 'containers/home/Contact'
 
 function Home (){

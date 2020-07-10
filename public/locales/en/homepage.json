@@ -1,95 +1,96 @@
 {
-  "customize": "CUSTOMIZE",
-  "suit": "SUIT",
-  "shirt": "SHIRT",
-  "vest": "VEST",
-  "pants": "PANTS",
-  "book-appointment": "BOOK APPOINTMENT",
-  "collections": "COLLECTIONS",
-  "login-button": "SIGN UP / LOGIN",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Create Your Own Formal Wear",
+      "subtitle": "Using our customization feature, you can express yourself by creating your own Suit, Shirt, and Pants!",
+      "button-1": "CUSTOMIZE",
+      "button-2": "CONSULT NOW"
+    },
+    "slide-2": {
+      "title": "Enjoy Our Discount Up to Rp200.000",
+      "subtitle": "On order over Rp2.000.000",
+      "button-1": "GET IT NOW!"
+    }
+  },
 
-  "title-1": "Create Your Own Formal Wear",
-  "subtitle-1": "Using our customization feature, you can express yourself by creating your own Suit, Shirt, and Pants!",
-  "button-1-1": "CUSTOMIZE",
-  "button-1-2": "CONSULT NOW",
+  "hiw-section": {
+    "title": "How it works",
+    "fabric": "Pick your fabric and craft your apparel",
+    "measure": "Select how you want to get measured",
+    "cart": "Your product will be delivered for free and ready to wear"
+  },
 
-  "title-2": "Enjoy Our Discount Up to Rp200.000",
-  "subtitle-2": "On order over Rp2.000.000",
-  "button-2-1": "GET IT NOW!",
-
-  "hiw-heading": "How it works",
-  "hiw-label-1": "Pick your fabric and craft your apparel",
-  "hiw-label-2": "Select how you want to get measured",
-  "hiw-label-3": "Your product will be delivered for free and ready to wear",
-
-  "sec3-title": "Premium Made to Measure Online Suit Maker",
-  "sec3-subtitle": "Make your made-to-measure formal wear for any events.",
-  "sec3-label-1": "SUIT",
-  "sec3-label-2": "SHIRT",
-  "sec3-label-3": "VEST",
-  "sec3-label-4": "PANTS",
+  "features-section": {
+    "title": "Premium Made to Measure Online Suit Maker",
+    "subtitle": "Make your made-to-measure formal wear for any events.",
+    "button-suit": "SUIT",
+    "button-shirt": "SHIRT",
+    "button-vest": "VEST",
+    "button-pants": "PANTS"
+  },
   
-  "sec4-title": "Let Us Come to You",
-  "sec4-subtitle": "Make your made-to-measure formal wear for any events. Exclusively tailor-made for you, directly measured by our talented tailor. Book an Appointment now!",
-  "sec4-button": "BOOK APPOINTMENT",
+  "book-section": {
+    "title": "Let Us Come to You",
+    "subtitle": "Make your made-to-measure formal wear for any events. Exclusively tailor-made for you, directly measured by our talented tailor. Book an Appointment now!",
+    "button": "BOOK APPOINTMENT"
+  },
 
-  "sec5-heading": "Why use our services?",
-  "sec5-subheading": "Here are some of the advantages that we proud of having",
-  
-  "sec5-label-1": "Free Nationwide Shipping",
-  "sec5-sublabel-1": "We ship thoroughly all over the country without minimum purchase.",
-  "sec5-label-2": "Premium Fabrics",
-  "sec5-sublabel-2": "We only offer the best fabrics to make it comfortable next to skin and keep you stylish.",
-  "sec5-label-3": "Easy Customization",
-  "sec5-sublabel-3": "You can do customization on your suit as you like.",
-  "sec5-label-4": "Perfect Fit",
-  "sec5-sublabel-4": "We do online and direct measurement to make it perfect to your body.",
-  "sec5-label-5": "1 Year Guarantee",
-  "sec5-sublabel-5": "We accept product returns if there is damage.",
+  "social-proof-section": {
+    "title": "Why use our services?",
+    "subtitle": "Here are some of the advantages that we proud of having",
+    "advantages": {
+      "shipping": {
+        "title": "Free Nationwide Shipping",
+        "subtitle": "We ship thoroughly all over the country without minimum purchase."
+      },
+      "fabric": {
+        "title": "Premium Fabrics",
+        "subtitle": "We only offer the best fabrics to make it comfortable next to skin and keep you stylish."
+      },
+      "customize": {
+        "title": "Easy Customization",
+        "subtitle": "You can do customization on your suit as you like."
+      },
+      "measure": {
+        "title": "Perfect Fit",
+        "subtitle": "We do online and direct measurement to make it perfect to your body."
+      },
+      "guarantee": {
+        "title": "1 Year Guarantee",
+        "subtitle": "We accept product returns if there is damage."
+      }
+    }
+  },
 
-  "collections-category": "PREMIUM",
-  "collections-title": "Our best collections",
-  "collections-subtitle": "Looking for inspiration? Check our best collection this season! You can also customize the looks after you select our collection",
-  "collections-button": "SEE MORE COLLECTIONS",
+  "best-collections-section": {
+    "category": "PREMIUM",
+    "title": "Our best collections",
+    "subtitle": "Looking for inspiration? Check our best collection this season! You can also customize the looks after you select our collection",
+    "button": "SEE MORE COLLECTIONS"
+  },
 
-  "testimonial-heading": "What our customers says",
-  "testimonial-quote-1": "",
-  "testimonial-person-1": "",
-  "testimonial-quote-2": "",
-  "testimonial-person-2": "",
-  "testimonial-quote-3": "",
-  "testimonial-person-3": "",
-  "testimonial-quote-4": "",
-  "testimonial-person-4": "",
-  "testimonial-quote-5": "",
-  "testimonial-person-5": "",
+  "testimoni-section": {
+    "title": "What our customers says",
+    "sliders": {
+      "slider-1": {
+        "quote": "",
+        "person": ""
+      },
+      "slider-2": {
+        "quote": "",
+        "person": ""
+      },
+      "slider-3": {
+        "quote": "",
+        "person": ""
+      }
+    }
+  },
 
-  "contact-title": "What are you waiting for?",
-  "contact-subtitle": "Sign up or consult now",
-  "contact-button-1": "SIGN UP",
-  "contact-button-2": "CONSULT NOW",
-
-  "language": "Language",
-  
-  "links": "LINKS",
-  "links-home": "Home",
-  "links-collections": "Collections",
-  "links-aboutus": "About Us",
-  "links-contactus": "Contact Us",
-  "links-partnership": "Partnership",
-
-  "features": "FEATURES",
-  "features-customize": "Customize",
-  "features-bookappointment": "Book Appointment",
-  "features-sizeguide": "Size Guide",
-
-  "contact": "CONTACT",
-  "contact-call": "Call",
-  "contact-or": "or",
-
-  "copyright": "Copyright © 2020 Brodewijk. All Rights Reserved",
-
-  "privacy-policy": "Privacy Policy",
-  "terms-conditions": "Terms & Conditions",
-  "FAQ": "FAQ"
+  "contact-section": {
+    "title": "What are you waiting for?",
+    "subtitle": "Sign up or consult now",
+    "button-register": "SIGN UP",
+    "button-consult": "CONSULT NOW"
+  }
 }

@@ -1,6 +1,7 @@
-#home-slider-section {
+#desktop-slider-section {
 	cursor: pointer;
 	height: 100%;
+	font-family: Open Sans;
 
 	.carousel{
 		height: 100%;
@@ -41,6 +42,7 @@
 							.title {
 								font-size: 56px;
 								font-weight: normal;
+								font-family: Playfair Display;
 							}
 
 							.subtitle {
@@ -53,6 +55,7 @@
 								.btn {
 									margin-right: 15px;
 									padding: 12px 20px;
+									font-family: Open Sans;
 								}
 							}
 						}

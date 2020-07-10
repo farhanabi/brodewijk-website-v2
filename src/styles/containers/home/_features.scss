@@ -1,31 +1,32 @@
 #features-section {
   background: #2f2f2f;
+  font-family: Open Sans;
 
   .left-section {
     .wrapper-text {
       color: #ffffff;
-      padding: 29% 0;
+      padding-top: 50px;
 
       .title {
-        font-size: 40px;
+        font-size: 34px;
+        font-family: Playfair Display;
       }
   
       .text {
         font-size: 16px;
+        margin-bottom: 30px;
       }
     }
   }
 
   .right-section {
     .data-list {
-      margin-right: 0;
 
       .data-item {
         padding: 0;
 
         .item-img {
           max-width: 100%;
-          max-height: 433px;
         }
         
         .wrapper-btn {
@@ -41,6 +42,7 @@
             height: 35px;
             width: 100%;
             font-size: 10pt;
+            font-family: Open Sans;
     
             &.all {
               border: 1px solid #fff;
@@ -55,6 +57,36 @@
 
       .data-item:hover {
         opacity: 0.7;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .left-section {
+      .wrapper-text {
+        padding: 29% 0;
+  
+        .title {
+          font-size: 40px;
+        }
+
+        .text {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .right-section {
+      .data-list {
+        margin-right: 0;
+
+        .data-item {
+          padding: 0;
+  
+          .item-img {
+            max-height: 433px;
+          }
+        }
       }
     }
   }

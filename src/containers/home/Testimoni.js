@@ -1,47 +1,49 @@
 import React, { useState } from 'react'
 import { Container, Row, Col, Carousel, CarouselItem, CarouselControl, CarouselIndicators } from 'reactstrap'
 import faker from 'faker'
-
-const data = [
-  {
-    id: faker.random.uuid(),
-    person: {
-      name: faker.name.firstName(),
-      job: faker.name.jobTitle(),
-      photo: faker.image.people(),
-    },
-    text: faker.lorem.sentences()
-  },
-  {
-    id: faker.random.uuid(),
-    person: {
-      name: faker.name.firstName(),
-      job: faker.name.jobTitle(),
-      photo: faker.image.people(),
-    },
-    text: faker.lorem.sentences()
-  },
-  {
-    id: faker.random.uuid(),
-    person: {
-      name: faker.name.firstName(),
-      job: faker.name.jobTitle(),
-      photo: faker.image.people(),
-    },
-    text: faker.lorem.sentences()
-  },
-  {
-    id: faker.random.uuid(),
-    person: {
-      name: faker.name.firstName(),
-      job: faker.name.jobTitle(),
-      photo: faker.image.people(),
-    },
-    text: faker.lorem.sentences()
-  },
-]
+import { useTranslation } from 'react-i18next'
 
 function Testimoni() {
+  const { t } = useTranslation("homepage");
+  const data = [
+    {
+      id: faker.random.uuid(),
+      person: {
+        name: faker.name.firstName(),
+        job: faker.name.jobTitle(),
+        photo: faker.image.people(),
+      },
+      text: faker.lorem.sentences()
+    },
+    {
+      id: faker.random.uuid(),
+      person: {
+        name: faker.name.firstName(),
+        job: faker.name.jobTitle(),
+        photo: faker.image.people(),
+      },
+      text: faker.lorem.sentences()
+    },
+    {
+      id: faker.random.uuid(),
+      person: {
+        name: faker.name.firstName(),
+        job: faker.name.jobTitle(),
+        photo: faker.image.people(),
+      },
+      text: faker.lorem.sentences()
+    },
+    {
+      id: faker.random.uuid(),
+      person: {
+        name: faker.name.firstName(),
+        job: faker.name.jobTitle(),
+        photo: faker.image.people(),
+      },
+      text: faker.lorem.sentences()
+    },
+  ]
+
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -83,7 +85,7 @@ function Testimoni() {
   return(
     <div id="testimoni-section">
       <Container>
-        <h5 className="title-testimoni">Why use our services?</h5>
+        <h5 className="title-testimoni">{t("testimoni-section.title")}</h5>
         <Row className="data-list justify-content-center">
           <Carousel
             activeIndex={activeIndex}
