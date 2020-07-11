@@ -1,25 +1,30 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
-import { BrowserView, MobileView } from 'react-device-detect';
+import { isMobile } from 'react-device-detect';
 import Loading from 'components/Loading';
 
 const RouterDesktop = Loadable({ loading: () => <Loading text={true} />, loader: () => import('./RouterDesktop') });
 const RouterMobile = Loadable({ loading: () => <Loading text={true} />, loader: () => import('./RouterMobile') });
 
-function App (){
+function WebRouter (){
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   
+  if (isMobile) {
+    return (
+      <Router>
+        <RouterMobile/>
+      </Router>
+    );
+  }
+
   return (
     <Router>
-      <>
-        <BrowserView><RouterDesktop /></BrowserView>
-        <MobileView><RouterMobile /></MobileView>
-      </>
-  </Router>
-  );
+      <RouterDesktop/>
+    </Router>
+  )
 }
 
-export default App;
+export default WebRouter;
