@@ -34,7 +34,7 @@ function Header() {
   }
 
   return(
-    <header id="mobile-header" className={scrollPosition > 100 ? 'sticky' : ''}>
+    <header id="mobile-header" className={`${scrollPosition > 1 ? 'sticky' : ''} ${!showNavbar && scrollPosition < 1 ? 'transparent' : ''}`} >
       <Container>
         <Row className="header-bar">
           <Col xs={6}>

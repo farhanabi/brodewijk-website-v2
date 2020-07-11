@@ -27,16 +27,16 @@ function Header() {
   }, []);
 
   return(
-    <header id="desktop-header"className={scrollPosition > 100 ? 'sticky' : ''}>
+    <header id="desktop-header"className={scrollPosition > 1 ? 'sticky' : ''}>
       <Container>
         <Row className="header-bar">
-          <Col md={5}>
+          <Col md={4}>
             <a href="/" className="header-logo">
               <img src={logoGram} alt="Logo-gram" className="img-logogram"/>
-              <img src={logoText} alt="Logo-text" className={`img-logotext ${scrollPosition < 100 ? 'd-none' : ''}`}/>
+              <img src={logoText} alt="Logo-text" className={`img-logotext ${scrollPosition < 655 ? 'd-none' : ''}`}/>
             </a>
           </Col>
-          <Col md={7} className="nav-menu">
+          <Col md={8} className="nav-menu">
             <Row className="justify-content-end mr-0 ml-0">
               <Nav>
                 <NavItem>

@@ -1,6 +1,6 @@
 #mobile-header {
   width: 100%;
-  background: transparent;
+  background: #2f2f2f;
   position: absolute;
   top: 0;
   z-index: 100;
@@ -9,7 +9,13 @@
 
   &.sticky{
     background: #2f2f2f;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  &.transparent{
+    background: transparent;
   }
 
   .header-bar {
@@ -44,8 +50,9 @@
     font-size: 14px;
 
     &.customize {
-      padding-top: 15px;
-      background: #A9A9A9;
+      // padding-top: 15px;
+      padding-left: 15px;
+      background: #2f2f2f;
     }
 
     .nav-item {

@@ -17,6 +17,17 @@ const MainSlider = (props) => {
         ]
       }
     },
+    {
+      src: require('assets/images/carousel-2-desktop.jpg'),
+      altText: 'Slide 2',
+      contain: {
+        title: t("main-slider-section.slide-2.title"),
+        subtitle: t("main-slider-section.slide-2.subtitle"),
+        button: [
+          { label: t("main-slider-section.slide-2.button-1"), link: "/customize", icon: "" }
+        ]
+      }
+    },
   ];
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);

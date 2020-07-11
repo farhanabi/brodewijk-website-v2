@@ -44,6 +44,7 @@ function DropdownLang(props) {
       styles={customStyles}
       onChange={(e) => changeLanguage(e)}
       isClearable={false}
+      isSearchable={false}
     />
   )
 }

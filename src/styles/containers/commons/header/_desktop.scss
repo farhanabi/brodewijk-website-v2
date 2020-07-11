@@ -8,8 +8,11 @@
   font-family: Open Sans;
 
   &.sticky{
-    background: #2f2f2f;
-    position: sticky;
+    background: #1C1C1C;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 
   .header-bar {
@@ -34,11 +37,11 @@
     }
 
     .nav-menu{
-      padding: 7px 15px;
+      padding: 10px 0px;
 
       .nav-item{
         font-size: 10pt;
-        margin-left: 10px;
+        margin: 0 15px;
       }
 
       .btn {
@@ -46,6 +49,7 @@
         width: auto;
         font-size: 14px;
         font-family: Open Sans;
+        letter-spacing: 0.05em;
 
         &.btn-customize {
           opacity: 0.8;
@@ -80,5 +84,14 @@
       font-family: Open Sans;
     }
   }
-  
 }
+
+// @media (max-width: 768px) {
+//   #mobile-header {
+//     .header-bar{
+//       .nav-menu{
+//         padding: 10px -5px;
+//       }
+//     }
+//   }
+// }
