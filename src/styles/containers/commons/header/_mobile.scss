@@ -1,6 +1,6 @@
 #mobile-header {
   width: 100%;
-  background: #2f2f2f;
+  background: #1C1C1C;
   position: absolute;
   top: 0;
   z-index: 100;
@@ -8,7 +8,8 @@
   font-family: Open Sans;
 
   &.sticky{
-    background: #2f2f2f;
+    background: #1C1C1C;
+    // opacity: 0.9;
     position: fixed;
     top: 0;
     width: 100%;
@@ -52,7 +53,7 @@
     &.customize {
       // padding-top: 15px;
       padding-left: 15px;
-      background: #2f2f2f;
+      background: #1C1C1C;
     }
 
     .nav-item {
