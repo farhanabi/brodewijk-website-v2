@@ -22,27 +22,60 @@
   .header-bar {
     padding: 10px 0;
 
-    .header-logo {
-      display: inline-block;
-      text-decoration: none;
-      padding: 5px 0;
-
-      .img-logo {
-        width: 130px;
-        height: auto;
-        filter: invert(1);
-      }
-    }
-
     .nav-menu{
       padding: 8px 15px;
-      text-align: right;
+      text-align: left;
 
       .btn {
         height: 35px;
         width: auto;
         font-size: 14px;
         font-family: Open Sans;
+      }
+    }
+
+    .nav-center {
+      text-align: center;
+
+      .title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 19px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.05em;
+
+        color: white;
+      }
+    }
+
+    .nav-logogram {
+      text-align: center;
+      padding: 8px 15px 8px 0px;
+    }
+
+    .header-logo {
+      display: inline-block;
+      text-decoration: none;
+      padding: 5px 0;
+      text-align: right;
+
+      .img-logo {
+        width: 130px;
+        height: auto;
+        filter: invert(1);
+      }
+
+      .img-logogram {
+        height: 35px;
+        filter: invert(1);
       }
     }
   }

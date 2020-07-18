@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 const logo = require('assets/images/Logo-horizontal.svg')
+const logogram = require('assets/images/Logogram.svg')
 
-function Header() {
+function Header(pageName) {
   const { t } = useTranslation("translation");
 
   const [scrollPosition, setSrollPosition] = useState(0);
@@ -37,12 +38,7 @@ function Header() {
     <header id="mobile-header" className={`${scrollPosition > 1 ? 'sticky' : ''} ${!showNavbar && scrollPosition < 1 ? 'transparent' : ''}`} >
       <Container>
         <Row className="header-bar">
-          <Col xs={6}>
-            <a href="/" className="header-logo">
-              <img src={logo} alt="Logo" className="img-logo"/>
-            </a>
-          </Col>
-          <Col xs={6} className="nav-menu">
+          <Col xs={2} className="nav-menu">
             {showNavbar ? (
               <Button onClick={handleShowNavbar} className="btn-outline-white">
                 <i className="fas fa-times" />
@@ -52,6 +48,17 @@ function Header() {
                 <i className="fas fa-bars" />
               </Button>
             )}
+          </Col>
+          <Col xs={8} className="nav-center">
+            <a href="/" className={`header-logo ${pageName='Homepage'?'':'d-none'}`}>
+              <img src={logo} alt="Logo" className="img-logo"/>
+            </a>
+            <h2 className={`title ${pageName='Homepage'?'d-none':''}`}>BOOK APPOINTMENT</h2>
+          </Col>
+          <Col xs={2} className="nav-logogram">
+            <a href="/" className={`header-logo ${pageName='Homepage'?'d-none':''}`}>
+              <img src={logogram} alt="Logo" className="img-logogram"/>
+            </a>
           </Col>
         </Row>
         {showNavbar && (
