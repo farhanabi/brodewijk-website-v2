@@ -1,0 +1,49 @@
+{
+  "title": "Ukuran",
+
+  "fit-option": {
+    "label": "Fit",
+    "slim-fit": "Slim Fit",
+    "regular-fit": "Regular Fit"
+  },
+
+  "method-option": {
+    "label": "Metode",
+    "standard": "Standar",
+    "custom": "Custom"
+  },
+
+  "custom-measurement": {
+    "body-measurement": {
+      "title": "Pengukuran Badan",
+      "height": "Tinggi Badan",
+      "weight": "Berat Badan"
+    },
+    "upper-measurement": {
+      "title": "Pengukuran Bagian Atas",
+      "front-length": "Panjang Atas",
+      "shoulder-width": "Lebar Bahu",
+      "sleeve-length": "Panjang Tangan",
+      "chest": "Lingkar Dada",
+      "waist": "Lingkar Perut",
+      "hips": "Lingkar Pinggul",
+      "armpits": "Lingkar Ketiak",
+      "biceps": "Lingkar Lengan Atas",
+      "wrist": "Lingkar Pergelangan Tangan",
+      "front-chest": "Lebar Dada Depan",
+      "back-chest": "Lebar Dada Belakang",
+    },
+    "bottom-measurement": {
+      "title": "Pengukuran Bawah",
+      "length": "Panjang Celana",
+      "waist": "Lingkar Pinggang",
+      "crotch": "Panjang Selangkangan",
+      "thigh": "Lingkar Paha",
+      "knee": "Lingkar Lutut",
+      "ankle": "Lingkar Pergelangan Kaki",
+      "hips": "Lingkar Pinggul Celana"
+    }
+  },
+
+  "save-button": "Save size"
+}

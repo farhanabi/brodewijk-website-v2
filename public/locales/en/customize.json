@@ -1,0 +1,34 @@
+{
+  "title": "CUSTOMIZE",
+
+  "fabric-section": {
+    "title": "FABRIC",
+    "searchbar": "Search fabric name",
+    "sort": "Sort",
+    "filter": "Filter"
+  },
+
+  "features-section": {
+    "title": "FEATURES",
+    "searchbar": "Search fabric name",
+    "sort": "Sort",
+    "filter": "Filter"
+  },  
+
+  "detail-box-section": {
+    "title": "CUSTOM SUIT DETAILS",
+    "features": {
+      "fabric": "Fabric",
+      "lining": "Lining",
+      "canvas": "Canvas",
+      "shoulder": "Shoulder",
+      "lapels": "Lapels",
+      "chest-pocket": "Chest Pocket",
+      "buttons": "Buttons",
+      "pockets": "Pockets",
+      "vents": "Vents"
+    },
+    "price": "Price",
+    "add-to-cart": "Add to Cart"
+  }
+}

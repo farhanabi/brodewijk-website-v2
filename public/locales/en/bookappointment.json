@@ -1,0 +1,35 @@
+{
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Let Us Come to You & Get You a Premium Wear",
+      "subtitle": "By book an appointment with us",
+      "button-1": "BOOK APPOINTMENT NOW"
+    }
+  },
+
+  "hiw-section": {
+    "title": "How it works",
+    "book": "Book your appointment and let our tailor approach you",
+    "pick": "Select your fabrics, styles, and get measured by our talented tailor",
+    "pay": "Pay and we will process your order, you just need to be ready",
+    "finish": "Your order will be ready in 15 workdays"
+  },
+
+  "testimoni-section": {
+    "title": "What our customers says about book appointment",
+    "sliders": {
+      "slider-1": {
+        "quote": "",
+        "person": ""
+      }
+    }
+  },
+
+  "contact-section": {
+    "title": "What are you waiting for?",
+    "subtitle": "Book an appointment or consult with us now",
+    "button-register": "BOOK APPOINTMENT",
+    "button-consult": "CONSULT NOW",
+    "button-consult-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you"
+  }
+}

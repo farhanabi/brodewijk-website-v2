@@ -1,0 +1,35 @@
+{
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Biar Kami yang Menghampiri Anda",
+      "subtitle": "Dengan membuat janji dengan penjahit kami",
+      "button-1": "BUAT JANJI"
+    }
+  },
+
+  "hiw-section": {
+    "title": "Bagaimana cara kerjanya",
+    "book": "Buat janji dan penjahit kami akan mendatangi Anda",
+    "pick": "Pilih kain, fitur, sekaligus diukur oleh penjahit kami yang berbakat",
+    "pay": "Bayar dan kami akan segera memproses pesanan Anda, Anda tinggal menunggu",
+    "finish": "Pesanan Anda akan siap dalam 15 hari kerja"
+  },
+
+  "testimoni-section": {
+    "title": "Apa kata pelanggan kami mengenai buat janji",
+    "sliders": {
+      "slider-1": {
+        "quote": "",
+        "person": ""
+      }
+    }
+  },
+
+  "contact-section": {
+    "title": "Tunggu apa lagi?",
+    "subtitle": "Buat janji atau konsultasikan sekarang",
+    "button-register": "BUAT JANJI",
+    "button-consult": "KONSULTASI SEKARANG",
+    "button-consult-link": "https://api.whatsapp.com/send?phone=628156051373&text=Halo%20Brodewijk!%20Aku%20tertarik%20untuk%20bertanya%2Dtanya"
+  }
+}

@@ -51,22 +51,17 @@ function Footer() {
     {
       icon: 'fas fa-envelope',
       label: t("contact.mail"),
-      link: '/mail'
+      link: 'mailto:contact@brodewijk.com'
     },
     {
       icon: 'fab fa-instagram',
       label: t("contact.instagram"),
-      link: '/ig'
+      link: 'https://www.instagram.com/brodewijk.id/'
     },
     {
       icon: 'fas fa-phone-alt',
-      label: t("contact.call-only"),
-      link: '/phone'
-    },
-    {
-      icon: '',
-      label: t("contact.call-or-wa"),
-      link: '/phone'
+      label: t("contact.whatsapp-only"),
+      link: 'https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you'
     }
   ]
   
@@ -142,7 +137,7 @@ function Footer() {
                   <ul className="list-unstyled">
                   {contacts.map((v, k) => (
                     <li className="menu-item" key={k}>
-                      <a href={v.link} className="link-item">
+                      <a href={v.link} className="link-item" target="_blank" rel="noopener noreferrer">
                         {v.icon.length > 0 ? (
                           <i className={v.icon + " icon-item"} aria-hidden="true"/>
                         ) : (

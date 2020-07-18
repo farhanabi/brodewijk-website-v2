@@ -1,0 +1,53 @@
+{
+  "sign-up": {
+    "title": "Tinggal satu langkah lagi untuk memesan",
+    "form": {
+      "first-name": {
+        "label": "Nama Depan",
+        "placeholder": "Masukkan nama depan Anda"
+      },
+      "last-name": {
+        "label": "Nama Belakang",
+        "placeholder": "Masukkan nama belakang Anda"
+      },
+      "username": {
+        "label": "Username",
+        "placeholder": "Masukkan nama pengguna Anda"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Masukkan email aktif Anda"
+      },
+      "phone": {
+        "label": "Nomor Telepon",
+        "placeholder": "Masukkan nomor telepon Anda"
+      }
+    },
+    "already-have-account": {
+      "text": "Sudah memiliki akun? Silakan",
+      "link": "login"
+    }
+  },
+  
+  "login": {
+    "title": "Login untuk memesan",
+    "form": {
+      "email": {
+        "label": "Email",
+        "placeholder": "Masukkan email yang terdaftar"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Masukkan kata sandi anda"
+      }
+    },
+    "create-account": {
+      "text": "Tidak punya?",
+      "link": "Buat akun"
+    },
+    "forgot-pass": {
+      "text": "Lupa kata sandi Anda?",
+      "link": "Klik untuk memulihkan"
+    }
+  }
+}

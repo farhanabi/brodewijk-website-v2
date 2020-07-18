@@ -1,0 +1,49 @@
+{
+  "title": "Measure",
+
+  "fit-option": {
+    "label": "Fit",
+    "slim-fit": "Slim Fit",
+    "regular-fit": "Regular Fit"
+  },
+
+  "method-option": {
+    "label": "Method",
+    "standard": "Standard",
+    "custom": "Custom"
+  },
+
+  "custom-measurement": {
+    "body-measurement": {
+      "title": "Body Measurement",
+      "height": "Height",
+      "weight": "Weight"
+    },
+    "upper-measurement": {
+      "title": "Upper Measurement",
+      "front-length": "Front Length",
+      "shoulder-width": "Shoulder Width",
+      "sleeve-length": "Sleeve Length",
+      "chest": "Chest",
+      "waist": "Waist",
+      "hips": "Hips",
+      "armpits": "Armpits",
+      "biceps": "Biceps",
+      "wrist": "Wrist",
+      "front-chest": "Front Chest Width",
+      "back-chest": "Back Chest Width",
+    },
+    "bottom-measurement": {
+      "title": "Bottom Measurement",
+      "length": "Pants Length",
+      "waist": "Trouser Waist",
+      "crotch": "Crotch",
+      "thigh": "Thigh",
+      "knee": "Knee",
+      "ankle": "Ankle",
+      "hips": "Pants Hips"
+    }
+  },
+
+  "save-button": "Save size"
+}

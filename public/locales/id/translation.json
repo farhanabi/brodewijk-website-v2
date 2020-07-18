@@ -1,4 +1,5 @@
 {
+  "home": "BERANDA",
   "customize": "KUSTOMISASI",
   "suit": "JAS",
   "shirt": "KEMEJA",
@@ -31,8 +32,7 @@
     "address": "Jl. Ganesha No. 15F, Kel. Lebak Siliwangi, Kec. Coblong, Bandung, Jawa Barat 40132",
     "mail": "contact@brodewijk.com",
     "instagram": "@brodewijk.id",
-    "call-only": "+62 8156051373 (Hanya WhatsApp)",
-    "call-or-wa": "+62 8156051373 (Telepon atau Whatsapp)"
+    "whatsapp-only": "+62 8156051373 (Hanya WhatsApp)"
   },
 
   "copyright": "Hak Cipta © 2020 Brodewijk. Semua Hak Dilindungi Undang-Undang",

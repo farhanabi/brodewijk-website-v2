@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 const img = require('assets/images/contact.svg')
 
 function Contact() {
-  const { t } = useTranslation("homepage");
+  const { t } = useTranslation("bookappointment");
   return(
     <div id="contact-section">
       <Container>
@@ -22,14 +22,20 @@ function Contact() {
             </Row>
           </Col>
           <Col lg={6} xs={12} className="wrapper-btn">
-            <Button className="btn-black sm">{t("contact-section.button-register")}</Button>
-            <Button
-              className="btn-outline-black sm"
-              href="https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you"
-              target='_blank' rel='noopener noreferrer'
-            >
-              <i className="fab fa-whatsapp"/>&nbsp;{t("contact-section.button-consult")}
-            </Button>
+          <Button
+            className="btn-black sm"
+            href='https://calendly.com/brodewijk-bookappointment/pengukuran-jas?month=2020-07'
+            target='_blank' rel='noopener noreferrer'
+          >
+            {t("contact-section.button-register")}
+          </Button>
+          <Button
+            className="btn-outline-black sm"
+            href={t("contact-section.button-consult-link")}
+            target='_blank' rel='noopener noreferrer'
+          >
+            <i className="fab fa-whatsapp"/>&nbsp;{t("contact-section.button-consult")}
+          </Button>
           </Col>
         </Row>
         

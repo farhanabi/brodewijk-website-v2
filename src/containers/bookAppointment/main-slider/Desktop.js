@@ -3,28 +3,21 @@ import { Carousel, CarouselItem, CarouselControl, Button, Container } from 'reac
 import { useTranslation } from 'react-i18next';
 
 const MainSlider = (props) => {
-  const { t } = useTranslation("homepage")
+  const { t } = useTranslation("bookappointment")
   const items = [
     {
-      src: require('assets/images/carousel-1-desktop.jpg'),
+      src: require('assets/images/carousel-bookappointment-1-desktop.jpg'),
       altText: 'Slide 1',
       contain: {
         title: t("main-slider-section.slide-1.title"),
         subtitle: t("main-slider-section.slide-1.subtitle"),
         button: [
-          { label: t("main-slider-section.slide-1.button-1"), link: "/customize", icon: "" },
-          { label: t("main-slider-section.slide-1.button-2"), link: "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you", newtab: true, icon: "fab fa-whatsapp" }
-        ]
-      }
-    },
-    {
-      src: require('assets/images/carousel-2-desktop.jpg'),
-      altText: 'Slide 2',
-      contain: {
-        title: t("main-slider-section.slide-2.title"),
-        subtitle: t("main-slider-section.slide-2.subtitle"),
-        button: [
-          { label: t("main-slider-section.slide-2.button-1"), link: "/customize", icon: "" }
+          { 
+            label: t("main-slider-section.slide-1.button-1"),
+            link: "https://calendly.com/brodewijk-bookappointment/pengukuran-jas?month=2020-07",
+            newtab: true,
+            icon: ""
+          }
         ]
       }
     },
@@ -84,8 +77,6 @@ const MainSlider = (props) => {
         previous={previous}
       >
         {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
       </Carousel>
     </div>
   );

@@ -1,0 +1,53 @@
+{
+  "sign-up": {
+    "title": "You're one step closer to ordering",
+    "form": {
+      "first-name": {
+        "label": "First Name",
+        "placeholder": "Enter your first name"
+      },
+      "last-name": {
+        "label": "Last Name",
+        "placeholder": "Enter your last name"
+      },
+      "username": {
+        "label": "Username",
+        "placeholder": "Put your username here"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Put your active email here"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "placeholder": "Put your active phone number here"
+      }
+    },
+    "already-have-account": {
+      "text": "Already have an account? Please",
+      "link": "log in"
+    }
+  },
+  
+  "login": {
+    "title": "Log in to order",
+    "form": {
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your registered email here"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter Password"
+      }
+    },
+    "create-account": {
+      "text": "Don't have one?",
+      "link": "Create an account"
+    },
+    "forgot-pass": {
+      "text": "Forgot your password?",
+      "link": "Click here to recover"
+    }
+  }
+}

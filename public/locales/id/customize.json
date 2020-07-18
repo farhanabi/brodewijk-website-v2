@@ -1,0 +1,34 @@
+{
+  "title": "KUSTOMISASI",
+
+  "fabric-section": {
+    "title": "KAIN",
+    "searchbar": "Cari nama kain",
+    "sort": "Urutkan",
+    "filter": "Filter"
+  },
+
+  "features-section": {
+    "title": "FITUR",
+    "searchbar": "Cari nama fitur",
+    "sort": "Urutkan",
+    "filter": "Filter"
+  },  
+
+  "detail-box-section": {
+    "title": "DETAIL JAS",
+    "features": {
+      "fabric": "Kain",
+      "lining": "Lining",
+      "canvas": "Kanvas",
+      "shoulder": "Bahu",
+      "lapels": "Kerah",
+      "chest-pocket": "Saku Dada",
+      "buttons": "Kancing",
+      "pockets": "Saku",
+      "vents": "Vents"
+    },
+    "price": "Harga",
+    "add-to-cart": "Tambah ke Keranjang"
+  }
+}
