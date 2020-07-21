@@ -88,6 +88,7 @@ code {
 
 // import styles
 @import './pages/home/desktop';
+@import './pages/customize';
 
 @import './components/loading';
 @import './containers/commons/header/desktop';
@@ -103,3 +104,5 @@ code {
 @import './containers/home/best-collections/mobile';
 @import './containers/home/testimoni';
 @import './containers/home/contact';
+@import './containers/customize/filterBar/desktop';
+@import './containers/customize/filterBar/mobile';

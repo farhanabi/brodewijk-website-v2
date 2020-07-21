@@ -9,9 +9,8 @@ import Testimoni from 'containers/bookAppointment/Testimoni'
 import Contact from 'containers/bookAppointment/Contact'
 
 function BookAppointment (){
-  console.log('desktop')
   return (
-    <Layout>
+    <Layout header="black" page="Book Appointment" footer={true}>
       <div id="page-home">
         <MainSlider/>
         <HowItWorks/>

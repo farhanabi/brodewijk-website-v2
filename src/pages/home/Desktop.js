@@ -13,9 +13,8 @@ import Testimoni from 'containers/home/Testimoni'
 import Contact from 'containers/home/Contact'
 
 function Home (){
-  console.log('desktop')
   return (
-    <Layout>
+    <Layout header="black" page="Home" footer={true}>
       <div id="page-home">
         <MainSlider/>
         <HowItWorks/>

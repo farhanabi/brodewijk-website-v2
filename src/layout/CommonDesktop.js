@@ -5,11 +5,12 @@ import Footer from 'containers/commons/Footer'
 import { withRouter } from 'react-router-dom'
 
 const CommonLayout = (props) => {
+  const { header, page, footer } = props;
   return (
     <div>
-      <Header/>
+      {header === "white" ? null : (<Header/>)}
       {props.children}
-      <Footer/>
+      {footer && (<Footer/>)}
     </div>
   )
 }

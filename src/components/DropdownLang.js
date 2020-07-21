@@ -25,7 +25,6 @@ function DropdownLang(props) {
     }
   }
 
-  console.log(defaultSelected, language)
   const customStyles = {
     container: styles => ({ ...styles, display: 'inline', width: '47px', position: 'absolute' }),
     control: styles => ({ ...styles, backgroundColor: 'transparent', border: 'none', boxShadow: 'none', cursor: 'pointer' }),
