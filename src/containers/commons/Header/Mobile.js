@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 const logo = require('assets/images/Logo-horizontal.svg')
 const logogram = require('assets/images/Logogram.svg')
 
-function Header(pageName) {
+function Header(props) {
   const { t } = useTranslation("translation");
 
   const [scrollPosition, setSrollPosition] = useState(0);
@@ -35,28 +35,30 @@ function Header(pageName) {
   }
 
   return(
-    <header id="mobile-header" className={`${scrollPosition > 1 ? 'sticky' : ''} ${!showNavbar && scrollPosition < 1 ? 'transparent' : ''}`} >
+    <header id="mobile-header" 
+      className={`${scrollPosition > 1 ? 'sticky' : ''} ${props.white && 'bg-white'} ${!showNavbar && scrollPosition < 1 ? 'transparent' : ''}`} 
+    >
       <Container>
         <Row className="header-bar">
           <Col xs={2} className="nav-menu">
             {showNavbar ? (
-              <Button onClick={handleShowNavbar} className="btn-outline-white">
+              <Button onClick={handleShowNavbar} className={`${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
                 <i className="fas fa-times" />
               </Button>
             ) : (
-              <Button onClick={handleShowNavbar} className="btn-outline-white">
+              <Button onClick={handleShowNavbar} className={`${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
                 <i className="fas fa-bars" />
               </Button>
             )}
           </Col>
           <Col xs={8} className="nav-center">
-            <a href="/" className={`header-logo ${pageName='Homepage'?'':'d-none'}`}>
+            <a href="/" className={`header-logo ${props.page !== 'Home' && 'd-none'}`}>
               <img src={logo} alt="Logo" className="img-logo"/>
             </a>
-            <h2 className={`title ${pageName='Homepage'?'d-none':''}`}>BOOK APPOINTMENT</h2>
+            <h2 className={`title ${props.page === 'Home' && 'd-none'} ${props.white && 'white'}`}>{props.page}</h2>
           </Col>
           <Col xs={2} className="nav-logogram">
-            <a href="/" className={`header-logo ${pageName='Homepage'?'d-none':''}`}>
+            <a href="/" className={`header-logo ${props.page === 'Home' && 'd-none'}`}>
               <img src={logogram} alt="Logo" className="img-logogram"/>
             </a>
           </Col>
@@ -64,31 +66,31 @@ function Header(pageName) {
         {showNavbar && (
           <Row className="nav-list">
             <Col xs={12} className="nav-item">
-              <Button className="btn-outline-white btn-nav-item" onClick={handleShowCustomize}>
+              <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`} onClick={handleShowCustomize}>
                 {t("customize")}
               </Button>
             </Col>
             {showCustomize && (
               <Col xs={12} className="nav-item">
-                <Row className="nav-list customize">
+                <Row className={`nav-list customize ${props.white && 'bg-white'}`}>
                   <Col xs={12} className="nav-item">
                     <Link to="/collections">
-                      <Button className="btn-outline-white btn-nav-item">{t("suit")}</Button>
+                      <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("suit")}</Button>
                     </Link>
                   </Col>
                   <Col xs={12} className="nav-item">
                     <Link to="/collections">
-                      <Button className="btn-outline-white btn-nav-item">{t("shirt")}</Button>
+                      <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("shirt")}</Button>
                     </Link>
                   </Col>
                   <Col xs={12} className="nav-item">
                     <Link to="/collections">
-                      <Button className="btn-outline-white btn-nav-item">{t("pants")}</Button>
+                      <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("pants")}</Button>
                     </Link>
                   </Col>
                   <Col xs={12} className="nav-item">
                     <Link to="/collections">
-                      <Button className="btn-outline-white btn-nav-item">{t("vest")}</Button>
+                      <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("vest")}</Button>
                     </Link>
                   </Col>
                 </Row>
@@ -96,17 +98,17 @@ function Header(pageName) {
             )}
             <Col xs={12} className="nav-item">
               <Link to="/book-appointment">
-                <Button className="btn-outline-white btn-nav-item">{t("book-appointment")}</Button>
+                <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("book-appointment")}</Button>
               </Link>
             </Col>
             <Col xs={12} className="nav-item">
               <Link to="/collections">
-                <Button className="btn-outline-white btn-nav-item">{t("collections")}</Button>
+                <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("collections")}</Button>
               </Link>
             </Col>
             <Col xs={12} className="nav-item">
               <Link to="/login">
-                <Button className="btn-outline-white all">{t("login-button")}</Button>
+                <Button className={`all ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("login-button")}</Button>
               </Link>
             </Col>
           </Row>

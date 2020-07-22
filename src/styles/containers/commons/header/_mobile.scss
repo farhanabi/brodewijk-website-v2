@@ -19,6 +19,20 @@
     background: transparent;
   }
 
+  &.bg-white {
+    position: fixed;
+    background: #ffffff;
+    color: #0C172F;
+
+    .header-bar {
+      .header-logo {
+        .img-logogram {
+          filter: none;
+        }
+      }
+    }
+  }
+
   .header-bar {
     padding: 10px 0;
 
@@ -42,23 +56,26 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        
-        font-family: 'Open Sans';
+        font-family: Open Sans;
         font-style: normal;
         font-weight: bold;
-        font-size: 17px;
+        font-size: 14px;
         line-height: 19px;
         align-items: center;
         text-align: center;
         letter-spacing: 0.05em;
 
         color: white;
+
+        &.white {
+          color: #0C172F;
+        }
       }
     }
 
     .nav-logogram {
       text-align: center;
-      padding: 8px 15px 8px 0px;
+      padding: 4px 15px 2px 0px;
     }
 
     .header-logo {
@@ -82,11 +99,17 @@
 
   .nav-list {
     font-size: 14px;
+    box-shadow: 0px 2px 5px 0.5px #2f2f2f2f;
 
     &.customize {
       // padding-top: 15px;
       padding-left: 15px;
       background: #1C1C1C;
+      box-shadow: none;
+
+      &.bg-white {
+        background: #ffffff;
+      }
     }
 
     .nav-item {

@@ -1,5 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 import Layout from 'layout/CommonDesktop'
 
@@ -9,8 +10,9 @@ import Testimoni from 'containers/bookAppointment/Testimoni'
 import Contact from 'containers/bookAppointment/Contact'
 
 function BookAppointment (){
+  const { t } = useTranslation("bookappointment");
   return (
-    <Layout header="black" page="Book Appointment" footer={true}>
+    <Layout header="black" page={t("title")} footer={true}>
       <div id="page-home">
         <MainSlider/>
         <HowItWorks/>

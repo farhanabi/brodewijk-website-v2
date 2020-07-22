@@ -24,7 +24,7 @@ function Contact() {
           <Col lg={6} xs={12} className="wrapper-btn">
             <Button className="btn-black sm">{t("contact-section.button-register")}</Button>
             <Button
-              className="btn-outline-black sm"
+              className="btn-outline-black all"
               href="https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you"
               target='_blank' rel='noopener noreferrer'
             >

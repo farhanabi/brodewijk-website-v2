@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap'
 import { useTranslation } from 'react-i18next'
 
 import Layout from 'layout/CommonDesktop'
-import FilterBar from 'containers/customize/FilterBar/Desktop'
+import FilterBar from 'containers/customize/filter-bar/Desktop'
 
 function Customize (){
   const { t } = useTranslation("customize");

@@ -8,7 +8,7 @@ const CommonLayout = (props) => {
   const { header, page, footer } = props;
   return (
     <div>
-      {header === "white" ? null : (<Header/>)}
+      {header === "white" ? (<Header white />) : (<Header/>)}
       {props.children}
       {footer && (<Footer/>)}
     </div>

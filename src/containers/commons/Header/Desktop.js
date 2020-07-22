@@ -8,7 +8,7 @@ import DropdownLang from 'components/DropdownLang'
 const logoGram = require('assets/images/Logogram.svg')
 const logoText = require('assets/images/Brodewijk-white.png')
 
-function Header() {
+function Header(props) {
   const { t } = useTranslation("translation");
 
   const [scrollPosition, setSrollPosition] = useState(0);
@@ -27,7 +27,9 @@ function Header() {
   }, []);
 
   return(
-    <header id="desktop-header"className={scrollPosition > 1 ? 'sticky' : ''}>
+    <header id="desktop-header" 
+      className={`${scrollPosition > 1 ? 'sticky' : ''} ${props.white && 'bg-white'}`}
+    >
       <Container>
         <Row className="header-bar">
           <Col md={4}>
@@ -47,26 +49,28 @@ function Header() {
                     onBlur={() => setShowCustomize(false)}
                     toggle={() => setShowCustomize(!showCustomize)}
                   >
-                    <DropdownToggle className="btn-outline-white">{t("customize")}</DropdownToggle>
-                    <DropdownMenu className="customize-bar">
+                    <DropdownToggle className={`${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
+                      {t("customize")}
+                    </DropdownToggle>
+                    <DropdownMenu className={`customize-bar ${props.white && 'bg-white'}`}>
                       <DropdownItem className="item">
                         <Link to="/collections">
-                          <Button className="btn-outline-white btn-item">{t("suit")}</Button>
+                          <Button className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("suit")}</Button>
                         </Link>
                       </DropdownItem>
                       <DropdownItem className="item">
                         <Link to="/collections">
-                          <Button className="btn-outline-white btn-item">{t("shirt")}</Button>
+                          <Button className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("shirt")}</Button>
                         </Link>
                       </DropdownItem>
                       <DropdownItem className="item">
                         <Link to="/collections">
-                          <Button className="btn-outline-white btn-item">{t("pants")}</Button>
+                          <Button className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("pants")}</Button>
                         </Link>
                       </DropdownItem>
                       <DropdownItem className="item">
                         <Link to="/collections">
-                          <Button className="btn-outline-white btn-item">{t("vest")}</Button>
+                          <Button className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("vest")}</Button>
                         </Link>
                       </DropdownItem>
                     </DropdownMenu>
@@ -74,21 +78,21 @@ function Header() {
                 </NavItem>
                 <NavItem>
                   <Link to="/book-appointment">
-                    <Button className="btn-outline-white">{t("book-appointment")}</Button>
+                    <Button className={`${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("book-appointment")}</Button>
                   </Link>
                 </NavItem>
                 <NavItem>
                   <Link to="/collections">
-                    <Button className="btn-outline-white">{t("collections")}</Button>
+                    <Button className={`${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("collections")}</Button>
                   </Link>
                 </NavItem>
                 <NavItem>
                   <Link to="/login">
-                    <Button className="btn-outline-white all">{t("login-button")}</Button>
+                    <Button className={`all ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("login-button")}</Button>
                   </Link>
                 </NavItem>
                 <NavItem>
-                  <DropdownLang/>
+                  {props.white ? (<DropdownLang white/>) : (<DropdownLang />)}
                 </NavItem>
               </Nav>
             </Row>
