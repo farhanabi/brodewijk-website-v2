@@ -9,6 +9,8 @@ function FilterBar() {
   const [activeTab, setActiveTab] = useState('fabric');
   const [listFabric, setListFabric] = useState([])
   const [fabric, setFabric] = useState('')
+  const [listFeature, setListFeature] = useState([])
+  const [feature, setFeature] = useState('')
   
   function fetchDataFabric() {
     const url = `${process.env.REACT_APP_BASE_API_URL}/customer/api/fabric/suit`
@@ -16,7 +18,6 @@ function FilterBar() {
       .get(url)
       .then(res => {
         const listFabric = res.data.data.fabrics
-        console.log(listFabric)
         setListFabric(listFabric)
       })
       .catch(err => console.log(err))
@@ -26,7 +27,11 @@ function FilterBar() {
     const url = `${process.env.REACT_APP_BASE_API_URL}/customer/api/feature/suit`
     axios
       .get(url)
-      .then(res => console.log(res))
+      .then(res => {
+        const listFeature = res.data.data.features 
+        console.log(listFeature)
+        setListFeature(listFeature)
+      })
       .catch(err => console.log(err))
   }
 
@@ -42,9 +47,9 @@ function FilterBar() {
   }
 
   return(
-    <div id="filter-bar-section">
+    <div id="filter-bar-mobile">
       <Row className="tab">
-        <Col md={6} className="tab-fabric">
+        <Col xs={6} className="tab-fabric">
           <Button
             className={`btn-tab ${classnames({ active: activeTab === 'fabric' })}`}
             onClick={() => toggleTab('fabric')}
@@ -52,7 +57,7 @@ function FilterBar() {
             {t("fabric-section.title")}
           </Button>
         </Col>
-        <Col md={6} className="tab-features">
+        <Col xs={6} className="tab-features">
           <Button
             className={`btn-tab ${classnames({ active: activeTab === 'features' })}`}
             onClick={() => toggleTab('features')}
@@ -65,15 +70,15 @@ function FilterBar() {
         <TabPane tabId="fabric" className="fabric">
           {listFabric && listFabric.map((val, key) => (
             <Row key={key} className="fabric-item">
-              <Col md={12} className="fabric-text">
+              <Col xs={12} className="fabric-text">
                 <h5 className="fabric-text-name">{val.name}</h5>
                 <p className="fabric-text-grade">{val.grade}</p>
                 <p className="fabric-text-desc">{val.description}</p>
               </Col>
-              <Col md={12} className="fabric-color">
+              <Col xs={12} className="fabric-color">
                 <Row className="mr-0 ml-0">
                   {val.colors.map((v, k) => (
-                    <Col md={6} key={k} className="fabric-color-item">
+                    <Col xs={6} key={k} className="fabric-color-item">
                       <img className="fabric-color-img" src={v.image} alt={v.name} />
                       <p className="fabric-color-name">{v.name}</p>
                     </Col>
@@ -84,11 +89,13 @@ function FilterBar() {
           ))}
         </TabPane>
         <TabPane tabId="features" className="features">
-          <Row>
-            <Col>
-              <h4>Features</h4>
-            </Col>
-          </Row>
+          {listFeature && listFeature.map((val, key) => (
+            <Row key={key} className="feature-item">
+              <Col xs={12} className="feature-text">
+                <h5 className="feature-text-name">{val.name}</h5>
+              </Col>
+            </Row>
+          ))}
         </TabPane>
       </TabContent>
     </div>
