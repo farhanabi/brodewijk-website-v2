@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next'
 import axios from 'axios';
 import Layout from 'layout/CommonDesktop'
 import FilterBar from 'containers/customize/filter-bar/desktop'
+import DetailBox from 'containers/customize/DetailBox';
 
 function Customize (){
   const { t } = useTranslation("customize");
@@ -65,7 +66,7 @@ function Customize (){
               live preview
             </Col>
             <Col md={3}>
-              detail box
+              <DetailBox fabric={fabric} price={price} />
             </Col>
           </Row>
         </Container>
