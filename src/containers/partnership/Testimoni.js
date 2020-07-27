@@ -3,6 +3,8 @@ import { Container, Row, Col, Carousel, CarouselItem, CarouselControl, CarouselI
 import faker from 'faker'
 import { useTranslation } from 'react-i18next'
 
+const img = require('assets/images/person-ismar.jpg')
+
 function Testimoni() {
   const { t } = useTranslation("partnership");
   const data = [
@@ -11,7 +13,7 @@ function Testimoni() {
       person: {
         name: t("testimoni-section.sliders.slider-1.person"),
         job: t("testimoni-section.sliders.slider-1.job"),
-        photo: faker.image.people(),
+        photo: img,
       },
       text: t("testimoni-section.sliders.slider-1.quote")
     }

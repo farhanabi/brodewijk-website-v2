@@ -1,5 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 import Layout from 'layout/CommonDesktop'
 
@@ -9,9 +10,9 @@ import Testimoni from 'containers/partnership/Testimoni'
 import Contact from 'containers/partnership/Contact'
 
 function Partnership (){
-  console.log('desktop')
+  const { t } = useTranslation("partnership");
   return (
-    <Layout>
+    <Layout header="black" page={t("title")} footer={true}>
       <div id="page-partnership">
         <MainSlider/>
         <HowItWorks/>

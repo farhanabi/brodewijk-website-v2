@@ -3,6 +3,11 @@ import { Container, Row, Col, Carousel, CarouselItem, CarouselControl, CarouselI
 import faker from 'faker'
 import { useTranslation } from 'react-i18next'
 
+const imgNabiel = require('assets/images/person-nabiel.jpg')
+const imgMangaramot = require('assets/images/person-mangaramot.jpg')
+const imgNaufal = require('assets/images/person-naufal.jpg')
+const imgRusdi = require('assets/images/person-rusdi.jpg')
+
 function Testimoni() {
   const { t } = useTranslation("homepage");
   const data = [
@@ -11,7 +16,7 @@ function Testimoni() {
       person: {
         name: t("testimoni-section.sliders.slider-1.person"),
         job: t("testimoni-section.sliders.slider-1.job"),
-        photo: faker.image.people(),
+        photo: imgNabiel,
       },
       text: t("testimoni-section.sliders.slider-1.quote")
     },
@@ -20,7 +25,7 @@ function Testimoni() {
       person: {
         name: t("testimoni-section.sliders.slider-2.person"),
         job: t("testimoni-section.sliders.slider-2.job"),
-        photo: faker.image.people(),
+        photo: imgMangaramot,
       },
       text: t("testimoni-section.sliders.slider-2.quote")
     },
@@ -29,7 +34,7 @@ function Testimoni() {
       person: {
         name: t("testimoni-section.sliders.slider-3.person"),
         job: t("testimoni-section.sliders.slider-3.job"),
-        photo: faker.image.people(),
+        photo: imgNaufal,
       },
       text: t("testimoni-section.sliders.slider-3.quote")
     },
@@ -38,7 +43,7 @@ function Testimoni() {
       person: {
         name: t("testimoni-section.sliders.slider-4.person"),
         job: t("testimoni-section.sliders.slider-4.job"),
-        photo: faker.image.people(),
+        photo: imgRusdi,
       },
       text: t("testimoni-section.sliders.slider-4.quote")
     }

@@ -23,7 +23,7 @@ function Contact() {
           </Col>
           <Col lg={6} xs={12} className="wrapper-btn">
           <Button
-            className="btn-outline-black sm"
+            className="btn-outline-black all"
             href={t("contact-section.button-consult-link")}
             target='_blank' rel='noopener noreferrer'
           >
