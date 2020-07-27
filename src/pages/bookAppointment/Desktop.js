@@ -12,7 +12,7 @@ function BookAppointment (){
   console.log('desktop')
   return (
     <Layout>
-      <div id="page-home">
+      <div id="page-book-appointment">
         <MainSlider/>
         <HowItWorks/>
         <Testimoni/>

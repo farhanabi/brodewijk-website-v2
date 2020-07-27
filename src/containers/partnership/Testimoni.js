@@ -4,43 +4,16 @@ import faker from 'faker'
 import { useTranslation } from 'react-i18next'
 
 function Testimoni() {
-  const { t } = useTranslation("homepage");
+  const { t } = useTranslation("partnership");
   const data = [
     {
-      id: 1,
+      id: faker.random.uuid(),
       person: {
         name: t("testimoni-section.sliders.slider-1.person"),
         job: t("testimoni-section.sliders.slider-1.job"),
         photo: faker.image.people(),
       },
       text: t("testimoni-section.sliders.slider-1.quote")
-    },
-    {
-      id: 2,
-      person: {
-        name: t("testimoni-section.sliders.slider-2.person"),
-        job: t("testimoni-section.sliders.slider-2.job"),
-        photo: faker.image.people(),
-      },
-      text: t("testimoni-section.sliders.slider-2.quote")
-    },
-    {
-      id: 3,
-      person: {
-        name: t("testimoni-section.sliders.slider-3.person"),
-        job: t("testimoni-section.sliders.slider-3.job"),
-        photo: faker.image.people(),
-      },
-      text: t("testimoni-section.sliders.slider-3.quote")
-    },
-    {
-      id: 3,
-      person: {
-        name: t("testimoni-section.sliders.slider-4.person"),
-        job: t("testimoni-section.sliders.slider-4.job"),
-        photo: faker.image.people(),
-      },
-      text: t("testimoni-section.sliders.slider-4.quote")
     }
   ]
 
@@ -92,10 +65,7 @@ function Testimoni() {
             next={next}
             previous={previous}
           >
-            <CarouselIndicators items={data} activeIndex={activeIndex} onClickHandler={goToIndex} />
             {slides}
-            <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-            <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
           </Carousel>
         </Row>
       </Container>

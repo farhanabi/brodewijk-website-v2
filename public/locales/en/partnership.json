@@ -1,0 +1,36 @@
+{
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Fulfill Your Needs By Partnering With Us",
+      "subtitle": "Want to make us a supplier for your organization? We will be happy to hear more about it from you",
+      "button-1": "MAKE A PARTNERSHIP",
+      "button-1-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20make%20a%20partnership%20with%20you"
+    }
+  },
+
+  "hiw-section": {
+    "title": "How it works",
+    "book": "Book your appointment and let our tailor approach you",
+    "pick": "Select your fabrics, styles, and get measured by our talented tailor",
+    "pay": "Pay and we will process your order, you just need to be ready",
+    "finish": "Your order will be ready in 15 business days at maximum"
+  },
+
+  "testimoni-section": {
+    "title": "What our customers says about partnership",
+    "sliders": {
+      "slider-1": {
+        "quote": "Partnership with Brodewijk has got me an unforgettable experience. They help me with everything, from consultation to finished product. The quality of their product is excellent, and not a single regret goes by in the process.",
+        "person": "Ismar",
+        "job": "CEO of Frewey Indonesia"
+      }
+    }
+  },
+
+  "contact-section": {
+    "title": "What are you waiting for?",
+    "subtitle": "Contact us to create a partnership now",
+    "button-consult": "CREATE PARTNERSHIP",
+    "button-consult-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20make%20a%20partnership%20with%20you"
+  }
+}

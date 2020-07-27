@@ -73,16 +73,24 @@
     "title": "What our customers says",
     "sliders": {
       "slider-1": {
-        "quote": "",
-        "person": ""
+        "quote": "The experience is unique, because they gave me some information before buying. Perfect",
+        "person": "Nabiel",
+        "job": "Entrepreneur"
       },
       "slider-2": {
-        "quote": "",
-        "person": ""
+        "quote": "Thank you very much, the suit fits great!",
+        "person": "Mangaramot",
+        "job": "Student"
       },
       "slider-3": {
-        "quote": "",
-        "person": ""
+        "quote": "Overall great suit. Very satisfied, thanks!",
+        "person": "Naufal",
+        "job": "BUMN Employee"
+      },
+      "slider-4": {
+        "quote": "Hi Brodewijk! The suit is good as expected. No regrets to make it here. Maybe next time I will make it here again",
+        "person": "Rusdi",
+        "job": "Entrepreneur"
       }
     }
   },
@@ -91,6 +99,7 @@
     "title": "What are you waiting for?",
     "subtitle": "Sign up or consult now",
     "button-register": "SIGN UP",
-    "button-consult": "CONSULT NOW"
+    "button-consult": "CONSULT NOW",
+    "button-consult-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you"
   }
 }

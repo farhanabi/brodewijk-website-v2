@@ -73,16 +73,24 @@
     "title": "Apa kata pelanggan kami",
     "sliders": {
       "slider-1": {
-        "quote": "",
-        "person": ""
+        "quote": "Unik karena ada edukasinya dulu sebelum membeli. Overall oke banget",
+        "person": "Nabiel",
+        "job": "Pengusaha"
       },
       "slider-2": {
-        "quote": "",
-        "person": ""
+        "quote": "Terimakasih banyak, jasnya cocok, mantap!",
+        "person": "Mangaramot",
+        "job": "Mahasiswa"
       },
       "slider-3": {
-        "quote": "",
-        "person": ""
+        "quote": "Overall mantap jasnya. Thanks banget puas!",
+        "person": "Naufal",
+        "job": "Pegawai BUMN"
+      },
+      "slider-4": {
+        "quote": "Hai Brodewijk! Jasnya bagus sesuai ekspektasi. Ga menyesal bikin disini. Mungkin selanjutnya akan bikin disini lagi",
+        "person": "Rusdi",
+        "job": "Pengusaha"
       }
     }
   },
@@ -91,6 +99,7 @@
     "title": "Tunggu apa lagi",
     "subtitle": "Daftar atau konsultasikan sekarang",
     "button-register": "DAFTAR",
-    "button-consult": "KONSULTASIKAN SEKARANG"
+    "button-consult": "KONSULTASIKAN SEKARANG",
+    "button-consult-link": "https://api.whatsapp.com/send?phone=628156051373&text=Halo%20Brodewijk!%20Saya%20tertarik%20untuk%20bertanya%2Dtanya"
   }
 }

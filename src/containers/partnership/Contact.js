@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 const img = require('assets/images/contact.svg')
 
 function Contact() {
-  const { t } = useTranslation("homepage");
+  const { t } = useTranslation("partnership");
   return(
     <div id="contact-section">
       <Container>
@@ -22,14 +22,13 @@ function Contact() {
             </Row>
           </Col>
           <Col lg={6} xs={12} className="wrapper-btn">
-            <Button className="btn-black sm">{t("contact-section.button-register")}</Button>
-            <Button
-              className="btn-outline-black sm"
-              href={t("contact-section.button-consult-link")}
-              target='_blank' rel='noopener noreferrer'
-            >
-              <i className="fab fa-whatsapp"/>&nbsp;{t("contact-section.button-consult")}
-            </Button>
+          <Button
+            className="btn-outline-black sm"
+            href={t("contact-section.button-consult-link")}
+            target='_blank' rel='noopener noreferrer'
+          >
+            <i className="fab fa-whatsapp"/>&nbsp;{t("contact-section.button-consult")}
+          </Button>
           </Col>
         </Row>
         

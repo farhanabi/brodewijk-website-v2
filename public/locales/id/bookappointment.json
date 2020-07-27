@@ -2,8 +2,8 @@
   "main-slider-section": {
     "slide-1": {
       "title": "Biar Kami yang Menghampiri Anda",
-      "subtitle": "Dengan membuat janji dengan penjahit kami",
-      "button-1": "BUAT JANJI"
+      "subtitle": "Tidak punya waktu untuk mengukur dan memilih gaya sendiri? Buat janji dan kami akan datang kepada Anda",
+      "button-1": "ATUR JADWAL PERTEMUAN"
     }
   },
 
@@ -28,8 +28,8 @@
   "contact-section": {
     "title": "Tunggu apa lagi?",
     "subtitle": "Buat janji atau konsultasikan sekarang",
-    "button-register": "BUAT JANJI",
+    "button-register": "ATUR JADWAL PERTEMUAN",
     "button-consult": "KONSULTASI SEKARANG",
-    "button-consult-link": "https://api.whatsapp.com/send?phone=628156051373&text=Halo%20Brodewijk!%20Aku%20tertarik%20untuk%20bertanya%2Dtanya"
+    "button-consult-link": "https://api.whatsapp.com/send?phone=628156051373&text=Halo%20Brodewijk!%20Saya%20tertarik%20untuk%20bertanya%2Dtanya"
   }
 }
