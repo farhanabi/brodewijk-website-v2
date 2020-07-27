@@ -30,7 +30,7 @@ function Contact() {
             {t("contact-section.button-register")}
           </Button>
           <Button
-            className="btn-outline-black sm"
+            className="btn-outline-black all"
             href={t("contact-section.button-consult-link")}
             target='_blank' rel='noopener noreferrer'
           >

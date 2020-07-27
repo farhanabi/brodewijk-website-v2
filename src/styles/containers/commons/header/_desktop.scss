@@ -15,6 +15,20 @@
     width: 100%;
   }
 
+  &.bg-white {
+    position: fixed;
+    background: #ffffff;
+    color: #0C172F;
+
+    .header-bar {
+      .header-logo {
+        .img-logogram {
+          filter: none;
+        }
+      }
+    }
+  }
+
   .header-bar {
     padding: 10px 0;
 
@@ -66,6 +80,17 @@
   border: none;
   opacity: 0.9;
   font-family: Open Sans;
+
+  &.bg-white {
+    background: #ffffff;
+    border: 1px solid #2f2f2f;
+
+    .item {
+      &:hover {
+        background: #ffffff;
+      }
+    }
+  }
 
   .item {
     padding: 5px 0;

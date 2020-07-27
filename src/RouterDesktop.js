@@ -5,6 +5,7 @@ import PageHome from 'pages/home/Desktop';
 import PageBookAppointment from 'pages/bookAppointment/Desktop';
 import PagePartnership from 'pages/partnership/Desktop';
 import PageNotFound from 'pages/notFound/Desktop';
+import PageCustomize from 'pages/customize/Desktop';
 
 function RouterDesktop (){
   useEffect(() => {
@@ -14,6 +15,7 @@ function RouterDesktop (){
   return (
     <Switch>
       <Route exact={true} path="/" component={PageHome}/>
+      <Route path="/customize" component={PageCustomize}/>
       <Route path="/partnership" component={PagePartnership}/>
       <Route path="/book-appointment" component={PageBookAppointment}/>
       <Route component={PageNotFound} />

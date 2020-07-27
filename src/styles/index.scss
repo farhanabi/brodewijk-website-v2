@@ -21,16 +21,26 @@ body {
   .btn-outline-black {
     background: #ffffff;
     color: #0C172F;
-    border: 1px solid #0C172F;
+    border: none;
 
     &:hover, &:active, &:focus {
       background: #ffffff !important;
-      border: 1px solid #0C172F !important;
+      border: none !important;
       color: #0C172F !important;
     }
 
     &:focus {
       box-shadow: none !important;
+    }
+
+    &.all {
+      border: 1px solid #0C172F;
+
+      &:hover {
+        border: 1px solid #0C172F !important;
+        background: #ffffff !important;
+        color: #0C172F !important;
+      }
     }
   }
 
@@ -88,6 +98,7 @@ code {
 
 // import styles
 @import './pages/home/desktop';
+@import './pages/customize';
 
 @import './components/loading';
 @import './containers/commons/header/desktop';
@@ -103,3 +114,8 @@ code {
 @import './containers/home/best-collections/mobile';
 @import './containers/home/testimoni';
 @import './containers/home/contact';
+@import './containers/customize/filterBar/desktop';
+@import './containers/customize/filterBar/mobile';
+@import './containers/customize/livePreview/desktop';
+@import './containers/customize/livePreview/mobile';
+@import './containers/customize/detailBox';

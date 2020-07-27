@@ -25,16 +25,16 @@ function DropdownLang(props) {
     }
   }
 
-  console.log(defaultSelected, language)
   const customStyles = {
     container: styles => ({ ...styles, display: 'inline', width: '47px', position: 'absolute' }),
     control: styles => ({ ...styles, backgroundColor: 'transparent', border: 'none', boxShadow: 'none', cursor: 'pointer' }),
     indicatorSeparator: styles => ({ ...styles, display: 'none' }),
     dropdownIndicator: styles => ({ ...styles, padding: '0' }),
     valueContainer: styles => ({ ...styles, padding: '0' }),
-    singleValue: styles => ({ ...styles, color: '#ffffff' }),
-    input: styles => ({ ...styles, color: '#ffffff' }),
-    menu: styles => ({ ...styles, backgroundColor: '#ffffff', border: '1px solid #2f2f2f', color: '#2f2f2f' }),
+    singleValue: styles => ({ ...styles, color: props.white ? '#0C172F' : '#ffffff' }),
+    input: styles => ({ ...styles, color: props.white ? '#0C172F' : '#ffffff' }),
+    menu: styles => ({ ...styles, backgroundColor: props.white ? '#ffffff' : '#1C1C1C', 
+                      border: '1px solid #2f2f2f', color: props.white ? '#0C172F' : '#ffffff' }),
     menuList: styles => ({ ...styles, backgroundColor: 'transparent' })
   }
   return(

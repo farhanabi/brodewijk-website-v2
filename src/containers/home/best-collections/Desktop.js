@@ -42,7 +42,7 @@ function BestCollections() {
           ))}
         </Row>
         <Row className="more-section">
-          <Button className="btn-outline-black">{t("best-collections-section.button")}</Button>
+          <Button className="btn-outline-black all">{t("best-collections-section.button")}</Button>
         </Row>
       </Container>
     </div>
