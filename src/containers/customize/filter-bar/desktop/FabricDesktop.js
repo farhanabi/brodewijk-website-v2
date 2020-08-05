@@ -4,8 +4,8 @@ import { Row, Col } from 'reactstrap';
 function FabricDesktop (props){
   const { item, setPrice, fabric, setFabric, setFabricPrice } = props
 
-  function changeFabric(fabricName, fabricColor, price) {
-    setFabric({ name: fabricName, color: fabricColor })
+  function changeFabric(fabricName, fabricColor, fabricPath, price) {
+    setFabric({ name: fabricName, color: fabricColor, path: fabricPath })
     setFabricPrice(price)
     setPrice(price)
   }
@@ -13,7 +13,7 @@ function FabricDesktop (props){
   return (
     <div className={`fabric-item ${fabric.name === item.name ? "active" : ""}`}>
       <Col md={12} className="fabric-text">
-        <h5 className="fabric-text-name">{item.name}</h5>
+        <h5 className="fabric-text-name">{item.name} (Rp{item.type.base_price})</h5>
         <p className="fabric-text-grade">{item.grade}</p>
         <p className="fabric-text-desc">{item.description}</p>
       </Col>
@@ -22,7 +22,7 @@ function FabricDesktop (props){
           {item.colors.map((v, k) => (
             <Col md={6} key={k} 
               className={`fabric-color-item ${fabric.color === v.name ? "color-active" : ""}`}
-              onClick={() => changeFabric(item.name, v.name, item.type.base_price)}
+              onClick={() => changeFabric(item.name, v.name, v.path, item.type.base_price)}
             >
               <img className="fabric-color-img" src={v.image} alt={v.name} />
               <p className="fabric-color-name">{v.name}</p>

@@ -1,28 +1,39 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 
-function FabricDesktop (props){
-  const { value, key } = props
+function FabricMobile (props){
+  const { item, setPrice, fabric, setFabric, setFabricPrice } = props
+
+  function changeFabric(fabricName, fabricColor, fabricPath, price) {
+    setFabric({ name: fabricName, color: fabricColor, path: fabricPath })
+    setFabricPrice(price)
+    setPrice(price)
+  }
 
   return (
-    <Row key={key} className="fabric-item">
-      <Col md={12} className="fabric-text">
-        <h5 className="fabric-text-name">{value.name}</h5>
-        <p className="fabric-text-grade">{value.grade}</p>
-        <p className="fabric-text-desc">{value.description}</p>
+    <div className={`fabric-item ${fabric.name === item.name ? "active" : ""}`}>
+      <Col xs={12} className="fabric-text">
+        <h5 className="fabric-text-name">{item.name} (Rp{item.type.base_price})</h5>
+        <p className="fabric-text-grade">{item.grade}</p>
+        <p className="fabric-text-desc">{item.description}</p>
       </Col>
-      <Col md={12} className="fabric-color">
-        <Row className="mr-0 ml-0">
-          {value.colors.map((v, k) => (
-            <Col md={6} key={k} className="fabric-color-item">
-              <img className="fabric-color-img" src={v.image} alt={v.name} />
-              <p className="fabric-color-name">{v.name}</p>
+      <Col xs={12} className="fabric-color">
+        <Row className="row-color">
+          {item.colors.map((v, k) => (
+            <Col xs={6} key={k} 
+              className={`fabric-color-item ${fabric.color === v.name ? "color-active" : ""}`}
+              onClick={() => changeFabric(item.name, v.name, v.path, item.type.base_price)}
+            >
+              <div className="wrapper-color-item">
+                <img className="fabric-color-img" src={v.image} alt={v.name} />
+                <p className="fabric-color-name">{v.name}</p>
+              </div>
             </Col>
           ))}
         </Row>
       </Col>
-    </Row>
+    </div>
   );
 }
 
-export default FabricDesktop;
+export default FabricMobile;

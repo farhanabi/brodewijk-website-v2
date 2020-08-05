@@ -39,5 +39,10 @@
 
   "privacy-policy": "Kebijakan Privasi",
   "terms-conditions": "Syarat & Ketentuan",
-  "faq": "FAQ"
+  "faq": "FAQ",
+
+  "not-found": {
+    "sorry": "Maaf, halaman yang Anda ingin tidak ditemukan.",
+    "link-home": "Klik disini."
+  }
 }

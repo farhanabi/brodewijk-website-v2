@@ -1,6 +1,9 @@
 {
   "sign-up": {
-    "title": "You're one step closer to ordering",
+    "title": {
+      "page": "SIGN UP",
+      "text": "You're one step closer to ordering"
+    },
     "form": {
       "first-name": {
         "label": "First Name",
@@ -21,7 +24,16 @@
       "phone": {
         "label": "Phone Number",
         "placeholder": "Put your active phone number here"
-      }
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Put password here"
+      },
+      "re-password": {
+        "label": "Password Confirmation",
+        "placeholder": "Retype password here"
+      },
+      "button": "Sign Up"
     },
     "already-have-account": {
       "text": "Already have an account? Please",
@@ -30,7 +42,10 @@
   },
   
   "login": {
-    "title": "Log in to order",
+    "title": {
+      "page": "LOG IN",
+      "text": "Log in to order"
+    },
     "form": {
       "email": {
         "label": "Email",
@@ -39,9 +54,11 @@
       "password": {
         "label": "Password",
         "placeholder": "Enter Password"
-      }
+      },
+      "button": "Log In"
     },
     "create-account": {
+      "or": "or",
       "text": "Don't have one?",
       "link": "Create an account"
     },

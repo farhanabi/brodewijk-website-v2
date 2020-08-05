@@ -28,7 +28,7 @@ function Header(props) {
 
   return(
     <header id="desktop-header" 
-      className={`${scrollPosition > 1 ? 'sticky' : ''} ${props.white && 'bg-white'}`}
+      className={`${scrollPosition > 1 ? 'sticky' : ''} ${props.white ? 'bg-white' : ''}`}
     >
       <Container>
         <Row className="header-bar">
@@ -52,7 +52,7 @@ function Header(props) {
                     <DropdownToggle className={`${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
                       {t("customize")}
                     </DropdownToggle>
-                    <DropdownMenu className={`customize-bar ${props.white && 'bg-white'}`}>
+                    <DropdownMenu className={`customize-bar ${props.white ? 'bg-white' : ''}`}>
                       <DropdownItem className="item">
                         <Link to="/collections">
                           <Button className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("suit")}</Button>
