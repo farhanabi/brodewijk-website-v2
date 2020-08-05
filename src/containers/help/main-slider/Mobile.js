@@ -3,24 +3,20 @@ import { Carousel, CarouselItem, CarouselControl, Button, Container } from 'reac
 import { useTranslation } from 'react-i18next';
 
 const MainSlider = (props) => {
-  const { t } = useTranslation("partnership")
+  const { t } = useTranslation("help")
   const items = [
     {
-      src: require('assets/images/carousel-partnership-1-desktop.jpg'),
+      src: require('assets/images/carousel-help-1-mobile.jpg'),
       altText: 'Slide 1',
       contain: {
         title: t("main-slider-section.slide-1.title"),
         subtitle: t("main-slider-section.slide-1.subtitle"),
         button: [
-          { 
-            label: t("main-slider-section.slide-1.button-1"),
-            link: t("main-slider-section.slide-1.button-1-link"),
-            newtab: true,
-            icon: "fab fa-whatsapp"
-          }
+          { label: t("main-slider-section.slide-1.button-1"), link: "#faq-section", icon: "" },
+          { label: t("main-slider-section.slide-1.button-2"), link: "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you", newtab: true, icon: "fab fa-whatsapp" }
         ]
       }
-    },
+    }
   ];
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -48,7 +44,6 @@ const MainSlider = (props) => {
           <div className="section-absolute">
             <Container>
               <div className="item-text">
-                <h6 className="page-title">{t("title")}</h6>
                 {item.contain.title ? <h2 className="title">{item.contain.title}</h2> : null}
                 {item.contain.subtitle ? <p className="subtitle">{item.contain.subtitle}</p> : null }
                 {item.contain.button ? (
@@ -71,13 +66,14 @@ const MainSlider = (props) => {
   });
 
   return (
-    <div id="desktop-slider-section">
+    <div id="mobile-slider-section">
       <Carousel
         activeIndex={activeIndex}
         next={next}
         previous={previous}
       >
         {slides}
+      
       </Carousel>
     </div>
   );

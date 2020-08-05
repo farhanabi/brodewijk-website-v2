@@ -13,7 +13,7 @@ const MainSlider = (props) => {
         subtitle: t("main-slider-section.slide-1.subtitle"),
         button: [
           { label: t("main-slider-section.slide-1.button-1"), link: "/customize", icon: "" },
-          { label: t("main-slider-section.slide-1.button-2"), link: "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you", newtab: true, icon: "fab fa-whatsapp" }
+          { label: t("main-slider-section.slide-1.button-2"), link: t("main-slider-section.slide-1.button-2-link"), newtab: true, icon: "fab fa-whatsapp" }
         ]
       }
     },

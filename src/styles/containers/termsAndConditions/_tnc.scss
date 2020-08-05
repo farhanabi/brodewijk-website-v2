@@ -1,0 +1,65 @@
+#tnc-section{
+  padding: 70px 0;
+  background: url('../../../assets/images/bg-social-proof-mobile.jpg') no-repeat;
+  background-size: cover;
+  font-family: Open Sans;
+
+  .title-tnc {
+    font-family: Playfair Display;
+    font-weight: normal;
+    color:#0C172F;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+    margin-top: 35px;
+  }
+
+  .subtitle-tnc {
+    color: #58595B;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto 30px;
+    width: 85%
+  }
+
+  .section-title {
+    font-family: Playfair Display;
+    font-weight: normal;
+    color:#0C172F;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    margin-top: 35px;
+  }
+
+  .section-content {
+    justify-self: center;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  #tnc-section {
+    background: url('../../../assets/images/bg-faq-desktop.jpg') no-repeat;
+    background-size: cover;
+
+
+    .title-tnc {
+      font-size: 32px;
+    }
+
+    .subtitle-tnc {
+      width: 85%;
+    }
+
+    .section-title {
+      font-size: 24px;
+    }
+
+    .tnc-section {
+      max-width: 75%; 
+      align-self: center;
+      margin: auto;
+    }
+  }
+}

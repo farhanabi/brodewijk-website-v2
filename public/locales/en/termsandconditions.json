@@ -1,0 +1,82 @@
+{
+  "title": "TERMS & CONDITIONS",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "This Is How We Serve You",
+      "subtitle": "We operate under the following Terms and Conditions. Please read it alongside our Privacy Policy carefully before using any feature of our websites or ordering from us.",
+      "button-1": "CHECK OUR TERMS AND CONDITIONS"}
+  },
+  
+  "tnc-section": {
+    "title": "Terms and Conditions",
+    "section": {
+      "how-to-order": {
+        "title": "How to Order",
+        "content": "Every order must be done through the website, an order that is not carried out of our website Brodewijk.com will be considered as not a valid order."
+      },
+      "how-to-measure": {
+        "title": "How to Measure",
+        "content": {
+          "par-1": "Brodewijk only provides 3 ways to get the fit measurement:",
+          "li-1": "Online Measurement: Through online measurement which the customer measures themselves by looking at the guidance video and then upload the measurement result to the website.",
+          "li-2": "Standard Size: Through our standard size patterns that have been provided by Brodewijk.",
+          "li-3": "Book Appointment: Through our Book Appointment service which tailor from Brodewijk will come to the customer and directly measure the customer. This service is subject to the following conditions:",
+          "li-3-li": {
+            "li-1": "This service is currently only serving in Jabodetabek area (minimum order 3 pcs) and Bandung (without minimum order)",
+            "li-2": "Customers can reschedule the booked appointment, but can’t cancel.",
+            "li-3": "Reschedule can only be done a maximum 7 days before the original scheduled time."
+          }
+        }
+      },
+      "payment-method": {
+        "title": "Price and Payment Method",
+        "content": {
+          "li-1": "Price displayed is a fixed price and can’t be changed unless there is a discount or promo price.",
+          "li-2": "Customer is obliged to pay the full price of the product, customer can’t pay partially.",
+          "li-3": "For any orders made through:",
+          "li-3-li": {
+            "li-1": "Online Customization: Full payment 100%",
+            "li-2": "Book Appointment: DP 50% and the rest 50% is paid after the suit is finished.",
+            "li-3": "Partnership: DP 50% and the rest 50% is paid after the suit is finished."
+          },
+          "li-4": "The suit can only be sent after the Customer completes the payment.",
+          "li-5": "Payment can be done through the payment methods that are available on our payment gateway or can be done through bank transfer."
+        }
+      },
+      "working-process": {
+        "title": "Working Process and Shipment",
+        "content": {
+          "li-1": "The product ordered is guaranteed by the quality and finishing time.",
+          "li-2": "The working process takes a maximum of 15 days, but can be faster. We are not responsible for any late delivery due to negligence or error of the courier expedition.",
+          "li-3": "If the customer wants to have the express work (2 days), additional fee will apply as much as Rp 50,000 per reduction in the number of days.",
+          "li-4": "The working process time is excluded from the shipment time.",
+          "li-5": "The shipment process will depend on the courier agent and shipping destination."
+        }
+      },
+      "guarantee-return": {
+        "title": "Guarantee and Return",
+        "content": {
+          "li-1": "The ordered and paid product can’t be canceled or refunded with any reason.",
+          "li-2": "If the ordered product is not appropriate, product defects, or any damages, please contact our Customer Service via WhatsApp: +628156051373 or email: contact@brodewijk.com.",
+          "li-3": "Customer can do product returns subject to the following conditions:",
+          "li-3-li": {
+            "li-1": "Product received doesn’t match with the order made by the Customer through Brodewijk website.",
+            "li-2": "There are product defects in the product received by the Customer.",
+            "uli": "Which both conditions:",
+            "uli-li": {
+              "li-1": "Covering fabrics type, colour, features, size.",
+              "li-2": "Product damages or defects are covering:",
+              "li-2-li-1": "Broken stitches/not neat.",
+              "li-2-li-2": "Broken buttons.",
+              "li-2-li-3": "Jammed zipper/removed/broken."
+            }
+          },
+          "li-4": "We will change or fix the product with the same fabrics type, colours, features, and sizes with the previous order details.",
+          "li-5": "The product returns because of the product defects or product received doesn’t match with the order made by the Customer is only applied 1 year (12 month since the purchase date) and can only be done once per purchase per item.",
+          "li-6": "The product return shipment fee from customer to Brodewijk is on customer but it’s on Brodewijk when Brodewijk sends back the fixed product to the customer.",
+          "li-7": "Customer has to enclose the “Thanks Card” that can be found in the packaging which acts as the guarantee card when sending back the product that wants to be fixed to Brodewijk."
+        }
+      }
+    }
+  }
+}

@@ -52,13 +52,13 @@ function Header(props) {
             )}
           </Col>
           <Col xs={8} className="nav-center">
-            <a href="/" className={`header-logo ${props.page !== 'Home' && 'd-none'}`}>
+            <a href="/" className={`header-logo ${(props.page !== 'Home' && props.page !== 'Link') && 'd-none'}`}>
               <img src={logo} alt="Logo" className="img-logo"/>
             </a>
-            <h2 className={`title ${props.page === 'Home' && 'd-none'} ${props.white && 'white'}`}>{props.page}</h2>
+            <h2 className={`title ${(props.page === 'Home' || props.page === 'Link') && 'd-none'} ${props.white && 'white'}`}>{props.page}</h2>
           </Col>
           <Col xs={2} className="nav-logogram">
-            <a href="/" className={`header-logo ${props.page === 'Home' && 'd-none'}`}>
+            <a href="/" className={`header-logo ${(props.page === 'Home' || props.page === 'Link') && 'd-none'}`}>
               <img src={logogram} alt="Logo" className="img-logogram"/>
             </a>
           </Col>

@@ -4,8 +4,9 @@
       "title": "Buat Pakaian Resmi-mu Sendiri",
       "subtitle": "Dengan menggunakan fitur kustomisasi kami, anda dapat mengekspresikan diri dengan membuat Jas, Kemeja, dan Celana mu sendiri!",
       "button-1": "KUSTOMISASI",
-      "button-2": "KONSULTASI SEKARANG"
-    },
+      "button-2": "KONSULTASI SEKARANG",
+      "button-2-link": "https://api.whatsapp.com/send?phone=628156051373&text=Halo%20Brodewijk!%20Saya%20tertarik%20untuk%20bertanya%2Dtanya"
+  },
     "slide-2": {
       "title": "Nikmati Diskon Hingga Rp200.000",
       "subtitle": "Dengan pembelian diatas Rp2.000.000",

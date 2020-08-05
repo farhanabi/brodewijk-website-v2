@@ -17,7 +17,7 @@
     "collections": "Koleksi",
     "about-us": "Tentang Kami",
     "contact-us": "Kontak Kami",
-    "partnership": "Bermitra"
+    "partnership": "Kerjasama"
   },
 
   "features": {
@@ -39,5 +39,5 @@
 
   "privacy-policy": "Kebijakan Privasi",
   "terms-conditions": "Syarat & Ketentuan",
-  "faq": "FAQ"
+  "help": "Bantuan"
 }

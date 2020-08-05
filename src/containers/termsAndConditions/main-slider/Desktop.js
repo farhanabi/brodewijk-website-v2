@@ -3,24 +3,19 @@ import { Carousel, CarouselItem, CarouselControl, Button, Container } from 'reac
 import { useTranslation } from 'react-i18next';
 
 const MainSlider = (props) => {
-  const { t } = useTranslation("partnership")
+  const { t } = useTranslation("termsandconditions")
   const items = [
     {
-      src: require('assets/images/carousel-partnership-1-desktop.jpg'),
+      src: require('assets/images/carousel-termsandconditions-1-desktop.jpg'),
       altText: 'Slide 1',
       contain: {
         title: t("main-slider-section.slide-1.title"),
         subtitle: t("main-slider-section.slide-1.subtitle"),
         button: [
-          { 
-            label: t("main-slider-section.slide-1.button-1"),
-            link: t("main-slider-section.slide-1.button-1-link"),
-            newtab: true,
-            icon: "fab fa-whatsapp"
-          }
+          { label: t("main-slider-section.slide-1.button-1"), link: "#tnc-section", icon: "" }
         ]
-      }
-    },
+        }
+    }
   ];
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -78,6 +73,7 @@ const MainSlider = (props) => {
         previous={previous}
       >
         {slides}
+        
       </Carousel>
     </div>
   );

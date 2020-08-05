@@ -1,0 +1,75 @@
+#desktop-slider-section {
+	cursor: pointer;
+	height: 100%;
+	font-family: Open Sans;
+
+	.carousel{
+		height: 100%;
+
+		.carousel-control-prev, .carousel-control-next {
+			bottom: 50px;
+			width: 20px;
+			top: unset;
+		}
+
+		.carousel-control-prev {
+			left: 47%;
+		}
+
+		.carousel-control-next {
+			right: 47%;
+		}
+
+		.carousel-inner{
+			width: 100%;
+			height: 100%;
+
+			.carousel-item {
+				.section-absolute {
+					position: absolute;
+					top: 0px;
+					height: 100%;
+					width: 100%;
+
+					.container {
+						height: 100%;
+						padding: 15% 15px;
+
+						.item-text {
+							width: 40%;
+							color: #ffffff;
+
+							.page-title {
+								font-size: 20px;
+								letter-spacing: 0.4rem;
+							  }
+
+							.title {
+								font-size: 56px;
+								font-weight: normal;
+								font-family: Playfair Display;
+							}
+
+							.subtitle {
+								width: 75%;
+								font-size: 16px;
+								margin-bottom: 20px;
+							}
+
+							.wrapper-btn {
+								.btn {
+									margin-right: 15px;
+									padding: 12px 20px;
+									font-family: Open Sans;
+								}
+							}
+						}
+					}
+				}
+        img {
+          width: 100%;
+        }
+			}
+		}
+	}
+}

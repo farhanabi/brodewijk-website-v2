@@ -1,0 +1,109 @@
+{
+  "title": "HELP",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Confused About Something?",
+      "subtitle": "We've got you covered. See our frequently asked questions or ask us directly!",
+      "button-1": "SEE OUR FAQs",
+      "button-2": "ASK US DIRECTLY",
+      "button-2-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk%21%20I%20want%20to%20ask%20something"
+    }
+  },
+  
+  "faq-section": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Here are some of the questions that our customers usually ask",
+    "categories": {
+      "order": {
+        "title": "Order Process",
+        "question-lists":{
+          "question-1": {
+            "question": "How to buy Brodewijk products?",
+            "answer-row-1": "If you want to buy online, customize your suit in real time, and measure your suit yourself or choose a standard size, then you can order via the Customize feature.",
+            "answer-row-2": "If you want to consult and order your suit directly and take measurements directly by us, then we can come to you according to the schedule that has been booked on the Book Appointment feature.",
+            "answer-row-3": "If you want to order in bulk, such as for the purposes of wedding, corporate, tv shows, business, and others. Then, you can contact us through the Partnership page."
+          },
+          "question-2": {
+            "question": "Does Brodewijk have an offline store?",
+            "answer": "No. We only operate online currently."
+          },
+          "question-3": {
+            "question": "Does Brodewijk accept sewing services only and customers bring their own fabrics?",
+            "answer": "No. Brodewijk can only make suits with fabric that Brodewijk provide to maintain the quality of the products."
+          },
+          "question-4": {
+            "question": "Are ready-made suits available for immediate purchase or rental?",
+            "answer": "No. for the time being, Brodewijk has not yet provided a suit rental service and has not yet sold a ready-made suit."
+          },
+          "question-5": {
+            "question": "Does Brodewijk provide suit repair services and accessories?",
+            "answer": "No. Brodewijk only repair damage during use for customers whose terms are regulated in our Terms & Conditions."
+          },
+          "question-6": {
+            "question": "How long does it take to make a suit and accessories?",
+            "answer": "The default is fifteen (15) days from the transaction date and excludes shipping."
+          },
+          "question-7": {
+            "question": "I'm in rush, is there express service available?",
+            "answer": "Yes, there is. The fastest time to make it is two (2) days, can be done with special conditions including an additional cost of Rp50,000 per reduction in the number of days."
+          },
+          "question-8": {
+            "question": "Will I be charged extra if I want to be measured directly using the Book Appointment feature?",
+            "answer": "Yes, you will be charged an additional Rp50,000 as travel and service fees."
+          },
+          "question-9": {
+            "question": "What is the transaction payment procedure?",
+            "answer-row-1": "Online Customization: 100% payment is made up front.",
+            "answer-row-2": "Book Appointment & Partnership: Initial 50% down payment and another 50% payment when the product is finished"
+          },
+          "question-10": {
+            "question": "Can the price listed on the Brodewijk site be negotiated?",
+            "answer": "No. The price is fixed."
+          }
+        }
+      },
+      "delivery": {
+        "title": "Shipping & Delivery",
+        "question-lists":{
+          "question-1": {
+            "question": "How much will Brodewijk charge for shipping?",
+            "answer": "Not even a single penny. All of purchases from Brodewijk are free shipping."
+          },
+          "question-2": {
+            "question": "How long does it take to ship the product?",
+            "answer": "The shipping time depends on the type of courier service and the location of the shipping destination."
+          },
+          "question-3": {
+            "question": "How do customers know that the order has been sent?",
+            "answer": "Brodewijk will send a WhatsApp message in the form of a shipping receipt number no later than 2 days after the product has been picked up by an expedition courier, as a proof that your order has been sent. For that at the time of booking, please make the telephone number listed in your active number and can be contacted."
+          },
+          "question-4": {
+            "question": "What should I do if I haven't received a receipt number?",
+            "answer": "Please contact us directly via WhatsApp: 08156051373 or e-mail: contact@brodewijk.com"
+          }
+        }
+      },
+      "quality": {
+        "title": "Quality & Returns",
+        "question-lists":{
+          "question-1": {
+            "question": "What distinguishes Brodewijk products from a normal tailor or other sewing services?",
+            "answer": "We offer high-quality premium suits at prices according to the value offered. Unlike the other suit places that offer low or ordinary quality but at prices that do not match the quality. You can prove this from the type of lining, the neatness of the seam, the thickness of the coat, the model, the fabric outside the suit, and the accuracy of the measurements."
+          },
+          "question-2": {
+            "question": "How does Brodewijk guarantee the quality of the produced products?",
+            "answer": "During Brodewijk production process, Brodewijk carries out quality control many times in a certain period so that the product is in accordance with international quality and in accordance with customer expectations."
+          },
+          "question-3": {
+            "question": "What is the guarantee for customer satisfaction?",
+            "answer": "If the product you have received does not match your order, the product can be returned and we will replace it with the product in accordance with your previous order as stipulated in the Terms & Conditions."
+          },
+          "question-4": {
+            "question": "What should I do if the product I received is not suitable / damaged / defective?",
+            "answer": "Products that are not suitable / damaged / defective can be returned and will be repaired in accordance with the Terms and Conditions."
+          }
+        }
+      }
+    }
+  }
+}

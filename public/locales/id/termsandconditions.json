@@ -1,0 +1,82 @@
+{
+  "title": "SYARAT & KETENTUAN",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Inilah Cara Kami Melayani Anda",
+      "subtitle": "Kami beroperasi berdasarkan Syarat dan Ketentuan berikut. Harap baca bersama Kebijakan Privasi kami dengan cermat sebelum menggunakan fitur apa pun dari situs web kami atau memesan dari kami.",
+      "button-1": "PERIKSA SYARAT DAN KETENTUAN"}
+  },
+  
+  "tnc-section": {
+    "title": "Syarat dan Ketentuan",
+    "section": {
+      "how-to-order": {
+        "title": "Cara Pemesanan",
+        "content": "Semua pemesanan harus dilakukan melalui situs web, pemesanan yang dilakukan di luar situs web Brodewijk tidak dianggap sebagai pemesanan yang sah dan segala risiko bukan menjadi tanggung jawab kami."
+      },
+      "how-to-measure": {
+        "title": "Cara Pengukuran",
+        "content": {
+          "par-1": "Brodewijk menyediakan 3 pilihan cara mendapatkan ukuran yang sesuai yaitu:",
+          "li-1": "Pengukuran Online : Pelanggan melakukan pengukuran sendiri dengan mengikuti tutorial video yang telah diunggah di situs Brodewijk.",
+          "li-2": "Ukuran Standar: Memilih ukuran jadi yang telah disediakan di situs Brodewijk.",
+          "li-3": "Buat Janji: Tim penjahit Brodewijk akan mendatangi pelanggan dan melakukan pengukuran secara langsung. Layanan ini tunduk pada persyaratan sebagai berikut:",
+          "li-3-li": {
+            "li-1": "Layanan Buat Janji saat ini hanya berlaku untuk wilayah Bandung (tanpa minimum pemesanan) dan Jabodetabek (minimum order 3 pcs.)",
+            "li-2": "Pelanggan bisa melakukan pemindahan jadwal terhadap Buat Janji, namun tidak bisa melakukan pembatalan",
+            "li-3": "Pemindahan jadwal dapat dilakukan paling lambat 7 hari sebelum waktu perjanjian yang telah dipesan."
+          }
+        }
+      },
+      "payment-method": {
+        "title": "Harga dan Metode Pembayaran",
+        "content": {
+          "li-1": "Harga yang tertera adalah harga tetap dan tidak bisa berubah kecuali terdapat diskon atau harga promosi.",
+          "li-2": "Dengan melakukan pemesanan, pelanggan menyetujui untuk membayar lunas total biaya yang harus dibayarkan, sebagaimana tertera dalam halaman pembayaran",
+          "li-3": "Untuk pemesanan melalui:",
+          "li-3-li": {
+            "li-1": "Kustomisasi: Pembayaran lunas 100% di awal",
+            "li-2": "Buat Janji: Pembayaran DP 50% di awal dan pelunasan 50% lainnya pada saat jas selesai dibuat.",
+            "li-3": "Kemitraan: Pembayaran DP 50% di awal dan pelunasan 50% lainnya pada saat jas selesai dibuat"
+          },
+          "li-4": "Produk baru bisa dikirim setelah pelanggan melunasi pembayarannya.",
+          "li-5": "Pembayaran dapat dilakukan melalui pilihan metode pembayaran yang terdapat pada Payment Gateway yang telah disediakan oleh Brodewijk atau melalui bank transfer."
+        }
+      },
+      "working-process": {
+        "title": "Proses Pengerjaan dan Pengiriman",
+        "content": {
+          "li-1": "Kami menjamin kualitas, kesesuaian, dan lama pengerjaan produk yang dipesan oleh pelanggan.",
+          "li-2": "Lama pengerjaan adalah 15 (lima belas) hari. Kami tidak bertanggung jawab dalam hal terjadi keterlambatan pengiriman dikarenakan kelalaian atau kesalahan kurir ekspedisi.",
+          "li-3": "Waktu tercepat pengerjaan adalah 2 (dua) hari, dapat dilakukan dengan kondisi khusus termasuk di antaranya penambahan biaya sebesar Rp50.000 per pengurangan jumlah hari",
+          "li-4": "Lama pengerjaan 15 (lima belas) hari tidak termasuk pengiriman",
+          "li-5": "Lama pengiriman bergantung pada jenis layanan kurir ekspedisi dan lokasi tujuan pengiriman."
+        }
+      },
+      "guarantee-return": {
+        "title": "Garansi dan Pengembalian",
+        "content": {
+          "li-1": "Produk yang sudah dipesan dan dibayar tidak dapat dibatalkan ataupun dikembalikan dengan alasan apapun.",
+          "li-2": "Jika produk yang anda pesan tidak sesuai, cacat pada saat diterima, atau mengalami kerusakan selama pemakaian, silahkan menghubungi layanan pelanggan kami di WhatsApp: +628156051373 atau e-mail: contact@brodewijk.com.",
+          "li-3": "Pelanggan dapat melakukan penukaran produk, dengan ketentuan sebagaimana berikut:",
+          "li-3-li": {
+            "li-1": "Produk yang diterima tidak sesuai dengan pemesanan yang dilakukan oleh pelanggan di situs Brodewijk",
+            "li-2": "Adanya kecacatan pada produk yang diterima oleh pelanggan",
+            "uli": "Dimana kedua hal tersebut:",
+            "uli-li": {
+              "li-1": "Meliputi: jenis bahan, warna, fitur, dan/atau ukuran",
+              "li-2": "Kerusakan selama pemakaian produk",
+              "li-2-li-1": "Jahitan putus/terbuka/tidak rapi.",
+              "li-2-li-2": "Kancing lepas/pecah.",
+              "li-2-li-3": "Resleting macet/lepas/patah."
+            }
+          },
+          "li-4": "Kami akan mengganti produk yang cacat dengan produk yang baru dengan jenis bahan, warna, fitur, dan ukuran yang sama dengan pesanan sebelumnya.",
+          "li-5": "Penukaran atau pengembalian karena produk mengalami kerusakan pemakaian/kecacatan berlaku selama 1 tahun (12 bulan) dari tanggal transaksi dan hanya dapat dilakukan 1 (satu) kali per transaksi.",
+          "li-6": "Biaya yang dikeluarkan untuk pengiriman produk yang ingin dikembalikan untuk diperbaiki menjadi tanggungan pelanggan yang mengirim, tetapi merupakan tanggungan kami pada saat mengirimkan kembali produk yang sudah diperbaiki kepada pelanggan.",
+          "li-7": "Pelanggan harus menyertakan kartu “Thanks Card” yang didapatkan ketika melakukan pembelian, kartu tersebut bertindak sebagai kartu garansi ketika mengirim kembali produk yang hendak diperbaiki atau diganti kepada Brodewijk."
+        }
+      }
+    }
+  }
+}

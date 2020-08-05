@@ -73,12 +73,12 @@ function Footer() {
     },
     {
       label: t("terms-conditions"),
-      link: '/terms-conditions',
+      link: '/terms-and-conditions',
       border_right: true
     },
     {
-      label: t("faq"),
-      link: '/faq',
+      label: t("help"),
+      link: '/help',
       border_right: false
     }
   ]

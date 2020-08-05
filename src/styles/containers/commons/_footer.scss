@@ -1,5 +1,8 @@
 .section-footer {
-	background: url('../../../assets/images/bg-footer-desktop.jpg') no-repeat left;
+	background: url('../../../assets/images/bg-footer-mobile.jpg') no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	color: #ffffff;
 	font-size: 13px;
@@ -108,6 +111,7 @@
     font-size: 12px;
     letter-spacing: 0.44px;
 		color: #ffff;
+		background-color: rgb(28,28,28);
 		
 		.row {
 			margin: 0;
@@ -127,6 +131,12 @@
 
 @media (min-width: 992px) {
 	.section-footer {
+		background: url('../../../assets/images/bg-footer-desktop.jpg') no-repeat center center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
 		.footer-top {
 			padding-top: 50px;
 

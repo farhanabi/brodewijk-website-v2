@@ -1,0 +1,12 @@
+{
+  "main-slider-section": {
+    "title": "Selamat datang! Ada yang bisa kami bantu?",
+    "subtitle": "Dibawah ini terdapat beberapa link Brodewijk yang dapat Anda kunjungi. Silakan klik salah satu tombol di bawah ini.",
+    "button-1": "WEBSITE",
+    "button-2": "LIST HARGA",
+    "button-3": "PESAN/KONSULTASI SEKARANG",
+    "button-3-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you",
+    "button-4": "BUAT PERTEMUAN PENGUKURAN",
+    "button-5": "PESAN MASKER"
+  }
+}

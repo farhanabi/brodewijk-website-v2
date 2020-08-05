@@ -1,0 +1,109 @@
+{
+  "title": "BANTUAN",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Ada hal yang kamu bingungkan?",
+      "subtitle": "Biarkan kami membantumu. Lihat pertanyaan yang sering ditanyakan atau tanyakan langsung kepada kami!",
+      "button-1": "LIHAT FAQ",
+      "button-2": "TANYA KAMI",
+      "button-2-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hai%20Brodewijk%21%20Saya%20ingin%20bertanya%20sesuatu"
+    }
+  },
+  
+  "faq-section": {
+    "title": "Pertanyaan yang Sering Ditanyakan",
+    "subtitle": "Berikut adalah beberapa pertanyaan yang sering ditanyakan pelanggan kami",
+    "categories": {
+      "order": {
+        "title": "Proses Pemesanan",
+        "question-lists":{
+          "question-1": {
+            "question": "Bagaimana cara membeli produk Brodewijk?",
+            "answer-row-1": "Apabila Anda ingin membeli secara online, men-custom jas Anda secara real-time, dan mengukur sendiri jasmu/memilih ukuran standar, maka kamu bisa memesan melalui fitur Kustomisasi.",
+            "answer-row-2": "Apabila Anda ingin berkonsultasi dan memesan langsung jas serta melakukan pengukuran langsung oleh kami, maka kami bisa mendatangi kamu sesuai dengan jadwal yang telah di-book pada fitur Buat Janji.",
+            "answer-row-3": "Apabila Anda ingin memesan secara massal/khusus, seperti untuk keperluan Wedding, corporate, tv shows, bisnis, dan lainnya. Maka, Anda bisa mengontak kami melalui halaman Kontak Kami."
+          },
+          "question-2": {
+            "question": "Apakah Brodewijk memiliki toko offline atau store?",
+            "answer": "Tidak. Untuk saat ini kami hanya beroperasi secara online."
+          },
+          "question-3": {
+            "question": "Apakah Brodewijk menerima jasa jahit saja dengan kain yang dibawa sendiri?",
+            "answer": "Tidak. Brodewijk hanya bisa melakukan pembuatan jas dengan kain yang kami sediakan demi menjaga kualitas barang."
+          },
+          "question-4": {
+            "question": "Apakah tersedia jas yang sudah jadi untuk langsung dibeli atau disewa?",
+            "answer": "Tidak, untuk saat ini Brodewijk belum menyediakan layanan sewa jas dan belum menjual jas yang telah jadi."
+          },
+          "question-5": {
+            "question": "Apakah Brodewijk menyediakan layanan reparasi jas dan kelengkapannya?",
+            "answer": "Tidak, Kami hanya memperbaiki kerusakan selama pemakaian bagi pelanggan yang ketentuannya diatur dalam Syarat & Ketentuan."
+          },
+          "question-6": {
+            "question": "Berapa lama pengerjaan jas dan kelengkapannya?",
+            "answer": "Standar pengerjaan produk kami adalah 15 (lima belas) hari terhitung dari tanggal transaksi dan tidak termasuk pengiriman."
+          },
+          "question-7": {
+            "question": "Apakah tersedia layanan ekspres?",
+            "answer": "Ada. Waktu tercepat pengerjaan adalah 2 (dua) hari, dapat dilakukan dengan kondisi khusus termasuk diantaranya penambahan biaya sebesar Rp50.000 per pengurangan jumlah hari."
+          },
+          "question-8": {
+            "question": "Apakah saya dikenakan biaya tambahan jika saya ingin diukur langsung/menggunakan fitur Buat Janji?",
+            "answer": "Ya, kamu akan dikenakan biaya tambahan sebesar Rp50.000 sebagai biaya perjalanan dan layanan."
+          },
+          "question-9": {
+            "question": "Bagaimana prosedur pembayarannya?",
+            "answer-row-1": "Kustomisasi: Pembayaran lunas 100% di awal.",
+            "answer-row-2": "Buat Janji & Kemitraan: Pembayaran DP 50% di awal dan pelunasan 50% lainnya pada saat jas selesai dibuat"
+          },
+          "question-10": {
+            "question": "Apakah harga yang tertera pada situs Brodewijk dapat dinegosiasikan?",
+            "answer": "Tidak. Harga yang tercantum adalah harga tetap."
+          }
+        }
+      },
+      "delivery": {
+        "title": "Pengiriman dan Pengantaran",
+        "question-lists":{
+          "question-1": {
+            "question": "Apakah ada biaya pengiriman?",
+            "answer": "Tidak. Seluruh pembelian berhak atas pengiriman gratis."
+          },
+          "question-2": {
+            "question": "Berapa lama waktu yang dibutuhkan untuk pengiriman produk?",
+            "answer": "Lama pengiriman bergantung pada jenis layanan kurir ekspedisi dan lokasi pengiriman."
+          },
+          "question-3": {
+            "question": "Bagaimana pelanggan tahu bahwa pesanan sudah dikirim?",
+            "answer": "Brodewijk akan mengirimkan pesan WhatsApp berupa nomor resi pengiriman paling lambat H+2 setelah produk di ambil oleh kurir ekspedisi, sebagai bukti produk pesanan Anda sudah dikirim. Untuk itu pada saat pemesanan, mohon agar nomor telepon yang dicantumkan adalah nomor yang selalu aktif dan dapat dihubungi."
+          },
+          "question-4": {
+            "question": "Apa yang harus saya lakukan apabila belum mendapatkan nomor resi?",
+            "answer": "Mohon untuk langsung menghubungi kami di WhatsApp: 08156051373 atau e-mail: contact@brodewijk.com"
+          }
+        }
+      },
+      "quality": {
+        "title": "Kualitas & Retur Barang",
+        "question-lists":{
+          "question-1": {
+            "question": "Apa yang membedakan produk jas Brodewijk dengan jas di tukang jahit biasa atau jasa jas jahit lainnya?",
+            "answer": "Kami menawarkan jas premium kualitas tinggi dengan harga yang sesuai dengan value yang ditawarkan. Berbeda dengan tempat jas lainnya yang menawarkan kualitas rendah atau biasa tapi dengan harga yang tidak sesuai dengan kualitasnya. Kamu dapat membuktikan ini dari jenis lining (kain bagian dalam jas), kerapihan jahitan, ketebalan lapisan jas, model, kain luar jas, serta keakuratan pengukurannya."
+          },
+          "question-2": {
+            "question": "Bagaimana cara Brodewijk menjamin kualitas produk yang diproduksi?",
+            "answer": "Selama pembuatan, Brodewijk melakukan Quality Control berkali-kali pada periode tertentu agar produk sesuai dengan kualitas internasional dan sesuai dengan ekspektasi pelanggan."
+          },
+          "question-3": {
+            "question": "Apa jaminan untuk kepuasan konsumen?",
+            "answer": "Apabila produk yang Anda terima tidak sesuai dengan pesananmu, maka produk bisa dikembalikan dan akan kami ganti dengan produk yang sesuai dengan pesananmu sebelumnya yang diatur dalam Syarat & Ketentuan."
+          },
+          "question-4": {
+            "question": "Apa yang harus saya lakukan apabila produk yang saya terima tidak sesuai/rusak/cacat?",
+            "answer": "Produk yang tidak sesuai/rusak/cacat dapat dikembalikan dan akan diperbaiki sesuai dengan ketentuan pada Syarat & Ketentuan."
+          }
+        }
+      }
+    }
+  }
+}

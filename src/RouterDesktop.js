@@ -6,6 +6,9 @@ import PageBookAppointment from 'pages/bookAppointment/Desktop';
 import PagePartnership from 'pages/partnership/Desktop';
 import PageNotFound from 'pages/notFound/Desktop';
 import PageCustomize from 'pages/customize/Desktop';
+import PageTnC from 'pages/termsAndConditions/Desktop';
+import PageHelp from 'pages/help/Desktop';
+import PageLink from 'pages/link/Desktop';
 
 function RouterDesktop (){
   useEffect(() => {
@@ -18,6 +21,9 @@ function RouterDesktop (){
       <Route path="/customize" component={PageCustomize}/>
       <Route path="/partnership" component={PagePartnership}/>
       <Route path="/book-appointment" component={PageBookAppointment}/>
+      <Route path="/terms-and-conditions" component={PageTnC}/>
+      <Route path="/help" component={PageHelp}/>
+      <Route path="/link" component={PageLink}/>
       <Route component={PageNotFound} />
     </Switch>
   );

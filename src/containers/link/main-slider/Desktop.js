@@ -3,24 +3,23 @@ import { Carousel, CarouselItem, CarouselControl, Button, Container } from 'reac
 import { useTranslation } from 'react-i18next';
 
 const MainSlider = (props) => {
-  const { t } = useTranslation("partnership")
+  const { t } = useTranslation("link")
   const items = [
     {
-      src: require('assets/images/carousel-partnership-1-desktop.jpg'),
+      src: require('assets/images/carousel-1-link-mobile.jpg'),
       altText: 'Slide 1',
       contain: {
-        title: t("main-slider-section.slide-1.title"),
-        subtitle: t("main-slider-section.slide-1.subtitle"),
+        title: t("main-slider-section.title"),
+        subtitle: t("main-slider-section.subtitle"),
         button: [
-          { 
-            label: t("main-slider-section.slide-1.button-1"),
-            link: t("main-slider-section.slide-1.button-1-link"),
-            newtab: true,
-            icon: "fab fa-whatsapp"
-          }
+          { label: t("main-slider-section.button-1"), link: "", icon: "" },
+          { label: t("main-slider-section.button-2"), link: "", newtab: true, icon: "fab fa-whatsapp" },
+          { label: t("main-slider-section.button-3"), link: "", newtab: true, icon: ""},
+          { label: t("main-slider-section.button-4"), link: "", newtab: true, icon: ""},
+          { label: t("main-slider-section.button-5"), link: "", newtab: true, icon: ""}
         ]
       }
-    },
+    }
   ];
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -48,7 +47,6 @@ const MainSlider = (props) => {
           <div className="section-absolute">
             <Container>
               <div className="item-text">
-                <h6 className="page-title">{t("title")}</h6>
                 {item.contain.title ? <h2 className="title">{item.contain.title}</h2> : null}
                 {item.contain.subtitle ? <p className="subtitle">{item.contain.subtitle}</p> : null }
                 {item.contain.button ? (
@@ -71,13 +69,14 @@ const MainSlider = (props) => {
   });
 
   return (
-    <div id="desktop-slider-section">
+    <div id="desktop-link-slider-section">
       <Carousel
         activeIndex={activeIndex}
         next={next}
         previous={previous}
       >
         {slides}
+
       </Carousel>
     </div>
   );

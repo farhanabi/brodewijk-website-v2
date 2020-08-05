@@ -4,7 +4,8 @@
       "title": "Create Your Own Formal Wear",
       "subtitle": "Using our customization feature, you can express yourself by creating your own Suit, Shirt, and Pants!",
       "button-1": "CUSTOMIZE",
-      "button-2": "CONSULT NOW"
+      "button-2": "CONSULT NOW",
+      "button-2-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you"
     },
     "slide-2": {
       "title": "Enjoy Our Discount Up to Rp200.000",
