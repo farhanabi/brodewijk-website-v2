@@ -13,7 +13,7 @@ function FabricDesktop (props){
   return (
     <div className={`fabric-item ${fabric.name === item.name ? "active" : ""}`}>
       <Col md={12} className="fabric-text">
-        <h5 className="fabric-text-name">{item.name} (Rp{item.type.base_price})</h5>
+        <h5 className="fabric-text-name">{item.name} (Rp{item.type.base_price.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.")})</h5>
         <p className="fabric-text-grade">{item.grade}</p>
         <p className="fabric-text-desc">{item.description}</p>
       </Col>

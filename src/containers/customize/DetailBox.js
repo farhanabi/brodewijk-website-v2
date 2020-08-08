@@ -34,7 +34,7 @@ function DetailBox (props){
           </p>
           <p className="text">
             <strong>{t("detail-box-section.features.chest-pocket")}:</strong>&nbsp;
-            {feature & feature["Chest Pocket"] ? feature["Chest Pocket"].name : ''}
+            {feature && feature["Chest Pocket"] ? feature["Chest Pocket"].name : ''}
           </p>
           <p className="text">
             <strong>{t("detail-box-section.features.buttons")}:</strong>&nbsp;
@@ -51,7 +51,7 @@ function DetailBox (props){
 
           <div className="price-wrapper">
             <p className="text"><strong>{t("detail-box-section.price")}:</strong></p>
-            <p className="text-price">Rp {price}</p>
+            <p className="text-price">Rp{price.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.")}</p>
           </div>
 
           <div className="btn-wrapper">

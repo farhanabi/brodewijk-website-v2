@@ -4,14 +4,14 @@ import { Switch, Route } from "react-router-dom";
 import PageHome from 'pages/home/Desktop';
 import PageBookAppointment from 'pages/bookAppointment/Desktop';
 import PagePartnership from 'pages/partnership/Desktop';
-import PageNotFound from 'pages/notFound/Desktop';
 import PageCustomize from 'pages/customize/Desktop';
 import PageLogin from 'pages/auth/login/Desktop';
 import PageRegister from 'pages/auth/register/Desktop';
-import PageNotFound from 'pages/NotFound';
 import PageTnC from 'pages/termsAndConditions/Desktop';
 import PageHelp from 'pages/help/Desktop';
 import PageLink from 'pages/link/Desktop';
+import PageNotFound from 'pages/notFound/Desktop';
+// import PageNotFound from 'pages/NotFound';
 
 function RouterDesktop (){
   useEffect(() => {

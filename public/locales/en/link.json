@@ -2,11 +2,12 @@
   "main-slider-section": {
     "title": "Welcome! Where do you want to go?",
     "subtitle": "Here's some link that we think you're going to go. Just click one of the button below.",
-    "button-1": "WEBSITE",
+    "button-1": "WEBSITE (BETA VERSION)",
     "button-2": "PRICE LIST",
     "button-3": "ORDER/CONSULT NOW",
     "button-3-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you",
     "button-4": "BOOK APPOINTMENT",
-    "button-5": "FACE MASK ORDER"
+    "button-5": "FACE MASK ORDER",
+    "button-6": "WEBSITE (OLDER VERSION)"
   }
 }

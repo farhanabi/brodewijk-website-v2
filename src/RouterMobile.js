@@ -5,13 +5,13 @@ import PageHome from 'pages/home/Mobile';
 import PageCustomize from 'pages/customize/Mobile';
 import PageBookAppointment from 'pages/bookAppointment/Mobile';
 import PagePartnership from 'pages/partnership/Mobile';
-import PageNotFound from 'pages/notFound/Mobile';
 import PageTnC from 'pages/termsAndConditions/Mobile';
 import PageHelp from 'pages/help/Mobile';
 import PageLink from 'pages/link/Mobile';
 import PageLogin from 'pages/auth/login/Mobile';
 import PageRegister from 'pages/auth/register/Mobile';
-import PageNotFound from 'pages/NotFound';
+import PageNotFound from 'pages/notFound/Mobile';
+// import PageNotFound from 'pages/NotFound';
 
 function RouterMobile (){
   useEffect(() => {
