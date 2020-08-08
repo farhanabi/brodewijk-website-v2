@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Carousel, CarouselItem, CarouselControl, Button, Container } from 'reactstrap';
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-scroll";
 
 const MainSlider = (props) => {
   const { t } = useTranslation("help")
@@ -12,8 +13,8 @@ const MainSlider = (props) => {
         title: t("main-slider-section.slide-1.title"),
         subtitle: t("main-slider-section.slide-1.subtitle"),
         button: [
-          { label: t("main-slider-section.slide-1.button-1"), link: "#faq-section", icon: "" },
-          { label: t("main-slider-section.slide-1.button-2"), link: "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you", newtab: true, icon: "fab fa-whatsapp" }
+          { label: t("main-slider-section.slide-1.button-1"), linkScroll: "faq-section", icon: "" },
+          { label: t("main-slider-section.slide-1.button-2"), link: "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you", icon: "fab fa-whatsapp" }
         ]
       }
     }
@@ -49,10 +50,24 @@ const MainSlider = (props) => {
                 {item.contain.button ? (
                 <div className="wrapper-btn">
                   {item.contain.button.map((v, k) => (
-                    <Button key={k} className="btn-outline-white all" href={v.link} target={v.newtab?`_blank`:``} rel={v.newtab?`noopener noreferrer`:``}>
-                      {v.icon.length > 0 ? <i className={v.icon} /> : null }
-                      &nbsp;{v.label}
-                    </Button>
+                    v.linkScroll ?
+                      <Link
+                        to={v.linkScroll}
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                      >
+                        <Button key={k} className="btn-outline-white all">
+                          {v.icon.length > 0 ? <i className={v.icon} /> : null }
+                          &nbsp;{v.label}
+                        </Button>
+                      </Link>
+                    : 
+                      <Button key={k} className="btn-outline-white all" href={v.link} target={v.newtab?`_blank`:``} rel={v.newtab?`noopener noreferrer`:``}>
+                        {v.icon.length > 0 ? <i className={v.icon} /> : null }
+                        &nbsp;{v.label}
+                      </Button>
                   ))}
                 </div>
                 ) : null}
