@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Container, Button, Row, Col } from 'reactstrap'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { withRouter } from 'react-router-dom';
 
 const logo = require('assets/images/Logo-horizontal.svg')
 const logogram = require('assets/images/Logogram.svg')
@@ -36,19 +37,25 @@ function Header(props) {
 
   return(
     <header id="mobile-header" 
-      className={`${scrollPosition > 1 ? 'sticky' : ''} ${props.white && 'bg-white'} ${!showNavbar && scrollPosition < 1 ? 'transparent' : ''}`} 
+      className={`${scrollPosition > 1 ? 'sticky' : ''} ${props.white ? 'bg-white' : ''} ${!showNavbar && scrollPosition < 1 ? 'transparent' : ''}`} 
     >
       <Container>
         <Row className="header-bar">
           <Col xs={2} className="nav-menu">
-            {showNavbar ? (
-              <Button onClick={handleShowNavbar} className={`${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
-                <i className="fas fa-times" />
+            {props.page === "LOG IN" || props.page ===  "SIGN UP" || props.page ===  "MASUK" || props.page === "DAFTAR" ? (
+              <Button className="btn-outline-black" onClick={props.history.goBack}>
+                <i className="fas fa-arrow-left" />
               </Button>
             ) : (
-              <Button onClick={handleShowNavbar} className={`${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
-                <i className="fas fa-bars" />
-              </Button>
+              showNavbar ? (
+                <Button onClick={handleShowNavbar} className={`${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
+                  <i className="fas fa-times" />
+                </Button>
+              ) : (
+                <Button onClick={handleShowNavbar} className={`${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
+                  <i className="fas fa-bars" />
+                </Button>
+              )
             )}
           </Col>
           <Col xs={8} className="nav-center">
@@ -72,7 +79,7 @@ function Header(props) {
             </Col>
             {showCustomize && (
               <Col xs={12} className="nav-item">
-                <Row className={`nav-list customize ${props.white && 'bg-white'}`}>
+                <Row className={`nav-list customize ${props.white ? 'bg-white' : ''}`}>
                   <Col xs={12} className="nav-item">
                     <Link to="/collections">
                       <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("suit")}</Button>
@@ -118,4 +125,4 @@ function Header(props) {
   )
 }
 
-export default Header;
+export default withRouter(Header);

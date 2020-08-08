@@ -38,7 +38,7 @@
 
   .tab-content {
     font-family: Open Sans;
-    height: 350px;
+    height: 80%;
     overflow: scroll;
     padding: 0 15px;
 
@@ -46,6 +46,8 @@
 
       &.fabric {
         .fabric-item {
+          margin-bottom: 20px;
+          
           .fabric-text {
             font-style: normal;
 
@@ -69,15 +71,33 @@
 
           .fabric-color {
 
-            .fabric-color-item {
-              padding: 15px;
+            .row-color {
+              margin: 0;
+              padding: 0 15px;
 
-              .fabric-color-img {
-                width: 100%;
-              }
-              .fabric-color-name {
-                font-size: 12px;
-                line-height: 20px;
+              .fabric-color-item {
+                padding: 10px;
+  
+                &.color-active {
+                  border: 0.5px dashed #808285;
+                  border-radius: 4px;
+                }
+  
+                .wrapper-color-item {
+                  width: 100%;
+                }
+  
+                .fabric-color-img {
+                  width: 100%;
+                }
+                .fabric-color-name {
+                  margin: 0;
+                  font-size: 12px;
+                  line-height: 20px;
+                  background: #1c1c1c;
+                  color: #ffffff;
+                  text-align: center;
+                }
               }
             }
           }
@@ -86,6 +106,9 @@
 
       &.features {
         .feature-item {
+          width: 100%;
+          margin-bottom: 20px;
+
           .feature-text {
             font-style: normal;
 
@@ -94,6 +117,54 @@
               font-size: 14px;
               line-height: 24px;
               margin-bottom: 10px;
+            }
+          }
+
+          .feature-options{
+            .lining {
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+
+              .tab-lining {
+                .btn-tab {
+                  width: 100%;
+                  font-family: Open Sans;
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 13px;
+                  background: #ffffff;
+                  color: #4E4E56;
+                  border: none;
+
+                  &:focus {
+                    box-shadow: none !important;
+                  }
+            
+                  &.active {
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+
+            .option-item {
+              padding: 12px;
+              cursor: pointer;
+
+              &.active {
+                border: 0.5px dashed #808285;
+                border-radius: 4px;
+              }
+
+              .option-item-img {
+                width: 100%;
+              }
+              .option-item-name {
+                margin: 0;
+                font-size: 12px;
+                line-height: 20px;
+              }
             }
           }
         }

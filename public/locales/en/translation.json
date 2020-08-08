@@ -39,5 +39,10 @@
 
   "privacy-policy": "Privacy Policy",
   "terms-conditions": "Terms & Conditions",
-  "help": "Help"
+  "help": "Help",
+
+  "not-found": {
+    "sorry": "We're sorry but we can't serve the page you requested.",
+    "link-home": "Back to homepage."
+  }
 }

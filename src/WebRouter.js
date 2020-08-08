@@ -4,8 +4,8 @@ import Loadable from 'react-loadable';
 import { isMobile } from 'react-device-detect';
 import Loading from 'components/Loading';
 
-const RouterDesktop = Loadable({ loading: () => <Loading text={true} />, loader: () => import('./RouterDesktop') });
-const RouterMobile = Loadable({ loading: () => <Loading text={true} />, loader: () => import('./RouterMobile') });
+const RouterDesktop = Loadable({ loading: () => <Loading text={false} />, loader: () => import('./RouterDesktop') });
+const RouterMobile = Loadable({ loading: () => <Loading text={false} />, loader: () => import('./RouterMobile') });
 
 function WebRouter (){
   useEffect(() => {

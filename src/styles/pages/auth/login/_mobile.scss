@@ -1,0 +1,86 @@
+#login-mobile {
+  padding: 100px 0;
+  background: #ffffff;
+
+  .container {
+
+    .row-content {
+      padding-top: 20px;
+      
+      .title {
+        font-family: Playfair Display;
+        font-size: 24px;
+        text-align: center;
+        color: #4E4E56;
+        margin-bottom: 30px;
+      }
+      
+      .wrapper-form {
+        background: #ffffff;
+        margin: 0;
+        padding: 20px;
+        border-radius: 5px;
+  
+        .form-group {
+          font-family: Open Sans;
+          
+          label {
+            color: #000000;
+            font-size: 16px;
+          }
+  
+          .form-control {
+            border: 1px solid #1C1C1C;
+            border-radius: 0;
+            font-size: 16px;
+  
+            &:focus{
+              box-shadow: none;
+            }
+  
+            &::placeholder {
+              color: #D1D3D4;
+            }
+          }
+
+          .pass-wrapper {
+            position: relative;
+
+            i {
+              cursor: pointer;
+              position: absolute;
+              top: 10px;
+              right: 10px;
+            }
+          }
+        }
+  
+        .wrapper-btn {
+          text-align: center;
+          margin: 30px 0;
+  
+          .btn-form {
+            width: 200px;
+            color: #ffffff;
+            background: #1C1C1C;
+            
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+  
+        .text {
+          text-align: center;
+          color: #000000;
+          
+          .link {
+            color: #000000;
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

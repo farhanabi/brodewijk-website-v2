@@ -9,6 +9,9 @@ import PageNotFound from 'pages/notFound/Mobile';
 import PageTnC from 'pages/termsAndConditions/Mobile';
 import PageHelp from 'pages/help/Mobile';
 import PageLink from 'pages/link/Mobile';
+import PageLogin from 'pages/auth/login/Mobile';
+import PageRegister from 'pages/auth/register/Mobile';
+import PageNotFound from 'pages/NotFound';
 
 function RouterMobile (){
   useEffect(() => {
@@ -24,7 +27,10 @@ function RouterMobile (){
       <Route path="/terms-and-conditions" component={PageTnC}/>
       <Route path="/help" component={PageHelp}/>
       <Route path="/link" component={PageLink}/>
+      <Route path="/login" component={PageLogin}/>
+      <Route path="/register" component={PageRegister}/>
       <Route component={PageNotFound} />
+      <Route path="*" component={PageNotFound} />
     </Switch>
   );
 }

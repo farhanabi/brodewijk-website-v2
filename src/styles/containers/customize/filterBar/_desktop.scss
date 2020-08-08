@@ -89,6 +89,9 @@
 
       &.features {
         .feature-item {
+          width: 100%;
+          margin-bottom: 20px;
+
           .feature-text {
             font-style: normal;
 
@@ -97,6 +100,80 @@
               font-size: 14px;
               line-height: 24px;
               margin-bottom: 10px;
+            }
+          }
+
+          .feature-options{
+            .lining {
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+
+              .tab-lining {
+                .btn-tab {
+                  width: 100%;
+                  font-family: Open Sans;
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 13px;
+                  background: #ffffff;
+                  color: #4E4E56;
+                  border: none;
+
+                  &:focus {
+                    box-shadow: none !important;
+                  }
+            
+                  &.active {
+                    font-weight: bold;
+                  }
+                }
+              }
+
+              .tab-content-lining {
+                height: auto;
+                
+                .tab-pane-lining {
+                  .lining-color {
+                    padding: 10px;
+                    cursor: pointer;
+
+                    &.active {
+                      border: 0.5px dashed #808285;
+                      border-radius: 4px;
+                    }
+
+                    .lining-color-img {
+                      width: 100%;
+                    }
+
+                    .lining-color-name {
+                      margin: 0;
+                      font-size: 12px;
+                      line-height: 20px;
+                    }
+                  }
+                }
+              }
+            }
+
+            .option-item {
+              padding: 12px;
+              cursor: pointer;
+
+              &.active {
+                border: 0.5px dashed #808285;
+                border-radius: 4px;
+              }
+
+              .option-item-img {
+                width: 100%;
+              }
+              .option-item-name {
+                margin: 0;
+                font-size: 12px;
+                line-height: 20px;
+              }
             }
           }
         }

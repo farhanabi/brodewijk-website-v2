@@ -19,11 +19,11 @@ const styles = {
   },
 };
 
-const Loading = ({ text = true }) => (
+const Loading = ({ text = false }) => (
   <React.Fragment>
     <div style={styles.loader}>
-      <img src={img} style={styles.img} alt="Loading..." className="img-load" />
-      {/* {text ? (<span className="loading-text" style={styles.text}>Loading...</span>) : null} */}
+      {text ? (<span className="loading-text" style={styles.text}>Loading...</span>) 
+      : (<img src={img} style={styles.img} alt="Loading..." className="img-load" />)}
     </div>
   </React.Fragment>
 );

@@ -99,6 +99,11 @@ code {
 // import styles
 @import './pages/home/desktop';
 @import './pages/customize';
+@import './pages/notFound';
+@import './pages/auth/register/desktop';
+@import './pages/auth/register/mobile';
+@import './pages/auth/login/desktop';
+@import './pages/auth/login/mobile';
 
 @import './components/loading';
 @import './containers/commons/header/desktop';

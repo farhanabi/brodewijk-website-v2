@@ -16,7 +16,7 @@
   }
 
   &.bg-white {
-    position: fixed;
+    // position: fixed;
     background: #ffffff;
     color: #0C172F;
 
@@ -110,13 +110,3 @@
     }
   }
 }
-
-// @media (max-width: 768px) {
-//   #mobile-header {
-//     .header-bar{
-//       .nav-menu{
-//         padding: 10px -5px;
-//       }
-//     }
-//   }
-// }

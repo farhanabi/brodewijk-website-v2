@@ -1,6 +1,9 @@
 {
   "sign-up": {
-    "title": "Tinggal satu langkah lagi untuk memesan",
+    "title": {
+      "page": "DAFTAR",
+      "text": "Tinggal satu langkah lagi untuk memesan"
+    },
     "form": {
       "first-name": {
         "label": "Nama Depan",
@@ -21,7 +24,16 @@
       "phone": {
         "label": "Nomor Telepon",
         "placeholder": "Masukkan nomor telepon Anda"
-      }
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Masukkan password"
+      },
+      "re-password": {
+        "label": "Konfirmasi Password",
+        "placeholder": "Masukkan kembali password"
+      },
+      "button": "Daftar"
     },
     "already-have-account": {
       "text": "Sudah memiliki akun? Silakan",
@@ -30,7 +42,10 @@
   },
   
   "login": {
-    "title": "Login untuk memesan",
+    "title": {
+      "page": "MASUK",
+      "text": "Login untuk memesan"
+    },
     "form": {
       "email": {
         "label": "Email",
@@ -39,9 +54,11 @@
       "password": {
         "label": "Password",
         "placeholder": "Masukkan kata sandi anda"
-      }
+      },
+      "button": "Masuk"
     },
     "create-account": {
+      "or": "atau",
       "text": "Tidak punya?",
       "link": "Buat akun"
     },
