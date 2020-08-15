@@ -12,6 +12,7 @@ import PageLogin from 'pages/auth/login/Mobile';
 import PageRegister from 'pages/auth/register/Mobile';
 import PageUser from 'pages/auth/user/Mobile';
 import PageNotFound from 'pages/notFound/Mobile';
+import PagePriceList from 'pages/priceList/Mobile';
 // import PageNotFound from 'pages/NotFound';
 
 function RouterMobile (){
@@ -28,6 +29,7 @@ function RouterMobile (){
       <Route path="/terms-and-conditions" component={PageTnC}/>
       <Route path="/help" component={PageHelp}/>
       <Route path="/link" component={PageLink}/>
+      <Route path="/price-list" component={PagePriceList}/>
       <Route path="/login" component={PageLogin}/>
       <Route path="/register" component={PageRegister}/>
       <Route path="/user" component={PageUser}/>

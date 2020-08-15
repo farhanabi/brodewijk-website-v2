@@ -1,0 +1,34 @@
+{
+  "title": "PRICELIST",
+  "special-discount": "SPECIAL DISCOUNT",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Enjoy Cashback up to Rp700.000",
+      "subtitle": "Special discount on celebrating Indonesian independence day. Only for you! Valid from August 17 until August 31.",
+      "button-1": "SHOP NOW"
+    }
+  },
+  
+  "bespoke-service-section": {
+    "title": "Bespoke Suit Service",
+    "subtitle": "We measure and make suit patterns from scratch and just for you. Each suit pattern and structure is made exclusively and is different for each individual, producing a suit size that fits your body so you can look more optimally and confidently. The price we offer includes a suit, pants, and fabric.",
+    "bespoke-suit-subtitle": "BESPOKE SUIT SERVICE",
+    "start-from": "Start from",
+    "two-piece-bold": "Two-Piece Suits",
+    "two-piece-regular": "(Suit + Pants)",
+    "three-piece-bold": "Three-Piece Suits",
+    "three-piece-regular": "(Suit + Pants + Vest)",
+    "order-now": "Order Now",
+    "bespoke-card": {
+      "card-1": {
+        "description": "Hi-Twist material is formed from polyester fibers that have a coarse texture, tend to be thinner and more flexible."
+      },
+      "card-2": {
+        "description": "Blends of Wool with other materials such as Cashmere, Polyester, Silk, and others. The thickness varies in each type."
+      },
+      "card-3": {
+        "description": "This material contains more than 90% Wool, are relatively thicker than other materials and have a coarse texture."
+      }
+    }
+  }
+}

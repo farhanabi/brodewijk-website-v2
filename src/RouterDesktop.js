@@ -12,6 +12,7 @@ import PageTnC from 'pages/termsAndConditions/Desktop';
 import PageHelp from 'pages/help/Desktop';
 import PageLink from 'pages/link/Desktop';
 import PageNotFound from 'pages/notFound/Desktop';
+import PagePriceList from 'pages/priceList/Desktop';
 // import PageNotFound from 'pages/NotFound';
 
 function RouterDesktop (){
@@ -23,14 +24,15 @@ function RouterDesktop (){
     <Switch>
       <Route exact={true} path="/" component={PageHome}/>
       <Route path="/customize" component={PageCustomize}/>
-      <Route path="/login" component={PageLogin}/>
-      <Route path="/register" component={PageRegister}/>
-      <Route path="/user" component={PageUser}/>
       <Route path="/partnership" component={PagePartnership}/>
       <Route path="/book-appointment" component={PageBookAppointment}/>
       <Route path="/terms-and-conditions" component={PageTnC}/>
       <Route path="/help" component={PageHelp}/>
       <Route path="/link" component={PageLink}/>
+      <Route path="/price-list" component={PagePriceList}/>
+      <Route path="/login" component={PageLogin}/>
+      <Route path="/register" component={PageRegister}/>
+      <Route path="/user" component={PageUser}/>
       <Route path="*" component={PageNotFound} />
       <Route component={PageNotFound} />
     </Switch>
