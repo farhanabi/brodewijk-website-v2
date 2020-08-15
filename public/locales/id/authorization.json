@@ -38,6 +38,14 @@
     "already-have-account": {
       "text": "Sudah memiliki akun? Silakan",
       "link": "login"
+    },
+    "success-msg": {
+      "title": "Registrasi Sukses",
+      "text": "Akun Anda telah berhasil dibuat, silahkan masuk menggunakan akun yang telah terdaftar"
+    },
+    "error-msg": {
+      "title": "Registrasi Gagal",
+      "text": "Terjadi kesalahan, silahkan coba lagi atau hubungi kami"
     }
   },
   
@@ -65,6 +73,10 @@
     "forgot-pass": {
       "text": "Lupa kata sandi Anda?",
       "link": "Klik untuk memulihkan"
+    },
+    "error-msg": {
+      "title": "Eror",
+      "text": "Email atau password salah"
     }
   }
 }

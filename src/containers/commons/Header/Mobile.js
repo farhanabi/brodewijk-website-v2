@@ -3,6 +3,9 @@ import { Container, Button, Row, Col } from 'reactstrap'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { withRouter } from 'react-router-dom';
+import { connect } from "react-redux";
+import * as authActions from 'state/ducks/auth/actions';
+import User from 'classes/User';
 
 const logo = require('assets/images/Logo-horizontal.svg')
 const logogram = require('assets/images/Logogram.svg')
@@ -13,6 +16,24 @@ function Header(props) {
   const [scrollPosition, setSrollPosition] = useState(0);
   const [showNavbar, setShowNavbar] = useState(false)
   const [showCustomize, setShowCustomize] = useState(false)
+  const [showProfile, setShowProfile] = useState(false);
+
+  const loginUrl = () => {
+    if (
+        (window.location.pathname.indexOf('/login') !== -1)
+        || (window.location.pathname.indexOf('/register') !== -1 )
+        || (window.location.pathname === '/')
+        || (window.location.pathname.indexOf('/forgot-password') !== -1)
+      ) {
+      return "/login";
+    }
+    return "/login?redirectTo=" + encodeURIComponent(window.location.href);
+  }
+
+  const logout = () => {
+    props.logout()
+    window.location.reload();
+  }
 
   function handleScroll() {
     const position = window.pageYOffset;
@@ -113,11 +134,28 @@ function Header(props) {
                 <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("collections")}</Button>
               </Link>
             </Col>
-            <Col xs={12} className="nav-item">
-              <Link to="/login">
-                <Button className={`all ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("login-button")}</Button>
-              </Link>
-            </Col>
+            {props.auth !== null && props.user !== null ? (
+              <>
+              <Col xs={12} className="nav-item">
+                <Link to="/my-profile">
+                  <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("profile")}</Button>
+                </Link>
+              </Col>
+              <Col xs={12} className="nav-item">
+                <Button onClick={() => logout()}
+                  className={`all ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}
+                >
+                  {t("logout-button")}
+                </Button>
+              </Col>
+              </>
+            ) : (
+              <Col xs={12} className="nav-item">
+                <Link to={loginUrl()}>
+                  <Button className={`all ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("login-button")}</Button>
+                </Link>
+              </Col>
+            )}
           </Row>
         )}
       </Container>
@@ -125,4 +163,16 @@ function Header(props) {
   )
 }
 
-export default withRouter(Header);
+const mapStateToProps = (state) => ({
+  auth: state.auth.auth,
+  user: state.auth.user
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  logout: () => dispatch([
+    authActions.setUser(new User()),
+    authActions.setAuth(null)
+  ])
+})
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));

@@ -96,6 +96,9 @@ code {
 // Fontawesome
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
+// toastr
+@import '~react-redux-toastr/src/styles/index';
+
 // import styles
 @import './pages/home/desktop';
 @import './pages/customize';

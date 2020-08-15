@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Switch, Route } from "react-router-dom";
+import * as Guard from 'utils/Guard';
 
 import PageHome from 'pages/home/Desktop';
 import PageBookAppointment from 'pages/bookAppointment/Desktop';
@@ -22,8 +23,8 @@ function RouterDesktop (){
     <Switch>
       <Route exact={true} path="/" component={PageHome}/>
       <Route path="/customize" component={PageCustomize}/>
-      <Route path="/login" component={PageLogin}/>
-      <Route path="/register" component={PageRegister}/>
+      <Route path="/login" component={Guard.onlyGuest(PageLogin)}/>
+      <Route path="/register" component={Guard.onlyGuest(PageRegister)}/>
       <Route path="/partnership" component={PagePartnership}/>
       <Route path="/book-appointment" component={PageBookAppointment}/>
       <Route path="/terms-and-conditions" component={PageTnC}/>

@@ -38,6 +38,14 @@
     "already-have-account": {
       "text": "Already have an account? Please",
       "link": "log in"
+    },
+    "success-msg": {
+      "title": "Registration Success",
+      "text": "Account register succesfully, please login using registered account"
+    },
+    "error-msg": {
+      "title": "Registration Failed",
+      "text": "Something went wrong, please try again or contact us"
     }
   },
   
@@ -65,6 +73,10 @@
     "forgot-pass": {
       "text": "Forgot your password?",
       "link": "Click here to recover"
+    },
+    "error-msg": {
+      "title": "Error",
+      "text": "Wrong email or password"
     }
   }
 }

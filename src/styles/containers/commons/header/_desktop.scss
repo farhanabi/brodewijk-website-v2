@@ -16,7 +16,6 @@
   }
 
   &.bg-white {
-    // position: fixed;
     background: #ffffff;
     color: #0C172F;
 
@@ -73,7 +72,7 @@
   }
 }
 
-.customize-bar {
+.customize-bar, .user-bar {
   background: #2f2f2f;
   min-width: unset;
   width: 120px;
