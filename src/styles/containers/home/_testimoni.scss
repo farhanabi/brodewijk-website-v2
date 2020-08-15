@@ -95,8 +95,9 @@
 
 @media (min-width: 768px) {
   #testimoni-section{
-    background: url('../../../assets/images/bg-testimoni-desktop.jpg') no-repeat;
-  
+    background: url('../../../assets/images/bg-testimoni-desktop.jpg') no-repeat center;
+    background-size: contain; 
+
     .title-testimoni {
       font-size: 32px;
     }

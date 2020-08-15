@@ -10,6 +10,7 @@ import PageHelp from 'pages/help/Mobile';
 import PageLink from 'pages/link/Mobile';
 import PageLogin from 'pages/auth/login/Mobile';
 import PageRegister from 'pages/auth/register/Mobile';
+import PageUser from 'pages/auth/user/Mobile';
 import PageNotFound from 'pages/notFound/Mobile';
 // import PageNotFound from 'pages/NotFound';
 
@@ -29,6 +30,7 @@ function RouterMobile (){
       <Route path="/link" component={PageLink}/>
       <Route path="/login" component={PageLogin}/>
       <Route path="/register" component={PageRegister}/>
+      <Route path="/user" component={PageUser}/>
       <Route component={PageNotFound} />
       <Route path="*" component={PageNotFound} />
     </Switch>

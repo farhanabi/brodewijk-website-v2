@@ -1,0 +1,55 @@
+{
+  "title": "User Information",
+  "profile": {
+    "title": "PROFILE",
+    "first-name": "First Name",
+    "last-name": "Last Name",
+    "email": "Email",
+    "username": "Username",
+    "phone-number": "Phone Number"
+  },
+
+  "address": {
+    "title": "ADDRESS",
+    "address-name": "Address Name",
+    "address": "Address",
+    "apt-number": "Apartment, Suite, or Company Name",
+    "city": "City",
+    "province": "Province",
+    "country": "Country",
+    "postal-code": "Postal Code"
+    },
+
+  "size": {
+    "title": "SIZE",
+    "body-measurement": {
+      "title": "Body Measurement",
+      "height": "Body Height",
+      "weight": "Body Weight"
+    },
+    "upper-measurement": {
+      "title": "Upper Measurement",
+      "neck": "Neck Circumference",
+      "shoulder": "Shoulder Width",
+      "bicep": "Bicep Circumference",
+      "arm": "Arm Length",
+      "wrist": "Wrist Circumference",
+      "torso": "Torso Length",
+      "chest": "Chest Circumference",
+      "stomach": "Stomach Circumference",
+      "waist": "Waist Circumference"
+    },
+    "bottom-measurement": {
+      "title": "Bottom Measurement",
+      "waist": "Waist Circumference",
+      "seat": "Seat Circumference",
+      "leg": "Leg Length",
+      "crotch": "Crotch Length",
+      "thigh": "Thigh Circumference",
+      "knee": "Knee Circumference"
+    }
+  },
+
+  "edit-button": "Edit",
+  "add-button": "Add"
+}

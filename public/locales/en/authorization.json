@@ -2,7 +2,7 @@
   "sign-up": {
     "title": {
       "page": "SIGN UP",
-      "text": "You're one step closer to ordering"
+      "text": "We would love to know you better"
     },
     "form": {
       "first-name": {
@@ -44,7 +44,7 @@
   "login": {
     "title": {
       "page": "LOG IN",
-      "text": "Log in to order"
+      "text": "Welcome back!"
     },
     "form": {
       "email": {

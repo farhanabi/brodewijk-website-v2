@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -104,6 +104,7 @@ code {
 @import './pages/auth/register/mobile';
 @import './pages/auth/login/desktop';
 @import './pages/auth/login/mobile';
+@import './pages/auth/user';
 
 @import './components/loading';
 @import './containers/commons/header/desktop';

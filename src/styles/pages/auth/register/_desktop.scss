@@ -37,6 +37,10 @@
   
             &:focus{
               box-shadow: none;
+               
+              &::placeholder {
+                color: #d1d3d480;
+              }
             }
   
             &::placeholder {

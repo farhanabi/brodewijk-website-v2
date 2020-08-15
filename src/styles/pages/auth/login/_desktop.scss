@@ -1,6 +1,7 @@
 #login-desktop {
   padding: 100px 0;
   background: #F9F9F9;
+  height: 100vh;
 
   .container {
 
@@ -37,6 +38,10 @@
   
             &:focus{
               box-shadow: none;
+              
+              &::placeholder {
+                color: #d1d3d480;
+              }
             }
   
             &::placeholder {

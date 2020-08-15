@@ -9,11 +9,11 @@ function Testimoni() {
     {
       id: faker.random.uuid(),
       person: {
-        name: faker.name.firstName(),
-        job: faker.name.jobTitle(),
-        photo: faker.image.people(),
+        name: t("testimoni-section.sliders.slider-1.person"),
+        job: t("testimoni-section.sliders.slider-1.job"),
+        photo: require('assets/images/person-nabiel.jpg'),
       },
-      text: faker.lorem.sentences()
+      text: t("testimoni-section.sliders.slider-1.quote")
     }
   ]
 

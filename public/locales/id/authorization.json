@@ -2,7 +2,7 @@
   "sign-up": {
     "title": {
       "page": "DAFTAR",
-      "text": "Tinggal satu langkah lagi untuk memesan"
+      "text": "Kami ingin mengenal kamu lebih dekat"
     },
     "form": {
       "first-name": {
@@ -37,14 +37,14 @@
     },
     "already-have-account": {
       "text": "Sudah memiliki akun? Silakan",
-      "link": "login"
+      "link": "masuk"
     }
   },
   
   "login": {
     "title": {
       "page": "MASUK",
-      "text": "Login untuk memesan"
+      "text": "Selamat datang kembali!"
     },
     "form": {
       "email": {
@@ -59,7 +59,7 @@
     },
     "create-account": {
       "or": "atau",
-      "text": "Tidak punya?",
+      "text": "Tidak punya akun?",
       "link": "Buat akun"
     },
     "forgot-pass": {

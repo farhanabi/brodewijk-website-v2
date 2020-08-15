@@ -7,6 +7,7 @@ import PagePartnership from 'pages/partnership/Desktop';
 import PageCustomize from 'pages/customize/Desktop';
 import PageLogin from 'pages/auth/login/Desktop';
 import PageRegister from 'pages/auth/register/Desktop';
+import PageUser from 'pages/auth/user/Desktop';
 import PageTnC from 'pages/termsAndConditions/Desktop';
 import PageHelp from 'pages/help/Desktop';
 import PageLink from 'pages/link/Desktop';
@@ -24,6 +25,7 @@ function RouterDesktop (){
       <Route path="/customize" component={PageCustomize}/>
       <Route path="/login" component={PageLogin}/>
       <Route path="/register" component={PageRegister}/>
+      <Route path="/user" component={PageUser}/>
       <Route path="/partnership" component={PagePartnership}/>
       <Route path="/book-appointment" component={PageBookAppointment}/>
       <Route path="/terms-and-conditions" component={PageTnC}/>

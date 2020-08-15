@@ -21,8 +21,9 @@
     "title": "Apa kata pelanggan kami mengenai buat janji",
     "sliders": {
       "slider-1": {
-        "quote": "",
-        "person": ""
+        "quote": "Pengalaman berbelanja mereka unik karena sebelum saya membeli, mereka memberi saya beberapa informasi yang perlu saya ketahui. Mereka memberi begitu banyak nasihat dan secara pribadi membuat pakaian yang sempurna untuk saya.",
+        "person": "Nabiel",
+        "job": "Pengusaha"
       }
     }
   },
