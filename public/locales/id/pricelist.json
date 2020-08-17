@@ -1,0 +1,47 @@
+{
+  "title": "PRICE LIST",
+  "special-discount": "SPECIAL DISCOUNT",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Enjoy Cashback up to Rp750.000",
+      "subtitle": "Special discount on celebrating Indonesian independence day. Only for you! Valid from August 17 until August 31.",
+      "button-1": "EXPLORE BESPOKE SERVICE",
+      "button-2": "EXPLORE WEDDING PACKAGE",
+      "button-3": "CONSULT WITH US",
+      "button-3-link": "https://api.whatsapp.com/send?phone=628156051373&text=Halo%20Brodewijk!%20Saya%20ingin%20untuk%berkonsultasi%20mengenai"
+    }
+  },
+  
+  "bespoke-service-section": {
+    "title": "Bespoke Suit Service",
+    "subtitle": "Kami mengukur dan membuat pola jas dari awal dan hanya untuk Anda. Setiap pola dan struktur jas dibuat baru serta berbeda di setiap individunya. Menghasilkan ukuran jas yang pas di badan Anda sehingga Anda dapat berpenampilan lebih maksimal dan percaya diri. Harga yang kami tawarkan sudah termasuk jas, celana, dan kainnya.",
+    "bespoke-suit-subtitle": "BESPOKE SUIT SERVICE",
+    "start-from": "Mulai dari",
+    "two-piece-bold": "Two-Piece Suits",
+    "two-piece-regular": "(Suit + Pants)",
+    "three-piece-bold": "Three-Piece Suits",
+    "three-piece-regular": "(Suit + Pants + Vest)",
+    "order-now": "Order Now",
+    "wa-link": "https://api.whatsapp.com/send?phone=628156051373&text=Halo%20Brodewijk!%20Saya%20tertarik%20untuk%20bertanya%20mengenai",
+    "bespoke-card": {
+      "card-1": {
+        "description": "Bahan Hi-Twist terbentuk dari serat poliester memiliki tekstur kasar, cenderung lebih tipis dan lentur."
+      },
+      "card-2": {
+        "description": "Bahan campuran Wool dan bahan lainnya seperti Cashmere, Poliester, Silk, dan lainnya. Tinggal ketebalannya bervariasi di setiap jenisnya."
+      },
+      "card-3": {
+        "description": "Bahan dengan kandungan Wool lebih dari 90%, relatif lebih tebal dari pada bahan lainnya dan memiliki tekstur kasar."
+      }
+    }
+  },
+
+  "wedding-package-section": {
+    "category": "WEDDING PACKAGE",
+    "title": "Looking for a suit for your best day?",
+    "subtitle": "Dapatkan penampilan terbaik pada hari pernikahanmu, lebih hemat dengan Wedding Package!",
+    "wedding-card-subtitle": "WEDDING PACKAGE",
+    "order-now": "Order Now",
+    "wa-link": "https://api.whatsapp.com/send?phone=628156051373&text=Halo%20Brodewijk!%20Saya%20tertarik%20untuk%20bertanya%20mengenai"
+  }
+}

@@ -23,7 +23,7 @@ function RouterMobile (){
   return (
     <Switch>
       <Route exact={true} path="/" component={PageHome}/>
-      <Route path="/customize" component={PageCustomize}/>
+      <Route path="/customize" component={PageNotFound}/>
       <Route path="/partnership" component={PagePartnership}/>
       <Route path="/book-appointment" component={PageBookAppointment}/>
       <Route path="/terms-and-conditions" component={PageTnC}/>

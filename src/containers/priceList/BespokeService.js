@@ -51,7 +51,7 @@ function BespokeService() {
             <p className="bespoke-price">{t("bespoke-service-section.start-from")} <strike>{v.twoPieceStrike}</strike> {v.twoPiecePrice}</p>
             <h5 className="bespoke-price-label"><b>{t("bespoke-service-section.three-piece-bold")}</b> {t("bespoke-service-section.three-piece-regular")}</h5>
             <p className="bespoke-price">{t("bespoke-service-section.start-from")} <strike>{v.threePieceStrike}</strike> {v.threePiecePrice}</p>
-            <a href="https://beta.brodewijk.com"><Button className="bespoke-cta">{t("bespoke-service-section.order-now")}</Button></a>
+            <a href={`${t("bespoke-service-section.wa-link")}%20${v.name}%20bespoke%20suit%20service`}><Button className="bespoke-cta">{t("bespoke-service-section.order-now")}</Button></a>
           </div>
         ))}
       </Container>

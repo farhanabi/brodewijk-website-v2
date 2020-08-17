@@ -1,0 +1,102 @@
+#wedding-package-mobile{
+  padding: 40px 0 0 0;
+  background: #ffffff;
+  font-family: Open Sans;
+
+  .info-section {
+    margin: 20px -15px;
+
+    .left-section {
+      color: #0C172F;
+      padding: 15px;
+
+      .tag-wedding-package {
+        font-size: 14px;
+        letter-spacing: 0.4rem;
+      }
+
+      .title-wedding-package {
+        font-size: 34px;
+        font-family: Playfair Display;
+      }
+
+      .text-wedding-package {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+
+    .right-section {
+      .img-wedding-package {
+        width: 100%;
+      }
+    }
+  }
+
+  a {
+    color: none;
+    
+    .wedding-cta {
+      display: grid;
+      margin: 20px auto;
+      justify-self: center;
+      background-color: #0C172F;
+    }
+  }
+
+  .data-section {
+    margin: 40px 0;
+
+    .carousel{
+      height: 100%;
+      width: 100%;
+
+      .carousel-indicators {
+        li {
+          background: #fff;
+          width: 12px;
+          height: 1px;
+          border-top: none;
+          margin: 0 10px;
+          border-radius: 50%;
+          
+          &.active {
+            opacity: 1;
+          }
+        }
+      }
+  
+      .carousel-inner{
+        width: 100%;
+        height: 100%;
+  
+        .carousel-item {
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .more-section {
+    margin: 20px 0;
+    justify-content: center;
+
+    .btn {
+      width: 100%;
+      font-family: Open Sans;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .more-section {
+      .btn {
+        width: 257px;
+        height: 52px;
+      }
+    }
+  }
+}

@@ -1,11 +1,14 @@
 {
-  "title": "PRICELIST",
+  "title": "PRICE LIST",
   "special-discount": "SPECIAL DISCOUNT",
   "main-slider-section": {
     "slide-1": {
-      "title": "Enjoy Cashback up to Rp700.000",
+      "title": "Enjoy Cashback up to Rp750.000",
       "subtitle": "Special discount on celebrating Indonesian independence day. Only for you! Valid from August 17 until August 31.",
-      "button-1": "SHOP NOW"
+      "button-1": "EXPLORE BESPOKE SERVICE",
+      "button-2": "EXPLORE WEDDING PACKAGE",
+      "button-3": "CONSULT WITH US",
+      "button-3-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20consult%20with%20you"
     }
   },
   
@@ -19,6 +22,7 @@
     "three-piece-bold": "Three-Piece Suits",
     "three-piece-regular": "(Suit + Pants + Vest)",
     "order-now": "Order Now",
+    "wa-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about",
     "bespoke-card": {
       "card-1": {
         "description": "Hi-Twist material is formed from polyester fibers that have a coarse texture, tend to be thinner and more flexible."
@@ -30,5 +34,14 @@
         "description": "This material contains more than 90% Wool, are relatively thicker than other materials and have a coarse texture."
       }
     }
+  },
+
+  "wedding-package-section": {
+    "category": "WEDDING PACKAGE",
+    "title": "Looking for a suit for your best day?",
+    "subtitle": "Get the best look on your wedding day, and save more with the Wedding Package!",
+    "wedding-card-subtitle": "WEDDING PACKAGE",
+    "order-now": "Order Now",
+    "wa-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about"
   }
 }
