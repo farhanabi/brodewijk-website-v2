@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'reactstrap';
 import Loading from 'components/Loading';
+import { currencyFormatter } from 'utils/number';
 
 function DetailBox (props){
   const { fabric, price, feature } = props
@@ -51,7 +52,7 @@ function DetailBox (props){
 
           <div className="price-wrapper">
             <p className="text"><strong>{t("detail-box-section.price")}:</strong></p>
-            <p className="text-price">Rp{price.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.")}</p>
+            <p className="text-price">Rp{currencyFormatter(price)}</p>
           </div>
 
           <div className="btn-wrapper">

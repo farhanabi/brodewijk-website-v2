@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import Loading from 'components/Loading';
+import { currencyFormatter } from 'utils/number';
 
 const imgCart = require('assets/images/cart.svg')
 const espalda_abajo = require('assets/images/interior+espalda_abajo+length_long.png')
@@ -44,7 +45,7 @@ function LivePreviewMobile(props) {
           </Col>
         </Row>
         <Row className="row-bottom">
-          <p className="text-price">Rp <strong>{price}</strong></p>
+          <p className="text-price">Rp <strong>{currencyFormatter(price)}</strong></p>
         </Row>
       </Container>
     </div>

@@ -6,6 +6,7 @@ import PageHome from 'pages/home/Desktop';
 import PageBookAppointment from 'pages/bookAppointment/Desktop';
 import PagePartnership from 'pages/partnership/Desktop';
 import PageCustomize from 'pages/customize/Desktop';
+import PageCart from 'pages/cart/Desktop';
 import PageLogin from 'pages/auth/login/Desktop';
 import PageRegister from 'pages/auth/register/Desktop';
 import PageTnC from 'pages/termsAndConditions/Desktop';
@@ -23,6 +24,7 @@ function RouterDesktop (){
     <Switch>
       <Route exact={true} path="/" component={PageHome}/>
       <Route path="/customize" component={PageCustomize}/>
+      <Route path="/cart" component={Guard.onlyLogged(PageCart)}/>
       <Route path="/login" component={Guard.onlyGuest(PageLogin)}/>
       <Route path="/register" component={Guard.onlyGuest(PageRegister)}/>
       <Route path="/partnership" component={PagePartnership}/>

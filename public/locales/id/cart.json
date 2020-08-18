@@ -1,0 +1,33 @@
+{
+  "title": "KERANJANG",
+
+  "suit": "JAS",
+  "shirt": "KEMEJA",
+  "vest": "ROMPI",
+  "pants": "CELANA",
+
+  "custom-suit-details": "DETAIL JAS KUSTOM",
+  "custom-shirt-details": "DETAIL KEMEJA KUSTOM",
+  "custom-pants-details": "DETAIL CELANA KUSTOM",
+  "custom-vest-details": "DETAIL ROMPI KUSTOM",
+
+  "suit-details": "DETAIL JAS",
+  "shirt-details": "DETAIL KEMEJA",
+  "pants-details": "DETAIL CELANA",
+  "vest-details": "DETAIL ROMPI",
+
+  "measure": "Ukuran",
+  "measured": "Terukur",
+  "edit": "Ubah",
+  "delete": "Hapus",
+
+  "summary": "RINGKASAN",
+  "shipping": "Pengiriman",
+  "enter-location": "Masukkan lokasi",
+
+  "checkout": {
+    "text": "Sudah yakin untuk checkout?",
+    "btn-back": "Kembali",
+    "btn-checkout": "Checkout"
+  }
+}

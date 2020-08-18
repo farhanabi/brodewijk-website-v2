@@ -137,6 +137,13 @@ function Header(props) {
             {props.auth !== null && props.user !== null ? (
               <>
               <Col xs={12} className="nav-item">
+                <Link to="/cart">
+                  <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
+                    <i className="fas fa-shopping-cart"/>
+                  </Button>
+                </Link>
+              </Col>
+              <Col xs={12} className="nav-item">
                 <Link to="/my-profile">
                   <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("profile")}</Button>
                 </Link>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
+import { currencyFormatter } from 'utils/number';
 
 function FabricMobile (props){
   const { item, setPrice, fabric, setFabric, setFabricPrice } = props
@@ -13,7 +14,7 @@ function FabricMobile (props){
   return (
     <div className={`fabric-item ${fabric.name === item.name ? "active" : ""}`}>
       <Col xs={12} className="fabric-text">
-        <h5 className="fabric-text-name">{item.name} (Rp{item.type.base_price})</h5>
+        <h5 className="fabric-text-name">{item.name} (Rp{currencyFormatter(item.type.base_price)})</h5>
         <p className="fabric-text-grade">{item.grade}</p>
         <p className="fabric-text-desc">{item.description}</p>
       </Col>

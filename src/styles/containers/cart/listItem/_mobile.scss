@@ -1,0 +1,109 @@
+#list-item-section-mobile {
+  height: 75vh;
+  padding-bottom: 20px;
+  
+  .wrapper-scroll {
+    height: 100%;
+    padding: 0 30px;
+    overflow: scroll;
+
+    .category {
+      margin: 10px 0 20px;
+
+      .title {
+        font-family: Open Sans;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.4em;
+        color: #0C172F;
+      }
+
+      .wrapper-item {
+
+        .row-item {
+          margin: 0;
+          background: #F9F9F9;
+          border-radius: 4px;
+          // padding-left: 40px;
+
+          .wrapper-btn {
+            padding: 0 20px;
+
+            .btn {
+              float: right;
+              background: unset;
+              font-size: 12px;
+
+              &.measured {
+                float: left;
+                color: #219653;
+
+                &:hover {
+                  text-decoration: underline;
+                  color: #219653 !important;
+                }
+              }
+
+              &.unmeasured{
+                color: #EB5757;
+              }
+
+              &:hover, :focus, :active {
+                background: unset !important;
+              }
+            }
+          }
+          .wrapper-info {
+            padding: 20px;
+            height: 135px;
+            border-bottom: 0.5px solid #D1D3D4;
+
+            .item-img {
+              width: 100%;
+            }
+
+            .item-title {
+              font-family: Lato;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 17px;
+              letter-spacing: 0.5px;
+              color: #4E4E56;
+              margin-bottom: 5px;
+            }
+
+            .item-desc {
+              font-family: Open Sans;
+              font-weight: 300;
+              font-size: 10px;
+              line-height: 16px;
+              letter-spacing: 0.5px;
+              color: #808285;
+              margin-bottom: 5px;
+              width: 100%; 
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;  
+              overflow: hidden;
+            }
+
+            .item-price {
+              font-family: Open Sans;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+              letter-spacing: 0.5px;
+              color: #1C1C1C;
+              margin: 0;
+
+              &.unmeasured {
+                color: #EB5757;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

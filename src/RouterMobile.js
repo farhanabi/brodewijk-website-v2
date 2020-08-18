@@ -4,6 +4,7 @@ import * as Guard from 'utils/Guard';
 
 import PageHome from 'pages/home/Mobile';
 import PageCustomize from 'pages/customize/Mobile';
+import PageCart from 'pages/cart/Mobile';
 import PageBookAppointment from 'pages/bookAppointment/Mobile';
 import PagePartnership from 'pages/partnership/Mobile';
 import PageTnC from 'pages/termsAndConditions/Mobile';
@@ -23,6 +24,7 @@ function RouterMobile (){
     <Switch>
       <Route exact={true} path="/" component={PageHome}/>
       <Route path="/customize" component={PageCustomize}/>
+      <Route path="/cart" component={Guard.onlyLogged(PageCart)}/>
       <Route path="/partnership" component={PagePartnership}/>
       <Route path="/book-appointment" component={PageBookAppointment}/>
       <Route path="/terms-and-conditions" component={PageTnC}/>
