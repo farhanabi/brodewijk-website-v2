@@ -2,142 +2,70 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import { Container, Row, Col, Button, FormGroup, FormFeedback, Label, Input } from 'reactstrap';
-import validate from 'validate.js';
+import * as yup from 'yup';
+import { Formik } from 'formik';
+import { toastr } from 'react-redux-toastr';
 
 import Layout from 'layout/CommonMobile'
+import registerApi from 'services/register';
 
 function RegisterLogin (props){
   const { t } = useTranslation("authorization")
   const [submitStatus, setSubmitStatus] = useState(false)
-  const [firstName, setFirstName] = useState("")
-  const [firstNameError, setFirstNameError] = useState(null)
-  const [lastName, setLastName] = useState("")
-  const [lastNameError, setLastNameError] = useState(null)
-  const [userName, setUserName] = useState("")
-  const [userNameError, setUserNameError] = useState(null)
-  const [email, setEmail] = useState("")
-  const [emailError, setEmailError] = useState(null)
-  const [phone, setPhone] = useState("")
-  const [phoneError, setPhoneError] = useState(null)
-  const [password, setPassword] = useState("")
-  const [passwordError, setPasswordError] = useState(null)
-  const [confirmPassword, setConfirmPassword] = useState("")
-  const [confirmPasswordError, setConfirmPasswordError] = useState(null)
-
-  // Validate firstname
-  useEffect(() => {
-    if (submitStatus) validateFirstName()
-  }, [firstName])
-
-  function validateFirstName (){
-    const constraints = {
-      firstName : { presence : { allowEmpty : false } }
-    }
-    const validFirstName = validate({firstName}, constraints)
-    setFirstNameError(validFirstName ? validFirstName.firstName[0] : null)
+  const initValues = {
+    first_name: "",
+    last_name: "",
+    username: "",
+    email: "",
+    phone_number: "",
+    password: "",
+    password_confirmation: ""
   }
 
-  // Validate lastname
-  useEffect(() => {
-    if (submitStatus) validateLastName()
-  }, [lastName])
-
-  function validateLastName (){
-    const constraints = {
-      lastName : { presence : { allowEmpty : false } }
-    }
-    const validLastName = validate({lastName}, constraints)
-    setLastNameError(validLastName ? validLastName.lastName[0] : null)
-  }
-
-  // Validate username
-  useEffect(() => {
-    if (submitStatus) validateUserName()
-  }, [userName])
-
-  function validateUserName (){
-    const constraints = {
-      userName : { presence : { allowEmpty : false } }
-    }
-    const validUserName = validate({userName}, constraints)
-    setUserNameError(validUserName ? validUserName.userName[0] : null)
-  }
-
-  // Validate email
-  useEffect(() => {
-    if (submitStatus) validateEmail()
-  }, [email])
-
-  function validateEmail (){
-    const constraints = {
-      email : { 
-        presence : { allowEmpty : false }, 
-        email : true
-      }
-    }
-    const validEmail = validate({email}, constraints)
-    console.log(validEmail)
-    setEmailError(validEmail ? validEmail.email[0] : null)
-  }
-
-  // Validate phone
-  useEffect(() => {
-    if (submitStatus) validatePhone()
-  }, [phone])
-
-  function validatePhone (){
-    const constraints = {
-      phone : {
-        presence : { allowEmpty : false },
-        format : { pattern : /[0-9]+/ }
-      }
-    }
-    const validPhone = validate({phone}, constraints)
-    setPhoneError(validPhone ? validPhone.phone[0] : null)
-  }
-
-  // Validate password
-  useEffect(() => {
-    if (submitStatus) validatePassword()
-  }, [password])
-
-  function validatePassword (){
-    const constraints = {
-      password : {
-        presence : { allowEmpty : false}
-      }
-    }
-    const validPassword = validate({password}, constraints)
-    setPasswordError(validPassword ? validPassword.password[0] : null)
-  }
-
-  // Validate confirm password
-  useEffect(() => {
-    if (submitStatus) validateConfirmPassword()
-  }, [confirmPassword])
-
-  function validateConfirmPassword (){
-    const constraints = {
-      confirmPassword : {
-        presence : { allowEmpty : false},
-        equality : { attribute : "password" }
-      }
-    }
-    const validPassword = validate({password, confirmPassword}, constraints)
-    setConfirmPasswordError(validPassword ? validPassword.confirmPassword[0] : null)
-  }
+  const validationSchema = yup.object({
+    first_name: yup.string()
+      .required('First name is required'),
+    username: yup.string()
+      .required('Username is required'),
+    email: yup.string()
+      .required('Email is required')
+      .email('It\'s not a valid email'),
+    phone_number: yup.string()
+      .required('Phone number is required')
+      .matches(/^08(\d{8,13})$/, 'Phone must be number and start with 08 (length 10 - 15 digit)'),
+    password: yup.string()
+      .required('Password is required')
+      .min(8),
+    password_confirmation: yup.string()
+      .required('Password confirmation is required')
+      .when("password", {
+        is: password => (password && password.length > 0 ? true : false),
+        then: yup.string().oneOf([yup.ref("password")], "Password doesn't match")
+      })
+  });
 
   // SUBMIT
-  function submit (){
-    console.log('submit')
+  function submit (values){
     setSubmitStatus(true)
-    validateFirstName()
-    validateLastName()
-    validateUserName()
-    validateEmail()
-    validatePhone()
-    validatePassword()
-    validateConfirmPassword()
+    const data = {
+      "first_name": values.first_name,
+      "last_name": values.last_name,
+      "username": values.username,
+      "email": values.email,
+      "phone_number": values.phone_number,
+      "password": values.password,
+      "password_confirmation": values.password_confirmation
+    }
+    registerApi(data)
+      .then(res => {
+        setSubmitStatus(false)
+        toastr.success(t("sign-up.success-msg.title"), t("sign-up.success-msg.text"))
+      })
+      .catch(err => {
+        console.error(err)
+        setSubmitStatus(false)
+        toastr.error(t("sign-up.error-msg.title"), t("sign-up.error-msg.text"))
+      })
   }
 
   return(
@@ -148,72 +76,98 @@ function RegisterLogin (props){
             <Col>
               <h2 className="title">{t("sign-up.title.text")}</h2>
               <div className="wrapper-form">
-                <FormGroup>
-                  <Label>{t("sign-up.form.first-name.label")}</Label>
-                  <Input type="text" 
-                    placeholder={t("sign-up.form.first-name.placeholder")} 
-                    onChange={(e) => setFirstName(e.target.value)} 
-                    invalid={firstNameError}
-                  />
-                  {firstNameError ? <FormFeedback>{firstNameError}</FormFeedback> : null}
-                </FormGroup>
-                <FormGroup>
-                  <Label>{t("sign-up.form.last-name.label")}</Label>
-                  <Input type="text" 
-                    placeholder={t("sign-up.form.last-name.placeholder")} 
-                    onChange={(e) => setLastName(e.target.value)} 
-                    invalid={lastNameError}
-                  />
-                  {lastNameError ? <FormFeedback>{lastNameError}</FormFeedback> : null}
-                </FormGroup>
-                <FormGroup>
-                  <Label>{t("sign-up.form.username.label")}</Label>
-                  <Input type="text" 
-                    placeholder={t("sign-up.form.username.placeholder")}
-                    onChange={(e) => setUserName(e.target.value)}
-                    invalid={userNameError}
-                  />
-                  {userNameError ? <FormFeedback>{userNameError}</FormFeedback> : null}
-                </FormGroup>
-                <FormGroup>
-                  <Label>{t("sign-up.form.email.label")}</Label>
-                  <Input type="email" 
-                    placeholder={t("sign-up.form.email.placeholder")}
-                    onChange={(e) => setEmail(e.target.value)}
-                    invalid={emailError}
-                  />
-                  {emailError ? <FormFeedback>{emailError}</FormFeedback> : null}
-                </FormGroup>
-                <FormGroup>
-                  <Label>{t("sign-up.form.phone.label")}</Label>
-                  <Input type="text" 
-                    placeholder={t("sign-up.form.phone.placeholder")}
-                    onChange={(e) => setPhone(e.target.value)}
-                    invalid={phoneError}
-                  />
-                  {phoneError ? <FormFeedback>{phoneError}</FormFeedback> : null}
-                </FormGroup>
-                <FormGroup>
-                  <Label>{t("sign-up.form.password.label")}</Label>
-                  <Input type="password" 
-                    placeholder={t("sign-up.form.password.placeholder")}
-                    onChange={(e) => setPassword(e.target.value)}
-                    invalid={passwordError}
-                  />
-                  {passwordError ? <FormFeedback>{passwordError}</FormFeedback> : null}
-                </FormGroup>
-                <FormGroup>
-                  <Label>{t("sign-up.form.re-password.label")}</Label>
-                  <Input type="password" 
-                    placeholder={t("sign-up.form.re-password.placeholder")}
-                    onChange={(e) => setConfirmPassword(e.target.value)}
-                    invalid={confirmPasswordError}
-                  />
-                  {confirmPasswordError ? <FormFeedback>{confirmPasswordError}</FormFeedback> : null}
-                </FormGroup>
-                <FormGroup className="wrapper-btn">
-                  <Button className="btn-form" onClick={submit}>{t("sign-up.form.button")}</Button>
-                </FormGroup>
+                <Formik 
+                  initialValues={initValues}
+                  validationSchema={validationSchema}
+                  onSubmit={(values) => submit(values)}
+                >
+                {formik => {
+                  const { handleChange, handleBlur, values, touched, errors, handleSubmit } = formik;
+                  return (
+                    <>
+                      <FormGroup>
+                        <Label>{t("sign-up.form.first-name.label")}</Label>
+                        <Input type="text" 
+                          placeholder={t("sign-up.form.first-name.placeholder")} 
+                          onChange={handleChange("first_name")}
+                          onBlur={handleBlur("first_name")}
+                          value={values.first_name}
+                          invalid={(touched.first_name && errors.first_name)}
+                        />
+                        {touched.first_name && errors.first_name && (<FormFeedback>{errors.first_name}</FormFeedback>)}
+                      </FormGroup>
+                      <FormGroup>
+                        <Label>{t("sign-up.form.last-name.label")}</Label>
+                        <Input type="text" 
+                          placeholder={t("sign-up.form.last-name.placeholder")} 
+                          onChange={handleChange("last_name")}
+                          onBlur={handleBlur("last_name")}
+                          value={values.last_name}
+                        />
+                      </FormGroup>
+                      <FormGroup>
+                        <Label>{t("sign-up.form.username.label")}</Label>
+                        <Input type="text" 
+                          placeholder={t("sign-up.form.username.placeholder")}
+                          onChange={handleChange("username")}
+                          onBlur={handleBlur("username")}
+                          value={values.username}
+                          invalid={(touched.username && errors.username)}
+                        />
+                        {touched.username && errors.username && (<FormFeedback>{errors.username}</FormFeedback>)}
+                      </FormGroup>
+                      <FormGroup>
+                        <Label>{t("sign-up.form.email.label")}</Label>
+                        <Input type="email" 
+                          placeholder={t("sign-up.form.email.placeholder")}
+                          onChange={handleChange("email")}
+                          onBlur={handleBlur("email")}
+                          value={values.email}
+                          invalid={(touched.email && errors.email)}
+                        />
+                        {touched.email && errors.email && (<FormFeedback>{errors.email}</FormFeedback>)}
+                      </FormGroup>
+                      <FormGroup>
+                        <Label>{t("sign-up.form.phone.label")}</Label>
+                        <Input type="text" 
+                          placeholder={t("sign-up.form.phone.placeholder")}
+                          onChange={handleChange("phone_number")}
+                          onBlur={handleBlur("phone_number")}
+                          value={values.phone_number}
+                          invalid={(touched.phone_number && errors.phone_number)}
+                        />
+                        {touched.phone_number && errors.phone_number && (<FormFeedback>{errors.phone_number}</FormFeedback>)}
+                      </FormGroup>
+                      <FormGroup>
+                        <Label>{t("sign-up.form.password.label")}</Label>
+                        <Input type="password" 
+                          placeholder={t("sign-up.form.password.placeholder")}
+                          onChange={handleChange("password")}
+                          onBlur={handleBlur("password")}
+                          value={values.password}
+                          invalid={(touched.password && errors.password)}
+                        />
+                        {touched.password && errors.password && (<FormFeedback>{errors.password}</FormFeedback>)}
+                      </FormGroup>
+                      <FormGroup>
+                        <Label>{t("sign-up.form.re-password.label")}</Label>
+                        <Input type="password" 
+                          placeholder={t("sign-up.form.re-password.placeholder")}
+                          onChange={handleChange("password_confirmation")}
+                          onBlur={handleBlur("password_confirmation")}
+                          value={values.password_confirmation}
+                          invalid={(touched.password_confirmation && errors.password_confirmation)}
+                        />
+                        {touched.password_confirmation && errors.password_confirmation && (<FormFeedback>{errors.password_confirmation}</FormFeedback>)}
+                      </FormGroup>
+                      <FormGroup className="wrapper-btn">
+                        <Button className="btn-form" onClick={handleSubmit} disabled={submitStatus}>
+                          {submitStatus ? "Loading ..." : t("sign-up.form.button")}
+                        </Button>
+                      </FormGroup>
+                    </>
+                  )}}
+                </Formik>
                 <div>
                   <p className="text">{t("sign-up.already-have-account.text")}&nbsp;
                     <Link className="link" to="/login">{t("sign-up.already-have-account.link")}</Link>

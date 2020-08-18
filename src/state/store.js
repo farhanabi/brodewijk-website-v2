@@ -1,35 +1,34 @@
-// redux
 import { createStore, applyMiddleware, compose } from "redux";
-
-// storage and middlewares
 import { persistStore, persistCombineReducers } from 'redux-persist'
-import storage from 'redux-persist/es/storage'
+import storage from 'redux-persist/lib/storage/session' // default: localStorage if web
+import thunk from 'redux-thunk';
 import multi from 'redux-multi';
 
-// all needed variables & params
-import * as reducers from "./ducks"; // import all reducers from ducks/index.js
-const config = {
-  key: 'root',
-  storage,
-  debug: !(process.env.NODE_ENV === "production"),
-  blacklist: ['toastr', 'now'],
-}
+import * as reducers from "./ducks"; 
 
+const config = {
+  key: 'primary',
+  storage,
+  debug: (process.env.NODE_ENV !== "production"),
+  blacklist: ['toastr']
+}
 
 export default function configureStore() {
   // compile reducers
   const rootReducer = persistCombineReducers(config, reducers);
 
-  // // compose
+  // compose
   var composeEnhancers = compose;
-  if (!(process.env.NODE_ENV === "production")) composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+  // if debug do connect to Redux Devtools
+  if (process.env.NODE_ENV !== "production") {
+    composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+  }
 
   // compile store
   const store = createStore(rootReducer, /* initialState */ composeEnhancers(
-    applyMiddleware(multi)
+    applyMiddleware(thunk, multi)
   ));
 
-  // return
   return {
     persistor: persistStore(store),
     store

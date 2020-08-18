@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Switch, Route } from "react-router-dom";
+import * as Guard from 'utils/Guard';
 
 import PageHome from 'pages/home/Mobile';
 import PageCustomize from 'pages/customize/Mobile';
@@ -30,8 +31,8 @@ function RouterMobile (){
       <Route path="/help" component={PageHelp}/>
       <Route path="/link" component={PageLink}/>
       <Route path="/price-list" component={PagePriceList}/>
-      <Route path="/login" component={PageLogin}/>
-      <Route path="/register" component={PageRegister}/>
+      <Route path="/login" component={Guard.onlyGuest(PageLogin)}/>
+      <Route path="/register" component={Guard.onlyGuest(PageRegister)}/>
       <Route path="/user" component={PageUser}/>
       <Route component={PageNotFound} />
       <Route path="*" component={PageNotFound} />
