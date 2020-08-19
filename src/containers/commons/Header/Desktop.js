@@ -122,7 +122,7 @@ function Header(props) {
                       </DropdownToggle>
                       <DropdownMenu className={`user-bar ${props.white ? 'bg-white' : ''}`}>
                         <DropdownItem className="item">
-                          <Link to="/my-profile">
+                          <Link to="/profile">
                             <Button className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("profile")}</Button>
                           </Link>
                         </DropdownItem>

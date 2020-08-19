@@ -14,7 +14,6 @@ import PageHelp from 'pages/help/Desktop';
 import PageLink from 'pages/link/Desktop';
 import PageNotFound from 'pages/notFound/Desktop';
 import PagePriceList from 'pages/priceList/Desktop';
-// import PageNotFound from 'pages/NotFound';
 
 function RouterDesktop (){
   useEffect(() => {
@@ -25,17 +24,15 @@ function RouterDesktop (){
     <Switch>
       <Route exact={true} path="/" component={PageHome}/>
       <Route path="/customize" component={PageCustomize}/>
-      <Route path="/login" component={Guard.onlyGuest(PageLogin)}/>
-      <Route path="/register" component={Guard.onlyGuest(PageRegister)}/>
       <Route path="/partnership" component={PagePartnership}/>
       <Route path="/book-appointment" component={PageBookAppointment}/>
       <Route path="/terms-and-conditions" component={PageTnC}/>
       <Route path="/help" component={PageHelp}/>
       <Route path="/link" component={PageLink}/>
       <Route path="/price-list" component={PageNotFound}/>
-      <Route path="/login" component={PageLogin}/>
-      <Route path="/register" component={PageRegister}/>
-      <Route path="/user" component={PageUser}/>
+      <Route path="/login" component={Guard.onlyGuest(PageLogin)}/>
+      <Route path="/register" component={Guard.onlyGuest(PageRegister)}/>
+      <Route path="/profile" component={Guard.onlyLogged(PageUser)}/>
       <Route path="*" component={PageNotFound} />
       <Route component={PageNotFound} />
     </Switch>

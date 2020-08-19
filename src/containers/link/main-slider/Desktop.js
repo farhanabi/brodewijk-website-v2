@@ -16,8 +16,8 @@ const MainSlider = (props) => {
           { label: t("main-slider-section.button-2"), link: "https://www.brodewijk.com/price-list", newtab: true, icon: "" },
           { label: t("main-slider-section.button-3"), link: t("main-slider-section.button-3-link"), newtab: true, icon: "fab fa-whatsapp"},
           { label: t("main-slider-section.button-4"), link: "https://calendly.com/brodewijk-bookappointment/pengukuran-jas", newtab: true, icon: ""},
-          { label: t("main-slider-section.button-5"), link: "https://www.tokopedia.com/brodewijkid/masker-kain-3-lapis-bahan-oxford-filter-slot-filter-brodewijk-dark-brown", newtab: true, icon: ""},
-          { label: t("main-slider-section.button-6"), link: "https://beta.brodewijk.com", newtab: true, icon: ""}
+          { label: t("main-slider-section.button-5"), link: "https://shopee.co.id/brodewijk", newtab: true, icon: ""},
+          { label: t("main-slider-section.button-6"), link: "https://www.tokopedia.com/brodewijkid", newtab: true, icon: ""}
 
         ]
       }

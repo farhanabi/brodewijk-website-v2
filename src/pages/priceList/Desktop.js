@@ -4,8 +4,10 @@ import { useTranslation } from 'react-i18next'
 
 import Layout from 'layout/CommonDesktop'
 
-import MainSlider from 'containers/priceList/main-slider/Desktop'
+import MainSlider from 'containers/priceList/main-slider/Mobile'
 import BespokeService from 'containers/priceList/BespokeService'
+import WeddingPackage from 'containers/priceList/wedding-package/Mobile'
+import WeddingPackageList from 'containers/priceList/WeddingPackageList'
 
 function Help (){
   const { t } = useTranslation("help");
@@ -15,6 +17,8 @@ function Help (){
       <div id="page-price-list">
         <MainSlider/>
         <BespokeService/>
+        <WeddingPackage/>
+        <WeddingPackageList/>
       </div>
     </Layout>
   )

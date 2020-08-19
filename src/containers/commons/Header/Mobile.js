@@ -137,7 +137,7 @@ function Header(props) {
             {props.auth !== null && props.user !== null ? (
               <>
               <Col xs={12} className="nav-item">
-                <Link to="/my-profile">
+                <Link to="/profile">
                   <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("profile")}</Button>
                 </Link>
               </Col>

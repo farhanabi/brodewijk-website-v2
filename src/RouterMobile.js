@@ -14,7 +14,6 @@ import PageRegister from 'pages/auth/register/Mobile';
 import PageUser from 'pages/auth/user/Mobile';
 import PageNotFound from 'pages/notFound/Mobile';
 import PagePriceList from 'pages/priceList/Mobile';
-// import PageNotFound from 'pages/NotFound';
 
 function RouterMobile (){
   useEffect(() => {
@@ -33,9 +32,9 @@ function RouterMobile (){
       <Route path="/price-list" component={PagePriceList}/>
       <Route path="/login" component={Guard.onlyGuest(PageLogin)}/>
       <Route path="/register" component={Guard.onlyGuest(PageRegister)}/>
-      <Route path="/user" component={PageUser}/>
-      <Route component={PageNotFound} />
+      <Route path="/profile" component={Guard.onlyLogged(PageUser)}/>
       <Route path="*" component={PageNotFound} />
+      <Route component={PageNotFound} />
     </Switch>
   );
 }
