@@ -3,8 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { Button, Row, Col, Modal, ModalBody } from 'reactstrap';
 import Loading from 'components/Loading';
 import CheckoutConfirmModal from '../CheckoutConfirmModal';
+import { currencyFormatter } from 'utils/number';
 
-function SummaryMobile (props){
+function SummaryMobile ({ totalPrice }){
   const { t } = useTranslation("cart");
 
   const [popupCheckout, setPopupCheckout] = useState(false);
@@ -20,7 +21,7 @@ function SummaryMobile (props){
       <Row>
         <Col xs={6}>
           <p className="text">TOTAL</p>
-          <p className="text price">Rp 1.450.000</p>
+          <p className="text price">Rp {currencyFormatter(totalPrice)}</p>
         </Col>
         <Col xs={6}>
           <Button className="btn-checkout" onClick={togglePopupCheckout}>Checkout</Button>

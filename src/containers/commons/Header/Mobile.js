@@ -63,7 +63,7 @@ function Header(props) {
       <Container>
         <Row className="header-bar">
           <Col xs={2} className="nav-menu">
-            {props.page === "LOG IN" || props.page ===  "SIGN UP" || props.page ===  "MASUK" || props.page === "DAFTAR" ? (
+            {props.page === "LOG IN" || props.page ===  "SIGN UP" || props.page ===  "MASUK" || props.page === "DAFTAR" || props.page === "MEASURE" || props.page === "UKURAN" ? (
               <Button className="btn-outline-black" onClick={props.history.goBack}>
                 <i className="fas fa-arrow-left" />
               </Button>

@@ -125,6 +125,7 @@
               width: 100%;
               display: flex;
               flex-wrap: wrap;
+              padding: 0 10px;
 
               .tab-lining {
                 .btn-tab {
@@ -146,6 +147,32 @@
                   }
                 }
               }
+
+              .tab-content-lining {
+                height: auto;
+                
+                .tab-pane-lining {
+                  .lining-color {
+                    padding: 10px;
+                    cursor: pointer;
+
+                    &.active {
+                      border: 0.5px dashed #808285;
+                      border-radius: 4px;
+                    }
+
+                    .lining-color-img {
+                      width: 100%;
+                    }
+
+                    .lining-color-name {
+                      margin: 0;
+                      font-size: 12px;
+                      line-height: 20px;
+                    }
+                  }
+                }
+              }
             }
 
             .option-item {
@@ -164,6 +191,22 @@
                 margin: 0;
                 font-size: 12px;
                 line-height: 20px;
+              }
+            }
+
+            .monogram {
+              .form-control {
+                border: 1px solid #1C1C1C;
+                border-radius: 0;
+                font-size: 16px;
+        
+                &:focus{
+                  box-shadow: none;
+                }
+        
+                &::placeholder {
+                  color: #D1D3D4;
+                }
               }
             }
           }

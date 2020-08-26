@@ -47,23 +47,9 @@ function FilterBar(props) {
           ))}
         </TabPane>
         <TabPane tabId="features" className="features">
-          {listFeature && listFeature.map((v, k) => (
+          {feature !== null &&  listFeature.length > 0 && listFeature.map((v, k) => (
             <Row key={k}>
-              <FeatureMobile item={v} feature={feature} setFeature={setFeature} setFeaturePrice={setFeaturePrice} setPrice={setPrice}
-                listFeatureLining={listFeatureLining}
-                listFeatureCanvas={listFeatureCanvas}
-                listFeatureShoulder={listFeatureShoulder}
-                listFeatureLapels={listFeatureLapels}
-                listFeatureChestPocket={listFeatureChestPocket}
-                listFeatureButtons={listFeatureButtons}
-                listFeaturePockets={listFeaturePockets}
-                listFeatureVents={listFeatureVents}
-                listFeaturePants={listFeaturePants}
-                listFeatureVest={listFeatureVest}
-                listFeatureShirt={listFeatureShirt}
-                listFeatureTie={listFeatureTie}
-                featureMonogram={featureMonogram}
-              />
+              <FeatureMobile item={v} index={k} feature={feature} setFeature={setFeature} setFeaturePrice={setFeaturePrice} setPrice={setPrice} />
             </Row>
           ))} 
         </TabPane>

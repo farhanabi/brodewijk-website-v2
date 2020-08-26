@@ -23,6 +23,7 @@
 
   "summary": "SUMMARY",
   "shipping": "Shipping",
+  "shipping-fee": "Free",
   "enter-location": "Enter location",
 
   "checkout": {
