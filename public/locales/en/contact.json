@@ -1,0 +1,14 @@
+{
+  "title": "CONTACT US",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "We Would Love to Hear From You",
+      "subtitle": "These is several ways to make contact with us. Feel free to send us whatever you want."
+    },
+    "button-1": "CONTACT VIA WHATSAPP",
+    "button-1-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!",
+    "button-2": "SEE OUR INSTAGRAM",
+    "button-3": "EMAIL US",
+    "button-4": "VISIT OUR LOCATION"
+  }
+}

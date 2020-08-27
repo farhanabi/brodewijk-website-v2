@@ -1,0 +1,33 @@
+{
+  "title": "TENTANG KAMI",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Kenal Kami Lebih Jauh",
+      "subtitle": "Kami senang sekali mengetahui bahwa Anda ingin mengenal kami lebih jauh. Jadi, inilah kami dan apa yang kami lakukan!",
+      "button-1": "KENALI KAMI"
+    }
+  },
+  
+  "about-us-section": {
+    "title": "Tentang Kami",
+    "section": {
+      "who-we-are": {
+        "title": "Siapa Kami",
+        "content-1": "Brodewijk adalah perusahaan fashion-tech yang merevolusi cara orang berbelanja dengan menyajikan pakaian yang dapat disesuaikan, dengan ukuran pas, dan pakaian berkualitas tinggi melalui teknologi.",
+        "content-2": "Kami mendisrupsi cara orang berbelanja konvensional dan menyelesaikan masalah ketidakcocokan ukuran pakaian, pengalaman pelanggan yang buruk, pemborosan mode, dan produk berkualitas rendah."
+      },
+      "problems": {
+        "title": "Masalah yang Kami Coba Pecahkan",
+        "content-1": "Orang-orang khawatir tentang ketidakcocokan ukuran / tidak dapat menemukan ukuran yang pas saat berbelanja online",
+        "content-2": "Orang-orang sulit menemukan tempat untuk menyesuaikan pakaian mereka sendiri",
+        "content-3": "Fast-fashion menghasilkan banyak limbah"
+      },
+      "solutions": {
+        "title": "Solusi Kami untuk Masalah Tersebut",
+        "content-1": "Kustomisasi Produk Real-Time Interaktif dan Style-adviser",
+        "content-2": "Proses pengukuran pakaian yang mudah dan nyaman",
+        "content-3": "Kami hanya memproduksi produk berdasarkan permintaan dan data pasar"
+      }
+    }
+  }
+}

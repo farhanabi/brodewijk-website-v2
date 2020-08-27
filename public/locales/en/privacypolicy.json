@@ -1,0 +1,111 @@
+{
+  "title": "PRIVACY POLICY",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "We need you for us to be better",
+      "subtitle": "We operate under the following Privacy Policy. Please read it alongside our Terms and Conditions carefully before using any feature of our websites or ordering from us.",
+      "button-1": "READ OUR PRIVACY POLICY"}
+  },
+  
+  "privacy-policy-section": {
+    "title": "Privacy Policy",
+    "section": {
+      "information-we-collect": {
+        "title": "Information We Collect",
+        "content-1": "We collect information to deliver the products and services you request, to help improve your shopping experience, and to support our business functions. We collect information from you in a variety of ways when you interact with our stores, websites, and mobile services.",
+        "content-2": "We may collect the following categories of personal information. Not all categories may be collected about every individual:",
+        "subcontent-1": "Personal identifiers, such as name and address",
+        "subcontent-2": "Device and online identifiers and related information, such as telephone number and email address",
+        "subcontent-3": "Internet, application, and network activity, such as cookie IDs and browser visits",
+        "subcontent-4": "Government identifiers, such as national identification numbers and driver’s license numbers",
+        "subcontent-5": "Demographic information, such as age and date of birth",
+        "subcontent-6": "Financial information, such as credit and debit card numbers and claims information",
+        "subcontent-7": "Characteristics of protected classifications under state or federal law, such as gender and nationality",
+        "subcontent-8": "Purchase history information, such as products you have bought, rented, and returned",
+        "subcontent-9": "Location information, such as geo-location information",
+        "subcontent-10": "Audio, visual, and other sensory information, such as audio and video recordings",
+        "subcontent-11": "Employment information, such as occupation, title, licenses and professional memberships",
+        "subcontent-12": "Education information, such as degree and schooling information",
+        "subcontent-13": "Individual preferences and characteristics, such as inferences related to shopping patterns and behaviors"
+      },
+      "how-we-collect-information": {
+        "title": "How We Collect Information",
+        "content-1": "We collect information from you in a variety of ways. It may be:",
+        "subcontent-1": "Provided directly by you or a member of your household",
+        "subcontent-2": "Collected from a device associated with you or your household",
+        "subcontent-3": "Collected through in-store technology",
+        "subcontent-4": "Collected from another company within our family of companies",
+        "subcontent-5": "Collected from an external third-party source",
+        "content-2": "Our goal is to limit the information we collect to the information needed to support our business.",
+        "content-3": "Information Provided Directly by You or a Member of Your Household: Brodewijk collects personal information about you when you interact with our Sites, including when you create an account, join our mailing list, make a purchase, or engage in an online chat with our customer service representatives. We also collect personal information when you make an appointment to visit, or visit us in person at, one of our Guideshop locations.",
+        "content-4": "If you make a purchase through our Sites, our third-party payment processor service providers may also collect billing information, such as your first and last name, email address, phone number, credit card or debit card number, and billing and shipping addresses. If you make a purchase over the phone, we will collect this personal information and share it with our third-party payment processor service providers.",
+        "content-5": "We may associate personal information you provide to us across our Sites with personal information that you provide to us in person in our Guideshop locations.",
+        "content-6": "Information We Collect from a Device Associated with You or Your Household: We may automatically collect personal information from your use of our mobile app and devices that you use to interact with our app and Sites, as well as from your interaction with emails that we send to you. The personal information we automatically collect may include your geolocation and other data, including your IP address, browser type, device type, the webpage you visited before coming to our Site, pages you visited on our Sites, time spent on those pages, information you searched for on the Sites, when and for how long you visited the Sites, and similar information, which we collect through cookies, beacons, and other technologies. The information we automatically collect will be associated with any personal information that you have provided to us.",
+        "content-7": "We may use this information to provide you location-based advertisements and social media posts. We may also use this personal information for analytics purposes. You may be able to discontinue our collection of geolocation information by changing the app's settings or the location settings on your mobile device.",
+        "content-8": "Information We Collect Through In-Store Technology: We may collect your personal information from technology we use in our stores, such as our facility cameras. We operate cameras in store for security and operational purposes, for example, to help us improve the design of our stores to better serve our customers.",
+        "content-9": "Information We Collect from Another Company within Our Family of Companies: We may collect your personal information from another organization within our corporate family of companies",
+        "content-10": "Information We Receive From External Third-Party Sources: We receive personal information about you from other sources to help us correct or supplement our records, improve the quality or personalization of our service to you, prevent or detect fraud, and for other business purposes."
+      },
+      "how-we-use-information": {
+        "title": "How We Use Information",
+        "content-1": "We use your personal information to provide you products and services, such as to fulfill your requests for products or to help us personalize our services and marketing to you. We also use your personal information to support our business functions, such as fraud prevention, marketing, and legal functions. Some examples include:",
+        "subcontent-1": "To fulfill your order or requests for services and provide customer service",
+        "subcontent-2": "To create and maintain your account",
+        "subcontent-3": "To conduct auditing and monitoring of transactions and engagement",
+        "subcontent-4": "To conduct marketing, personalization, and third-party advertising",
+        "subcontent-5": "To protect the security and integrity of our websites, mobile services and our business, and help prevent fraud",
+        "subcontent-6": "To update our operational and technical functionality",
+        "subcontent-7": "To conduct business analysis, such as analytics, projections, identifying areas for operational improvement",
+        "subcontent-8": "To conduct research and development",
+        "subcontent-9": "To fulfill our legal function or obligations",
+        "content-2-1": "If you decide at any time that you no longer wish to receive marketing and promotional materials from us, please follow the unsubscribe instructions provided in any of the communications you receive from us. You may also contact us at ",
+        "content-2-2": " and explain your request."
+      },
+      "when-we-share": {
+        "title": "When We Share and Disclose Personal Information",
+        "content-1": "All of the categories of personal information that we collect have been shared with other companies, including those within our corporate family, for a business purpose. We also may share your personal information with service providers who perform services and functions on our behalf to support our interactions with you including, for example, providing our products and services, providing site operations and maintenance services, providing database management, processing your purchases, administering surveys or contests, or communicating with you.",
+        "content-2": "We may share your personal information with other third parties, including law enforcement authorities, when we determine that doing so is appropriate to:",
+        "subcontent-2-1": "enforce our Terms of Service;",
+        "subcontent-2-2": "protect our property, services, and legal rights;",
+        "subcontent-2-3": "prevent physical harm to persons or the property of others;",
+        "subcontent-2-4": "prevent fraud or other illegal activity against Brodewijk and others;",
+        "subcontent-2-5": "support auditing, compliance, and corporate governance functions;",
+        "subcontent-2-6": "comply with subpoenas, court orders, or similar legal processes, including to law enforcement agencies, regulators and courts; or",
+        "subcontent-2-7": "comply with any and all applicable laws.",
+        "content-3": "Aggregated, Non-Identifying Information: Brodewijk may share aggregated information that is not individually identifiable (or personal information) with third parties for industry analysis, demographic analysis, and targeted ad delivery.",
+        "content-4": "Finally, we may provide your personal information to third parties for these third parties' own marketing and other business purposes. You may opt out of our continuing to share your information for these purposes by contacting us at "
+      },
+      "how-uses-cookies": {
+        "title": "How Brodewijk Uses Cookies and Other Technologies",
+        "content-1": "When you visit our Sites, Brodewijk may place pieces of code, commonly referred to as \"cookies,\" or similar technology on your devices. Brodewijk may begin collecting information about you or your activity on devices associated with you through cookies or similar technologies as soon as you visit our Sites. We use advertising identifiers similar to cookies in our mobile applications. By using our Sites, you permit Brodewijk to collect and use your personal information from activity on devices associated with you in accordance with this Privacy Policy.",
+        "content-2": "Brodewijk uses cookies for a number of purposes: First, we use persistent cookies to save your login information for future logins to our Sites and to collect and analyze information about your online activity to help us improve our services. Second, we use session ID cookies to enable certain features of the Sites to better understand how you interact with the Sites, and to monitor aggregate use of our Sites by Brodewijk users. Unlike persistent cookies, session cookies are deleted from your computer when you log off of the Sites and close your browser.",
+        "content-3": "We also may use \"pixel tags,\" \"web beacons,\" and other technologies on our Sites to collect usage, demographic, and geographic location data, which allow us to count users who have visited certain pages of the Sites, to deliver branded services, and to help determine the effectiveness of promotional or advertising campaigns.",
+        "content-4": "Some internet browsers (e.g. Internet Explorer, Safari, Chrome) offer their own opt outs for interest-based advertising. The ad networks and ad service providers we participate with may not recognize these opt outs. Information about how to opt out of certain online interest-based advertising is discussed in the next section of this Privacy Policy."
+      },
+      "third-party-ads": {
+        "title": "Third-Party Advertisements",
+        "content-1": "Third parties, including advertisers, may collect information, potentially including personal information, about your activities over time and across different websites when you use the Sites. Those third parties may use cookies, pixel tags, web beacons, mobile application advertising identifiers and other technologies. Those third parties may also provide Brodewijk with information and reports about data collection, ad response measurement, analytical information, and assist with delivery of relevant marketing messages and advertisements.",
+        "content-2": "Collection of your information by third parties is not governed by this Privacy Policy. Please consult the privacy policies of those third parties to determine how they collect and use your information. Many third-party advertisers and some web browsers and mobile devices allow you to opt out of third-party advertising. Information and resources regarding how to opt out of interest-based advertising are available from the Digital Advertising Alliance at "
+      },
+      "how-to-modify": {
+        "title": "How to Modify or Delete Personal Information",
+        "content-1-1": "You can request that we review, modify, and delete your personal account information by contacting us. If you request that we delete your personal information, your account may become deactivated. If you would like us to modify or delete your account information, please contact us at ",
+        "content-1-2": " with a request that we delete your personal information from our database. We will use commercially reasonable efforts to honor your request. We may retain an archived copy of your records as required by law or for legitimate business purposes."
+      },
+      "how-brodewijk-protect": {
+        "title": "How Brodewijk Protects Personal Information",
+        "content-1": "Brodewijk has implemented an information security program that includes administrative, technical and physical controls reasonably designed to safeguard your personal information. However, Brodewijk is not fully responsible for any data leaks due to hacks performed by professionals."
+      },
+      "business-transfers": {
+        "title": "Business Transfers and Corporate Changes",
+        "content-1": "We reserve the right to disclose, sell, or transfer all information related to the Sites, including personal information:",
+        "subcontent-1-1": "to a subsequent owner, co-owner or operator of one or more of the Sites; or",
+        "subcontent-1-2": "in connection with a corporate merger, consolidation, or restructuring; the sale of substantially all of our stock and/or assets; or other corporate change, including, without limitation, during the course of any due diligence process."
+      },
+      "how-to-contact-brodewijk": {
+        "title": "How to Contact Brodewijk",
+        "content-1": "Please contact us if you have any questions or comments about our privacy practices or this Privacy Policy. You can reach us online at "
+      }
+    }
+  }
+}

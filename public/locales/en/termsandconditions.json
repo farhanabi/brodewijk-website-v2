@@ -35,9 +35,12 @@
           "li-2": "Customer is obliged to pay the full price of the product, customer can’t pay partially.",
           "li-3": "For any orders made through:",
           "li-3-li": {
-            "li-1": "Online Customization: Full payment 100%",
-            "li-2": "Book Appointment: DP 50% and the rest 50% is paid after the suit is finished.",
-            "li-3": "Partnership: DP 50% and the rest 50% is paid after the suit is finished."
+            "li-1-1": "Online Customization",
+            "li-1-2": ": Full payment 100%",
+            "li-2-1": "Book Appointment",
+            "li-2-2": ": DP 50% and the rest 50% is paid after the suit is finished.",
+            "li-3-1": "Partnership",
+            "li-3-2": ": DP 50% and the rest 50% is paid after the suit is finished."
           },
           "li-4": "The suit can only be sent after the Customer completes the payment.",
           "li-5": "Payment can be done through the payment methods that are available on our payment gateway or can be done through bank transfer."
@@ -57,7 +60,8 @@
         "title": "Guarantee and Return",
         "content": {
           "li-1": "The ordered and paid product can’t be canceled or refunded with any reason.",
-          "li-2": "If the ordered product is not appropriate, product defects, or any damages, please contact our Customer Service via WhatsApp: +628156051373 or email: contact@brodewijk.com.",
+          "li-2-1": "If the ordered product is not appropriate, product defects, or any damages, please contact our Customer Service via WhatsApp:  ",
+          "li-2-2": " or email: ",
           "li-3": "Customer can do product returns subject to the following conditions:",
           "li-3-li": {
             "li-1": "Product received doesn’t match with the order made by the Customer through Brodewijk website.",

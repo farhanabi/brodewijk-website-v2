@@ -35,9 +35,12 @@
           "li-2": "Dengan melakukan pemesanan, pelanggan menyetujui untuk membayar lunas total biaya yang harus dibayarkan, sebagaimana tertera dalam halaman pembayaran",
           "li-3": "Untuk pemesanan melalui:",
           "li-3-li": {
-            "li-1": "Kustomisasi: Pembayaran lunas 100% di awal",
-            "li-2": "Buat Janji: Pembayaran DP 50% di awal dan pelunasan 50% lainnya pada saat jas selesai dibuat.",
-            "li-3": "Kemitraan: Pembayaran DP 50% di awal dan pelunasan 50% lainnya pada saat jas selesai dibuat"
+            "li-1-1": "Kustomisasi",
+            "li-1-2": ": Pembayaran lunas 100% di awal",
+            "li-2-1": "Buat Janji",
+            "li-2-2": ": Pembayaran DP 50% di awal dan pelunasan 50% lainnya pada saat jas selesai dibuat.",
+            "li-3-1": "Kerjasama",
+            "li-3-2": ": Pembayaran DP 50% di awal dan pelunasan 50% lainnya pada saat jas selesai dibuat"
           },
           "li-4": "Produk baru bisa dikirim setelah pelanggan melunasi pembayarannya.",
           "li-5": "Pembayaran dapat dilakukan melalui pilihan metode pembayaran yang terdapat pada Payment Gateway yang telah disediakan oleh Brodewijk atau melalui bank transfer."
@@ -57,7 +60,8 @@
         "title": "Garansi dan Pengembalian",
         "content": {
           "li-1": "Produk yang sudah dipesan dan dibayar tidak dapat dibatalkan ataupun dikembalikan dengan alasan apapun.",
-          "li-2": "Jika produk yang anda pesan tidak sesuai, cacat pada saat diterima, atau mengalami kerusakan selama pemakaian, silahkan menghubungi layanan pelanggan kami di WhatsApp: +628156051373 atau e-mail: contact@brodewijk.com.",
+          "li-2-1": "Jika produk yang anda pesan tidak sesuai, cacat pada saat diterima, atau mengalami kerusakan selama pemakaian, silahkan menghubungi layanan pelanggan kami di WhatsApp: ",
+          "li-2-2": " atau e-mail: ",
           "li-3": "Pelanggan dapat melakukan penukaran produk, dengan ketentuan sebagaimana berikut:",
           "li-3-li": {
             "li-1": "Produk yang diterima tidak sesuai dengan pemesanan yang dilakukan oleh pelanggan di situs Brodewijk",

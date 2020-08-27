@@ -1,21 +1,19 @@
 import React, { useState } from 'react';
-import { Carousel, CarouselItem, CarouselControl, Button, Container } from 'reactstrap';
+import { Carousel, CarouselItem, Button, Container } from 'reactstrap';
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-scroll";
 
 const MainSlider = (props) => {
-  const { t } = useTranslation("link")
+  const { t } = useTranslation("privacypolicy")
   const items = [
     {
-      src: require('assets/images/carousel-1-link-mobile.jpg'),
+      src: require('assets/images/carousel-privacypolicy-1-mobile.jpg'),
       altText: 'Slide 1',
       contain: {
-        title: t("main-slider-section.title"),
-        subtitle: t("main-slider-section.subtitle"),
+        title: t("main-slider-section.slide-1.title"),
+        subtitle: t("main-slider-section.slide-1.subtitle"),
         button: [
-          { label: t("main-slider-section.button-1"), link: "https://www.tokopedia.com/brodewijkid", newtab: true, icon: ""},
-          { label: t("main-slider-section.button-2"), link: t("main-slider-section.button-2-link"), newtab: true, icon: "fab fa-whatsapp"},
-          { label: t("main-slider-section.button-3"), link: "https://calendly.com/brodewijk-bookappointment/pengukuran-jas", newtab: true, icon: ""},
-          { label: t("main-slider-section.button-4"), link: "https://www.brodewijk.com", icon: "" }
+          { label: t("main-slider-section.slide-1.button-1"), linkScroll: "privacy-policy-section", icon: "" }
         ]
       }
     }
@@ -51,10 +49,24 @@ const MainSlider = (props) => {
                 {item.contain.button ? (
                 <div className="wrapper-btn">
                   {item.contain.button.map((v, k) => (
-                    <Button key={k} className="btn-outline-white all" href={v.link} target={v.newtab?`_blank`:``} rel={v.newtab?`noopener noreferrer`:``}>
-                      {v.icon.length > 0 ? <i className={v.icon} /> : null }
-                      &nbsp;{v.label}
-                    </Button>
+                    v.linkScroll ?
+                      <Link
+                        to={v.linkScroll}
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                      >
+                        <Button key={k} className="btn-outline-white all">
+                          {v.icon.length > 0 ? <i className={v.icon} /> : null }
+                          &nbsp;{v.label}
+                        </Button>
+                      </Link>
+                    : 
+                      <Button key={k} className="btn-outline-white all" href={v.link} target={v.newtab?`_blank`:``} rel={v.newtab?`noopener noreferrer`:``}>
+                        {v.icon.length > 0 ? <i className={v.icon} /> : null }
+                        &nbsp;{v.label}
+                      </Button>
                   ))}
                 </div>
                 ) : null}
@@ -68,14 +80,14 @@ const MainSlider = (props) => {
   });
 
   return (
-    <div id="desktop-link-slider-section">
+    <div id="mobile-slider-section">
       <Carousel
         activeIndex={activeIndex}
         next={next}
         previous={previous}
       >
         {slides}
-
+      
       </Carousel>
     </div>
   );

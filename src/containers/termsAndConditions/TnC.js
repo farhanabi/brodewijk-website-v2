@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { Card, CardHeader, CardBody, Collapse, Container, Row, Col, Button} from 'reactstrap'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 function TnC() {
 
@@ -46,9 +47,9 @@ function TnC() {
               <li>
                 {t("tnc-section.section.payment-method.content.li-3")}
                 <ul>
-                  <li>{t("tnc-section.section.payment-method.content.li-3-li.li-1")}</li>
-                  <li>{t("tnc-section.section.payment-method.content.li-3-li.li-2")}</li>
-                  <li>{t("tnc-section.section.payment-method.content.li-3-li.li-3")}</li>
+                  <li><Link to="/customize">{t("tnc-section.section.payment-method.content.li-3-li.li-1-1")}</Link>{t("tnc-section.section.payment-method.content.li-3-li.li-1-2")}</li>
+                  <li><Link to="/book-appointment">{t("tnc-section.section.payment-method.content.li-3-li.li-2-1")}</Link>{t("tnc-section.section.payment-method.content.li-3-li.li-2-2")}</li>
+                  <li><Link to="/partnership">{t("tnc-section.section.payment-method.content.li-3-li.li-3-1")}</Link>{t("tnc-section.section.payment-method.content.li-3-li.li-3-2")}</li>
                 </ul>
               </li>
               <li>{t("tnc-section.section.payment-method.content.li-4")}</li>
@@ -73,7 +74,7 @@ function TnC() {
           <p className="section-content">
             <ul>
               <li>{t("tnc-section.section.guarantee-return.content.li-1")}</li>
-              <li>{t("tnc-section.section.guarantee-return.content.li-2")}</li>
+              <li>{t("tnc-section.section.guarantee-return.content.li-2-1")}<a href="https://wa.me/628156051373">+628156051373</a>{t("tnc-section.section.guarantee-return.content.li-2-2")}<a href="mailto:contact@brodewijk.com">contact@brodewijk.com</a>.</li>
               <li>
                 {t("tnc-section.section.guarantee-return.content.li-3")}
                 <ul>

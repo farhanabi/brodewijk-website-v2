@@ -1,0 +1,33 @@
+{
+  "title": "ABOUT US",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Get to Know Us Better",
+      "subtitle": "We'd love to know that you want to know us better. So, this is who we are and what we do!",
+      "button-1": "GET TO KNOW US"
+    }
+  },
+  
+  "about-us-section": {
+    "title": "About Us",
+    "section": {
+      "who-we-are": {
+        "title": "Who We Are",
+        "content-1": "Brodewijk is a Fashion-tech company that revolutionize the way people shop by serving customizable, size fit and high-quality wear through technology.",
+        "content-2": "We disrupt the conventional way of people shopping and solve the concerns of clothing size mismatch, low customer experience, fashion waste, and low-quality product."
+      },
+      "problems": {
+        "title": "Problems We Are Trying to Solve",
+        "content-1": "People worry about size mismatches/can’t find fit size when shopping online",
+        "content-2": "People find it hard to find a place where they can customize their own apparel",
+        "content-3": "Fast-fashion generates considerable amount of waste"
+      },
+      "solutions": {
+        "title": "Our Solutions to The Problems",
+        "content-1": "Interactive Real-Time Product Customization and Style Adviser",
+        "content-2": "Convenient clothes measurement process",
+        "content-3": "We only produce products based on demand and market data"
+      }
+    }
+  }
+}

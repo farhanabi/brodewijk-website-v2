@@ -1,10 +1,10 @@
-#tnc-section{
+#privacy-policy-section{
   padding: 20px 0 70px 0;
   background: url('../../../assets/images/bg-social-proof-mobile.jpg') no-repeat;
   background-size: cover;
   font-family: Open Sans;
 
-  .title-tnc {
+  .title-privacy-policy {
     font-family: Playfair Display;
     font-weight: normal;
     color:#0C172F;
@@ -14,7 +14,7 @@
     margin-top: 35px;
   }
 
-  .subtitle-tnc {
+  .subtitle-privacy-policy {
     color: #58595B;
     font-size: 14px;
     text-align: center;
@@ -34,7 +34,7 @@
 
   .section-content {
     justify-self: center;
-    margin: auto;
+    margin: 1rem 0;
 
     a {
       color: rgba(50,50,50,1);
@@ -48,16 +48,16 @@
 }
 
 @media (min-width: 992px) {
-  #tnc-section {
+  #privacy-policy-section {
     background: url('../../../assets/images/bg-faq-desktop.jpg') no-repeat;
     background-size: cover;
 
 
-    .title-tnc {
+    .title-privacy-policy {
       font-size: 32px;
     }
 
-    .subtitle-tnc {
+    .subtitle-privacy-policy {
       width: 85%;
     }
 
@@ -65,7 +65,7 @@
       font-size: 24px;
     }
 
-    .tnc-section {
+    .privacy-policy-section {
       max-width: 75%; 
       align-self: center;
       margin: auto;

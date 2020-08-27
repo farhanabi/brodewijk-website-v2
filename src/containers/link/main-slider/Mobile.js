@@ -12,12 +12,10 @@ const MainSlider = (props) => {
         title: t("main-slider-section.title"),
         subtitle: t("main-slider-section.subtitle"),
         button: [
-          { label: t("main-slider-section.button-1"), link: "https://www.brodewijk.com", icon: ""},
-          { label: t("main-slider-section.button-2"), link: "https://www.brodewijk.com/price-list", icon: "" },
-          { label: t("main-slider-section.button-3"), link: t("main-slider-section.button-3-link"), icon: "fab fa-whatsapp" },
-          { label: t("main-slider-section.button-4"), link: "https://calendly.com/brodewijk-bookappointment/pengukuran-jas", icon: ""},
-          { label: t("main-slider-section.button-5"), link: "https://shopee.co.id/brodewijk", icon: ""},
-          { label: t("main-slider-section.button-6"), link: "https://www.tokopedia.com/brodewijkid", icon: ""}
+          { label: t("main-slider-section.button-1"), link: "https://www.tokopedia.com/brodewijkid", icon: ""},
+          { label: t("main-slider-section.button-2"), link: t("main-slider-section.button-2-link"), icon: "fab fa-whatsapp" },
+          { label: t("main-slider-section.button-3"), link: "https://calendly.com/brodewijk-bookappointment/pengukuran-jas", icon: ""},
+          { label: t("main-slider-section.button-4"), link: "https://www.brodewijk.com", icon: ""}
         ]
       }
     }

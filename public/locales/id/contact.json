@@ -1,0 +1,14 @@
+{
+  "title": "KONTAK KAMI",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Kami Ingin Berkomunikasi dengan Anda",
+      "subtitle": "Berikut beberapa cara untuk menghubungi kami. Jangan ragu untuk mengirimkan apapun yang Anda inginkan."
+    },
+    "button-1": "HUBUNGI MELALUI WHATSAPP",
+    "button-1-link": "https://api.whatsapp.com/send?phone=628156051373&text=Halo%20Brodewijk!",
+    "button-2": "LIHAT INSTAGRAM KAMI",
+    "button-3": "EMAIL KAMI",
+    "button-4": "KUNJUNGI LOKASI KAMI"
+  }
+}
