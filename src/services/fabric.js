@@ -6,4 +6,15 @@ const getFabrics = (categorySlug) => {
     .get(url)
 }
 
-export { getFabrics };
+const getSuitFabrics = () => {
+  return getFabrics('suit')
+    .then(res => {
+      const initProduct = res.data.data.product
+      const listFabric = res.data.data.fabrics
+      const initFabric = listFabric.filter(v => v.selected === true)[0]
+
+      return ({ initProduct, listFabric, initFabric })
+    })
+}
+
+export { getFabrics, getSuitFabrics };

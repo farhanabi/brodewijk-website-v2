@@ -3,12 +3,11 @@ import { Row, Col } from 'reactstrap';
 import { currencyFormatter } from 'utils/number';
 
 function FabricMobile (props){
-  const { item, setPrice, fabric, setFabric, setFabricPrice } = props
+  const { item, fabric, setFabric, setFabricPrice } = props
 
   function changeFabric(fabricId, fabricName, fabricColorId, fabricColorName, fabricPath, price) {
     setFabric({ id: fabricId, name: fabricName, colorId: fabricColorId, colorName: fabricColorName, path: fabricPath })
     setFabricPrice(price)
-    setPrice(price)
   }
 
   return (

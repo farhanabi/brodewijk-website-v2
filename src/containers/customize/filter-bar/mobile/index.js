@@ -6,11 +6,7 @@ import FabricMobile from './FabricMobile';
 import FeatureMobile from './FeatureMobile';
 
 function FilterBar(props) {
-  const { 
-    setPrice, listFabric, fabric, setFabric, setFabricPrice, listFeature, feature, setFeature, setFeaturePrice, 
-    listFeatureLining, listFeatureCanvas,  listFeatureShoulder, listFeatureLapels, listFeatureChestPocket, listFeatureButtons, 
-    listFeaturePockets, listFeatureVents, listFeaturePants, listFeatureVest, listFeatureShirt, listFeatureTie, featureMonogram
-  } = props
+  const { listFabric, fabric, setFabric, setFabricPrice, listFeature, feature, setFeature, setFeaturePrice } = props
   const { t } = useTranslation("customize");
   const [activeTab, setActiveTab] = useState('fabric');
 
@@ -42,14 +38,14 @@ function FilterBar(props) {
         <TabPane tabId="fabric" className="fabric">
           {listFabric && listFabric.map((v, k) => (
             <Row key={k}>
-              <FabricMobile item={v} fabric={fabric} setFabric={setFabric} setFabricPrice={setFabricPrice} setPrice={setPrice} />
+              <FabricMobile item={v} fabric={fabric} setFabric={setFabric} setFabricPrice={setFabricPrice}/>
             </Row>
           ))}
         </TabPane>
         <TabPane tabId="features" className="features">
           {feature !== null &&  listFeature.length > 0 && listFeature.map((v, k) => (
             <Row key={k}>
-              <FeatureMobile item={v} index={k} feature={feature} setFeature={setFeature} setFeaturePrice={setFeaturePrice} setPrice={setPrice} />
+              <FeatureMobile item={v} index={k} feature={feature} setFeature={setFeature} setFeaturePrice={setFeaturePrice} />
             </Row>
           ))} 
         </TabPane>

@@ -7,8 +7,8 @@ import Layout from 'layout/CommonMobile'
 import FilterBar from 'containers/customize/filter-bar/mobile';
 import LivePreview from 'containers/customize/live-preview/Mobile';
 
-import { getFabrics } from 'services/fabric';
-import { getFeatures } from 'services/feature';
+import { getSuitFabrics } from 'services/fabric';
+import { getSuitFeatures } from 'services/feature';
 import { addToCart } from 'services/cart'
 
 function Customize (props){
@@ -21,71 +21,36 @@ function Customize (props){
   const [fabricPrice, setFabricPrice] = useState(0)
 
   const [listFeature, setListFeature] = useState([])
+  const [featurePrice, setFeaturePrice] = useState(0)
   const [feature, setFeature] = useState(null)
   
   function fetchDataFabric() {
-    getFabrics("suit")
-      .then(res => {
-        const initProduct = res.data.data.product
-        setProduct(initProduct)
+    getSuitFabrics()
+      .then(data => {
+        const initFabricColor = data.initFabric.colors.filter(v => v.selected === true)[0]
+        const fabric = { 
+          id: data.initFabric.id, 
+          name: data.initFabric.name, 
+          colorId: initFabricColor.id, 
+          colorName: initFabricColor.name, 
+          path: initFabricColor.path 
+        }
 
-        const listFabric = res.data.data.fabrics
-        const initFabric = listFabric.filter(v => v.selected === true)[0]
-        const initFabricColor = initFabric.colors.filter(v => v.selected === true)[0]
-        const fabric = { id: initFabric.id, name: initFabric.name, colorId: initFabricColor.id, colorName: initFabricColor.name, path: initFabricColor.path }
-        setListFabric(listFabric)
+        setProduct(data.initProduct)
+        setListFabric(data.listFabric)
         setFabric(fabric)
-        setFabricPrice(initFabric.type.base_price)
-        setPrice(initFabric.type.base_price)
+        setFabricPrice(data.initFabric.type.base_price)
       })
       .catch(err => console.log(err))
   }
 
   function fetchDataFeatures() {
-    getFeatures("suit")
-      .then(res => {
-        const listFeature = res.data.data.features 
-        setListFeature(listFeature)
-
-        const initLining = listFeature[0].options.filter(v => v.selected)[0] || {}
-        const initCanvas = listFeature[1].options.filter(v => v.selected)[0] || {}
-        const initShoulder = listFeature[2].options.filter(v => v.selected)[0] || {}
-        const initLapels = listFeature[3].options.filter(v => v.selected)[0] || {}
-        const initChestPocket = listFeature[4].options.filter(v => v.selected)[0] || {}
-        const initButtons = listFeature[5].options.filter(v => v.selected)[0] || {}
-        const initPockets = listFeature[6].options.filter(v => v.selected)[0] || {}
-        const initVents = listFeature[7].options.filter(v => v.selected)[0] || {}
-        const initPants = listFeature[8].options.filter(v => v.selected)[0] || {}
-        const initVest = listFeature[9].options.filter(v => v.selected)[0] || {}
-        const initShirt = listFeature[10].options.filter(v => v.selected)[0] || {}
-        const initTie = listFeature[11].options.filter(v => v.selected)[0] || {}
-        const initMonogram = listFeature[12].options.filter(v => v.selected)[0] || {}
-
-        const initFeature = [
-          { name: "Lining",
-            data: { 
-              id: initLining.id,
-              name: initLining.name, 
-              child: {
-                id: initLining.childs.filter(v => v.selected)[0].id,
-                name: initLining.childs.filter(v => v.selected)[0].name
-              }
-            }
-          },
-          { name: "Canvas Type", data: { id: initCanvas.id, name: initCanvas.name }},
-          { name: "Shoulder Type", data: { id: initShoulder.id, name: initShoulder.name }},
-          { name: "Lapels", data: { id: initLapels.id, name: initLapels.name, codeName: initLapels.code_name, resources: initLapels.resources }},
-          { name: "Chest Pocket", data: { id: initChestPocket.id, name: initChestPocket.name, resources: initChestPocket.resources }},
-          { name: "Buttons", data: { id: initButtons.id, name: initButtons.name, codeName: initButtons.code_name, resources: initButtons.resources }},
-          { name: "Pockets", data: { id: initPockets.id, name: initPockets.name, resources: initPockets.resources }},
-          { name: "Vents", data: { id: initVents.id, name: initVents.name }},
-          { name: "Pants", data: { id: initPants.id, name: initPants.name }},
-          { name: "Vest", data: { id: initVest.id, name: initVest.name}},
-          { name: "Shirt", data: { id: initShirt.id, name: initShirt.name}},
-          { name: "Tie", data: { id: initTie.id, name: initTie.name}},
-          { name: "Monogram", data: { id: initMonogram.id, name: initMonogram.name, value: "" }}
-        ]
-        setFeature(initFeature)
+    getSuitFeatures()
+      .then(data => {
+        const initFeaturePrice = data.initFeature.map(v => v.data.price).reduce((a, b) => a + b)
+        setListFeature(data.listFeature)
+        setFeature(data.initFeature)
+        setFeaturePrice(initFeaturePrice)
       })
       .catch(err => console.log(err))
   }
@@ -94,6 +59,15 @@ function Customize (props){
     fetchDataFabric()
     fetchDataFeatures()
   }, [])
+
+  const totalPrice = () => {
+    const price = fabricPrice + featurePrice
+    setPrice(price)
+  }
+
+  useEffect(() => {
+    totalPrice()
+  }, [fabricPrice, featurePrice])
 
   function submit (){
     const features = feature.map((v) => {
@@ -123,7 +97,7 @@ function Customize (props){
       }
     }
     
-    if (props.auth === null && props.user) {
+    if (props.auth === null || props.user === null) {
       return window.location = `/login?redirectTo=${encodeURIComponent(window.location.href)}`
     } else {
       addToCart(props.auth.token, data)
@@ -138,7 +112,7 @@ function Customize (props){
   return (
     <Layout header="white" page={t("title")} footer={false}>
       <div id="page-customize">
-        <FilterBar setPrice={setPrice} setFabricPrice={setFabricPrice}
+        <FilterBar setFabricPrice={setFabricPrice} setFeaturePrice={setFeaturePrice}
           listFabric={listFabric} fabric={fabric} setFabric={setFabric} 
           listFeature={listFeature} feature={feature} setFeature={setFeature}
         />
