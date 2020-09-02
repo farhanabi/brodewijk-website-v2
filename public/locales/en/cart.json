@@ -1,0 +1,34 @@
+{
+  "title": "CART",
+
+  "suit": "SUIT",
+  "shirt": "SHIRT",
+  "vest": "VEST",
+  "pants": "PANTS",
+  
+  "custom-suit-details": "CUSTOM SUIT DETAILS",
+  "custom-shirt-details": "CUSTOM SHIRT DETAILS",
+  "custom-pants-details": "CUSTOM PANTS DETAILS",
+  "custom-vest-details": "CUSTOM VEST DETAILS",
+
+  "suit-details": "SUIT DETAILS",
+  "shirt-details": "SHIRT DETAILS",
+  "pants-details": "PANTS DETAILS",
+  "vest-details": "VEST DETAILS",
+
+  "measure": "Measure",
+  "measured": "Measured",
+  "edit": "Edit",
+  "delete": "Delete",
+
+  "summary": "SUMMARY",
+  "shipping": "Shipping",
+  "shipping-fee": "Free",
+  "enter-location": "Enter location",
+
+  "checkout": {
+    "text": "Are you sure to checkout?",
+    "btn-back": "Back",
+    "btn-checkout": "Checkout"
+  }
+}

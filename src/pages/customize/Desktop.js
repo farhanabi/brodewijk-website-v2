@@ -1,113 +1,58 @@
 import React, { useEffect, useState } from 'react'
-import { withRouter } from 'react-router-dom'
-import { Container, Row, Col } from 'reactstrap'
+import { withRouter, Redirect } from 'react-router-dom'
+import { Container, Row, Col, Input } from 'reactstrap'
 import { useTranslation } from 'react-i18next'
-import axios from 'axios';
+import { connect } from 'react-redux'
+
 import Layout from 'layout/CommonDesktop'
 import FilterBar from 'containers/customize/filter-bar/desktop'
 import DetailBox from 'containers/customize/DetailBox';
 import LivePreviewDesktop from 'containers/customize/live-preview/Desktop';
 
-function Customize (){
+import { getSuitFabrics } from 'services/fabric';
+import { getSuitFeatures } from 'services/feature';
+import { addToCart } from 'services/cart'
+
+function Customize (props){
   const { t } = useTranslation("customize");
 
   const [price, setPrice] = useState(0)
+  const [product, setProduct] = useState({})
   const [listFabric, setListFabric] = useState([])
   const [fabric, setFabric] = useState({})
   const [fabricPrice, setFabricPrice] = useState(0)
 
   const [listFeature, setListFeature] = useState([])
-  const [listFeatureLining, setListFeatureLining] = useState({})
-  const [listFeatureCanvas, setListFeatureCanvas] = useState({})
-  const [listFeatureShoulder, setListFeatureShoulder] = useState({})
-  const [listFeatureLapels, setListFeatureLapels] = useState({})
-  const [listFeatureChestPocket, setListFeatureChestPocket] = useState({})
-  const [listFeatureButtons, setListFeatureButtons] = useState({})
-  const [listFeaturePockets, setListFeaturePockets] = useState({})
-  const [listFeatureVents, setListFeatureVents] = useState({})
-  const [listFeaturePants, setListFeaturePants] = useState({})
-  const [listFeatureVest, setListFeatureVest] = useState({})
-  const [listFeatureShirt, setListFeatureShirt] = useState({})
-  const [listFeatureTie, setListFeatureTie] = useState({})
-  const [featureMonogram, setFeatureMonogram] = useState({})
+  const [featurePrice, setFeaturePrice] = useState(0)
   const [feature, setFeature] = useState(null)
   
   function fetchDataFabric() {
-    const url = `${process.env.REACT_APP_BASE_API_URL}/customer/api/fabric/suit`
-    axios
-      .get(url)
-      .then(res => {
-        const listFabric = res.data.data.fabrics
-        const initFabric = listFabric.filter(v => v.selected === true)[0]
-        const initFabricColor = initFabric.colors.filter(v => v.selected === true)[0]
-        const fabric = { name: initFabric.name, color_id: initFabricColor.id, color: initFabricColor.name, path: initFabricColor.path }
-        setListFabric(listFabric)
+    getSuitFabrics()
+      .then(data => {
+        const initFabricColor = data.initFabric.colors.filter(v => v.selected === true)[0]
+        const fabric = { 
+          id: data.initFabric.id, 
+          name: data.initFabric.name, 
+          colorId: initFabricColor.id, 
+          colorName: initFabricColor.name, 
+          path: initFabricColor.path 
+        }
+
+        setProduct(data.initProduct)
+        setListFabric(data.listFabric)
         setFabric(fabric)
-        setFabricPrice(initFabric.type.base_price)
-        setPrice(initFabric.type.base_price)
+        setFabricPrice(data.initFabric.type.base_price)
       })
       .catch(err => console.log(err))
   }
 
   function fetchDataFeatures() {
-    const url = `${process.env.REACT_APP_BASE_API_URL}/customer/api/feature/suit`
-    axios
-      .get(url)
-      .then(res => {
-        const listFeature = res.data.data.features 
-        setListFeatureLining(listFeature[0])
-        setListFeatureCanvas(listFeature[1])
-        setListFeatureShoulder(listFeature[2])
-        setListFeatureLapels(listFeature[3])
-        setListFeatureChestPocket(listFeature[4])
-        setListFeatureButtons(listFeature[5])
-        setListFeaturePockets(listFeature[6])
-        setListFeatureVents(listFeature[7])
-        setListFeaturePants(listFeature[8])
-        setListFeatureVest(listFeature[9])
-        setListFeatureShirt(listFeature[10])
-        setListFeatureTie(listFeature[11])
-        setFeatureMonogram(listFeature[12])
-        setListFeature(listFeature)
-        
-        const initLining = listFeature[0].options.filter(v => v.selected)[0] || {}
-        const initCanvas = listFeature[1].options.filter(v => v.selected)[0] || {}
-        const initShoulder = listFeature[2].options.filter(v => v.selected)[0] || {}
-        const initLapels = listFeature[3].options.filter(v => v.selected)[0] || {}
-        const initChestPocket = listFeature[4].options.filter(v => v.selected)[0] || {}
-        const initButtons = listFeature[5].options.filter(v => v.selected)[0] || {}
-        const initPockets = listFeature[6].options.filter(v => v.selected)[0] || {}
-        const initVents = listFeature[7].options.filter(v => v.selected)[0] || {}
-        const initPants = listFeature[8].options.filter(v => v.selected)[0] || {}
-        const initVest = listFeature[9].options.filter(v => v.selected)[0] || {}
-        const initShirt = listFeature[10].options.filter(v => v.selected)[0] || {}
-        const initTie = listFeature[11].options.filter(v => v.selected)[0] || {}
-        const initMonogram = listFeature[12].options.filter(v => v.selected)[0] || {}
-
-        const initFeature = {
-          "Lining": { 
-            id: initLining.id,
-            name: initLining.name, 
-            child: {
-              id: initLining.childs.filter(v => v.selected)[0].id,
-              name: initLining.childs.filter(v => v.selected)[0].name
-            }
-          },
-          "Canvas Type": { id: initCanvas.id, name: initCanvas.name },
-          "Shoulder Type": { id: initShoulder.id, name: initShoulder.name },
-          "Lapels": { id: initLapels.id, name: initLapels.name, codeName: initLapels.code_name, resources: initLapels.resources },
-          "Chest Pocket": { id: initChestPocket.id, name: initChestPocket.name, resources: initChestPocket.resources },
-          "Buttons": { id: initButtons.id, name: initButtons.name, codeName: initButtons.code_name, resources: initButtons.resources },
-          "Pockets": { id: initPockets.id, name: initPockets.name, resources: initPockets.resources },
-          "Vents": { id: initVents.id, name: initVents.name },
-          "Pants": { id: initPants.id, name: initPants.name },
-          "Vest": { id: initVest.id, name: initVest.name},
-          "Shirt": { id: initShirt.id, name: initShirt.name},
-          "Tie": { id: initTie.id, name: initTie.name},
-          "Monogram": { id: initMonogram.id, name: initMonogram.name }
-        }
-
-        setFeature(initFeature)
+    getSuitFeatures()
+      .then(data => {
+        const initFeaturePrice = data.initFeature.map(v => v.data.price).reduce((a, b) => a + b)
+        setListFeature(data.listFeature)
+        setFeature(data.initFeature)
+        setFeaturePrice(initFeaturePrice)
       })
       .catch(err => console.log(err))
   }
@@ -117,6 +62,55 @@ function Customize (){
     fetchDataFeatures()
   }, [])
 
+  const totalPrice = () => {
+    const price = fabricPrice + featurePrice
+    setPrice(price)
+  }
+
+  useEffect(() => {
+    totalPrice()
+  }, [fabricPrice, featurePrice])
+
+  function submit (){
+    const features = feature.map((v) => {
+      return {
+        "option_value": v.data.id,
+        "child_value": v.data.child ? v.data.child.id : null,
+        "string_value": v.data.value ? v.data.value : null
+      }
+    })
+
+    const data = {
+      "fabric_color_id": fabric.colorId,
+      "product_id": product.id,
+      "category":{
+        "id": product.category.id,
+        "type": product.category.type
+      },
+      "is_customized": 0,
+      "note": "",
+      "features": features,
+      "measurement": {
+        "method": "manual",
+        "fit_option_id": 1,
+        "standard_measurement_id": 1,
+        "height": 160,
+        "weight": 60,
+      }
+    }
+    
+    if (props.auth === null || props.user === null) {
+      return window.location = `/login?redirectTo=${encodeURIComponent(window.location.href)}`
+    } else {
+      addToCart(props.auth.token, data)
+        .then(res => {
+          if (res.data.message === "success") {
+            window.location = "/cart"
+          }
+        })
+    }
+  }
+
   return (
     <Layout header="white" page={t("title")} footer={false}>
       <div id="page-customize">
@@ -124,29 +118,16 @@ function Customize (){
           <Row>
             <Col md={4}>
               <FilterBar 
-                setPrice={setPrice} setFabricPrice={setFabricPrice}
+                setFabricPrice={setFabricPrice} setFeaturePrice={setFeaturePrice}
                 listFabric={listFabric} fabric={fabric} setFabric={setFabric} 
                 listFeature={listFeature} feature={feature} setFeature={setFeature}
-                listFeatureLining={listFeatureLining}
-                listFeatureCanvas={listFeatureCanvas}
-                listFeatureShoulder={listFeatureShoulder}
-                listFeatureLapels={listFeatureLapels}
-                listFeatureChestPocket={listFeatureChestPocket}
-                listFeatureButtons={listFeatureButtons}
-                listFeaturePockets={listFeaturePockets}
-                listFeatureVents={listFeatureVents}
-                listFeaturePants={listFeaturePants}
-                listFeatureVest={listFeatureVest}
-                listFeatureShirt={listFeatureShirt}
-                listFeatureTie={listFeatureTie}
-                featureMonogram={featureMonogram}
               />
             </Col>
             <Col md={5}>
               <LivePreviewDesktop fabric={fabric} feature={feature} />
             </Col>
             <Col md={3}>
-              <DetailBox fabric={fabric} price={price} feature={feature} />
+              <DetailBox fabric={fabric} price={price} feature={feature} addToCart={submit} />
             </Col>
           </Row>
         </Container>
@@ -155,4 +136,12 @@ function Customize (){
   )
 }
 
-export default withRouter(Customize)
+const mapStateToProps = (state) => ({
+  auth: state.auth.auth,
+  user: state.auth.user
+})
+
+const mapDispatchToProps = () => ({
+})
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Customize));

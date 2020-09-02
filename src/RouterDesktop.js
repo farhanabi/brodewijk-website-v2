@@ -4,6 +4,7 @@ import * as Guard from 'utils/Guard';
 
 import PageHome from 'pages/home/Desktop';
 import PageCustomize from 'pages/customize/Desktop';
+import PageCart from 'pages/cart/Desktop';
 import PageBookAppointment from 'pages/bookAppointment/Desktop';
 import PagePartnership from 'pages/partnership/Desktop';
 import PageLogin from 'pages/auth/login/Desktop';
@@ -27,6 +28,10 @@ function RouterDesktop (){
     <Switch>
       <Route exact={true} path="/" component={PageHome}/>
       <Route path="/customize" component={PageCustomize}/>
+      <Route path="/cart" component={Guard.onlyLogged(PageCart)}/>
+      <Route path="/login" component={Guard.onlyGuest(PageLogin)}/>
+      <Route path="/register" component={Guard.onlyGuest(PageRegister)}/>
+      <Route path="/profile" component={Guard.onlyLogged(PageUser)}/>
       <Route path="/partnership" component={PagePartnership}/>
       <Route path="/book-appointment" component={PageBookAppointment}/>
       <Route path="/terms-and-conditions" component={PageTnC}/>
@@ -36,9 +41,6 @@ function RouterDesktop (){
       <Route path="/contact" component={PageContact}/>
       <Route path="/link" component={PageLink}/>
       <Route path="/price-list" component={PagePriceList}/>
-      <Route path="/login" component={Guard.onlyGuest(PageLogin)}/>
-      <Route path="/register" component={Guard.onlyGuest(PageRegister)}/>
-      <Route path="/profile" component={Guard.onlyLogged(PageUser)}/>
       <Route path="*" component={PageNotFound} />
       <Route component={PageNotFound} />
     </Switch>

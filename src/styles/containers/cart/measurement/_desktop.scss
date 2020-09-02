@@ -1,0 +1,144 @@
+.measure-desktop {
+  width: 100%;
+
+  .wrapper-btn-close {
+    justify-content: flex-end;
+  }
+
+  .link-guide {
+    font-family: Open Sans;
+    font-size: 16px;
+    line-height: 134.77%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+  }
+
+  .title{
+    font-family: Playfair Display;
+    font-size: 32px;
+    line-height: 140.62%;
+    text-align: center;
+    color: #4E4E56;
+    margin-bottom: 25px;
+  }
+
+  .fit, .method {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .option {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: #1C1C1C;
+    margin-bottom: 0;
+    margin-right: 20px;
+    width: 70px;
+    text-align: right;
+  }
+
+  .btn-tab {
+    background: transparent;
+    font-family: Open Sans;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #58595B;
+    border: none;
+
+    &:focus, &:active {
+      color: #58595B !important;
+      box-shadow: none !important;
+      background: transparent !important;
+      border: none !important;
+    }
+
+    &.active {
+      background: #F9F9F9 !important;
+      border: 0.5px dashed #808285 !important;
+      color: #58595B !important;
+      box-shadow: none !important;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+  }
+  .standard-size {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #1C1C1C;
+    min-width: 55px;
+    
+    &.active {
+      color: #1C1C1C !important;
+    }
+  }
+
+  .custom {
+    padding: 0 20px;
+
+    .subtitle {
+      font-family: Playfair Display;
+      font-size: 24px;
+      line-height: 140.62%;
+      color: #4E4E56;
+      margin-bottom: 10px;
+      
+      &.center {
+        text-align: center;
+      }
+    }
+
+    .form-group {
+      label {
+        font-family: Open Sans;
+        font-size: 16px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+      }
+      
+      .form-control {
+        border: 1px solid #1C1C1C;
+        border-radius: 0;
+        font-size: 16px;
+
+        &:focus{
+          box-shadow: none;
+        }
+
+        &::placeholder {
+          color: #D1D3D4;
+        }
+      }
+    }
+  }
+
+  .wrapper-btn-save {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    .btn-save {
+      width: 200px;
+      height: 48px;
+      color: #ffffff;
+      background: #1C1C1C;
+      
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}

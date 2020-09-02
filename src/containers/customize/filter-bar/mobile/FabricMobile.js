@@ -1,19 +1,19 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
+import { currencyFormatter } from 'utils/number';
 
 function FabricMobile (props){
-  const { item, setPrice, fabric, setFabric, setFabricPrice } = props
+  const { item, fabric, setFabric, setFabricPrice } = props
 
-  function changeFabric(fabricName, fabricColor, fabricPath, price) {
-    setFabric({ name: fabricName, color: fabricColor, path: fabricPath })
+  function changeFabric(fabricId, fabricName, fabricColorId, fabricColorName, fabricPath, price) {
+    setFabric({ id: fabricId, name: fabricName, colorId: fabricColorId, colorName: fabricColorName, path: fabricPath })
     setFabricPrice(price)
-    setPrice(price)
   }
 
   return (
     <div className={`fabric-item ${fabric.name === item.name ? "active" : ""}`}>
       <Col xs={12} className="fabric-text">
-        <h5 className="fabric-text-name">{item.name} (Rp{item.type.base_price})</h5>
+        <h5 className="fabric-text-name">{item.name} (Rp{currencyFormatter(item.type.base_price)})</h5>
         <p className="fabric-text-grade">{item.grade}</p>
         <p className="fabric-text-desc">{item.description}</p>
       </Col>
@@ -21,8 +21,8 @@ function FabricMobile (props){
         <Row className="row-color">
           {item.colors.map((v, k) => (
             <Col xs={6} key={k} 
-              className={`fabric-color-item ${fabric.color === v.name ? "color-active" : ""}`}
-              onClick={() => changeFabric(item.name, v.name, v.path, item.type.base_price)}
+              className={`fabric-color-item ${fabric.colorName === v.name ? "color-active" : ""}`}
+              onClick={() => changeFabric(item.id, item.name, v.id, v.name, v.path, item.type.base_price)}
             >
               <div className="wrapper-color-item">
                 <img className="fabric-color-img" src={v.image} alt={v.name} />

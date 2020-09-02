@@ -6,11 +6,7 @@ import FabricDesktop from './FabricDesktop';
 import FeatureDesktop from './FeatureDesktop';
 
 function FilterBar(props) {
-  const { 
-    setPrice, listFabric, fabric, setFabric, setFabricPrice, listFeature, feature, setFeature, setFeaturePrice, 
-    listFeatureLining, listFeatureCanvas,  listFeatureShoulder, listFeatureLapels, listFeatureChestPocket, listFeatureButtons, 
-    listFeaturePockets, listFeatureVents, listFeaturePants, listFeatureVest, listFeatureShirt, listFeatureTie, featureMonogram
-  } = props
+  const { listFabric, fabric, setFabric, setFabricPrice, listFeature, feature, setFeature, setFeaturePrice } = props
   const { t } = useTranslation("customize");
   const [activeTab, setActiveTab] = useState('fabric');
 
@@ -42,31 +38,14 @@ function FilterBar(props) {
         <TabPane tabId="fabric" className="fabric">
           {listFabric.length > 0 && listFabric.map((v, k) => (
             <Row key={k}>
-              <FabricDesktop item={v} fabric={fabric} setFabric={setFabric} setFabricPrice={setFabricPrice} setPrice={setPrice} />
+              <FabricDesktop item={v} fabric={fabric} setFabric={setFabric} setFabricPrice={setFabricPrice} />
             </Row>
           ))}
         </TabPane>
         <TabPane tabId="features" className="features">
-          {/* {feature !== null &&  listFeature.length > 0 &&  (
-            <FeatureDesktop feature={feature} setFeature={setFeature} setFeaturePrice={setFeaturePrice} setPrice={setPrice}
-              listFeatureLining={listFeatureLining}
-              listFeatureCanvas={listFeatureCanvas}
-              listFeatureShoulder={listFeatureShoulder}
-              listFeatureLapels={listFeatureLapels}
-              listFeatureChestPocket={listFeatureChestPocket}
-              listFeatureButtons={listFeatureButtons}
-              listFeaturePockets={listFeaturePockets}
-              listFeatureVents={listFeatureVents}
-              listFeaturePants={listFeaturePants}
-              listFeatureVest={listFeatureVest}
-              listFeatureShirt={listFeatureShirt}
-              listFeatureTie={listFeatureTie}
-              featureMonogram={featureMonogram}
-            />
-          )} */}
           {feature !== null &&  listFeature.length > 0 && listFeature.map((v, k) => (
             <Row key={k}>
-              <FeatureDesktop item={v} feature={feature} setFeature={setFeature} setFeaturePrice={setFeaturePrice} setPrice={setPrice} />
+              <FeatureDesktop item={v} index={k} feature={feature} setFeature={setFeature} setFeaturePrice={setFeaturePrice} />
             </Row>
           ))}
         </TabPane>

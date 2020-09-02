@@ -1,0 +1,137 @@
+.measure-mobile {
+  width: 100%;
+  margin-top: 75px;
+
+  .link-guide {
+    font-family: Open Sans;
+    font-size: 16px;
+    line-height: 134.77%;
+    display: block;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+    margin: 20px 0;
+  }
+
+  .fit, .method {
+    margin-bottom: 10px;
+  }
+
+  .option {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: #1C1C1C;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .btn-tab {
+    background: transparent;
+    font-family: Open Sans;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #58595B;
+    border: none;
+
+    &:focus, &:active {
+      color: #58595B !important;
+      box-shadow: none !important;
+      background: transparent !important;
+      border: none !important;
+    }
+
+    &.full-width {
+      width: 100%;
+    }
+
+    &.active {
+      background: #F9F9F9 !important;
+      border: 0.5px dashed #808285 !important;
+      color: #58595B !important;
+      box-shadow: none !important;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+  }
+
+  .standard {
+    .list-standard {
+      margin: 20px 0;
+      justify-content: center;
+
+      .standard-size {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: #1C1C1C;
+        min-width: 55px;
+        
+        &.active {
+          color: #1C1C1C !important;
+        }
+      }
+    }
+  }
+
+  .custom {
+    padding: 0 20px;
+
+    .subtitle {
+      font-family: Open Sans;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      color: #1C1C1C;
+    }
+
+    .form-group {
+      label {
+        font-family: Open Sans;
+        font-size: 16px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+      }
+      .form-control {
+        border: 1px solid #1C1C1C;
+        border-radius: 0;
+        font-size: 16px;
+
+        &:focus{
+          box-shadow: none;
+        }
+
+        &::placeholder {
+          color: #D1D3D4;
+        }
+      }
+    }
+  }
+
+  .wrapper-btn-save {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    .btn-save {
+      width: 200px;
+      height: 48px;
+      color: #ffffff;
+      background: #1C1C1C;
+      
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "title": "UKURAN",
-
+  "measuring-guide": "Petunjuk pengukuran",
   "fit-option": {
     "label": "Fit",
     "slim-fit": "Slim Fit",
@@ -31,7 +31,7 @@
       "biceps": "Lingkar Lengan Atas",
       "wrist": "Lingkar Pergelangan Tangan",
       "front-chest": "Lebar Dada Depan",
-      "back-chest": "Lebar Dada Belakang",
+      "back-chest": "Lebar Dada Belakang"
     },
     "bottom-measurement": {
       "title": "Pengukuran Bawah",

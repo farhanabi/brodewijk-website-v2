@@ -113,34 +113,45 @@ function Header(props) {
                   </Link>
                 </NavItem>
 
-                {/* USER */}
-                <NavItem>
-                  {props.auth !== null && props.user !== null ? (
-                    <Dropdown isOpen={showProfile} toggle={() => setShowProfile(!showProfile)}>
-                      <DropdownToggle className={`${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
-                        <i className="fas fa-user" />
-                      </DropdownToggle>
-                      <DropdownMenu className={`user-bar ${props.white ? 'bg-white' : ''}`}>
-                        <DropdownItem className="item">
-                          <Link to="/profile">
-                            <Button className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("profile")}</Button>
-                          </Link>
-                        </DropdownItem>
-                        <DropdownItem className="item">
-                          <Button onClick={() => logout()}
-                            className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}
-                          >
-                            {t("logout-button")}
-                          </Button>
-                        </DropdownItem>
-                      </DropdownMenu>
-                    </Dropdown>
-                  ) : (
+                {/* USER & CART */}
+                {props.auth !== null && props.user !== null ? (
+                  <>
+                    <NavItem>
+                      <Dropdown isOpen={showProfile} toggle={() => setShowProfile(!showProfile)}>
+                        <DropdownToggle className={`${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
+                          <i className="fas fa-user" />
+                        </DropdownToggle>
+                        <DropdownMenu className={`user-bar ${props.white ? 'bg-white' : ''}`}>
+                          <DropdownItem className="item">
+                            <Link to="/my-profile">
+                              <Button className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("profile")}</Button>
+                            </Link>
+                          </DropdownItem>
+                          <DropdownItem className="item">
+                            <Button onClick={() => logout()}
+                              className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}
+                            >
+                              {t("logout-button")}
+                            </Button>
+                          </DropdownItem>
+                        </DropdownMenu>
+                      </Dropdown>
+                    </NavItem>
+                    <NavItem>
+                      <Link to="/cart">
+                        <Button className={`${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
+                          <i className="fas fa-shopping-cart"/>
+                        </Button>
+                      </Link>
+                    </NavItem>
+                  </>
+                ) : (
+                  <NavItem>
                     <Link to={loginUrl()}>
                       <Button className={`all ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("login-button")}</Button>
                     </Link>
-                  )}
-                </NavItem>
+                  </NavItem>
+                )}
 
                 {/* MULTILANG */}
                 <NavItem>

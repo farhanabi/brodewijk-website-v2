@@ -63,7 +63,7 @@ function Header(props) {
       <Container>
         <Row className="header-bar">
           <Col xs={2} className="nav-menu">
-            {props.page === "LOG IN" || props.page ===  "SIGN UP" || props.page ===  "MASUK" || props.page === "DAFTAR" ? (
+            {props.page === "LOG IN" || props.page ===  "SIGN UP" || props.page ===  "MASUK" || props.page === "DAFTAR" || props.page === "MEASURE" || props.page === "UKURAN" ? (
               <Button className="btn-outline-black" onClick={props.history.goBack}>
                 <i className="fas fa-arrow-left" />
               </Button>
@@ -136,6 +136,13 @@ function Header(props) {
             </Col>
             {props.auth !== null && props.user !== null ? (
               <>
+              <Col xs={12} className="nav-item">
+                <Link to="/cart">
+                  <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
+                    <i className="fas fa-shopping-cart"/>
+                  </Button>
+                </Link>
+              </Col>
               <Col xs={12} className="nav-item">
                 <Link to="/profile">
                   <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("profile")}</Button>

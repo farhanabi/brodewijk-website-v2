@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import Loading from 'components/Loading';
+import { currencyFormatter } from 'utils/number';
+import { addToCart } from 'services/cart';
 
 const imgCart = require('assets/images/cart.svg')
 const espalda_abajo = require('assets/images/interior+espalda_abajo+length_long.png')
@@ -12,18 +14,18 @@ function LivePreviewMobile(props) {
   let buttonSegment = ""
   let chestPocket = ""
   let pockets = ""
-  if (feature && feature["Lapels"] && feature["Buttons"] && feature["Chest Pocket"] && feature["Pockets"]) {
-    lapel_button = feature[`Buttons`].resources[`${feature["Lapels"].codeName}`].neck
-    buttonSegment = feature["Buttons"].codeName.split('+')[0]
-    chestPocket = feature["Chest Pocket"].resources.pocket
-    pockets = feature["Pockets"].resources.pocket
+  if (feature) {
+    lapel_button = feature[5].data.resources[`${feature[3].data.codeName}`].neck
+    buttonSegment = feature[5].data.codeName.split('+')[0]
+    chestPocket = feature[4].data.resources.pocket
+    pockets = feature[6].data.resources.pocket
   }
-  console.log(fabric)
+  
   return (
     <div id="live-preview-mobile">
       <Container>
         <Row className="row-top">
-          {fabric && fabric.color && feature ? (
+          {fabric && fabric.colorName && feature ? (
             <Col xs={10} className="wrapper-img">
               <div className="bg-grey">
                 <img src={espalda_abajo} className="img-preview" alt=''/>
@@ -38,13 +40,13 @@ function LivePreviewMobile(props) {
             </Col>
           ) : (<Loading text={true} />)}
           <Col xs={2} className="wrapper-btn">
-            <Button className="btn-cart" title="Add to cart">
+            <Button className="btn-cart" title="Add to cart" onClick={() => props.addToCart()}>
               <img src={imgCart}/>
             </Button>
           </Col>
         </Row>
         <Row className="row-bottom">
-          <p className="text-price">Rp <strong>{price}</strong></p>
+          <p className="text-price">Rp <strong>{currencyFormatter(price)}</strong></p>
         </Row>
       </Container>
     </div>

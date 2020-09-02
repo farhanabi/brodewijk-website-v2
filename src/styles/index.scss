@@ -100,8 +100,9 @@ code {
 @import '~react-redux-toastr/src/styles/index';
 
 // import styles
-@import './pages/home/desktop';
+@import './pages/home';
 @import './pages/customize';
+@import './pages/cart';
 @import './pages/notFound';
 @import './pages/auth/register/desktop';
 @import './pages/auth/register/mobile';
@@ -132,12 +133,19 @@ code {
 @import './containers/privacyPolicy/privacyPolicy';
 @import './containers/link/main-slider/desktop';
 @import './containers/link/main-slider/mobile';
+@import './containers/priceList/main-slider/mobile';
+@import './containers/priceList/bespokeService';
+@import './containers/priceList/weddingPackage/mobile';
+@import './containers/priceList/weddingPackageList';
 @import './containers/customize/filterBar/desktop';
 @import './containers/customize/filterBar/mobile';
 @import './containers/customize/livePreview/desktop';
 @import './containers/customize/livePreview/mobile';
 @import './containers/customize/detailBox';
-@import './containers/priceList/main-slider/mobile';
-@import './containers/priceList/bespokeService';
-@import './containers/priceList/weddingPackage/mobile';
-@import './containers/priceList/weddingPackageList';
+@import './containers/cart/listItem/desktop';
+@import './containers/cart/listItem/mobile';
+@import './containers/cart/summary/desktop';
+@import './containers/cart/summary/mobile';
+@import './containers/cart/checkoutConfirm';
+@import './containers/cart/measurement/desktop';
+@import './containers/cart/measurement/mobile';

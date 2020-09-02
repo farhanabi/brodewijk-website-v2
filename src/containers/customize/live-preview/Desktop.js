@@ -11,12 +11,13 @@ function LivePreviewDesktop (props){
   let buttonSegment = ""
   let chestPocket = ""
   let pockets = ""
-  if (feature && feature["Lapels"] && feature["Buttons"] && feature["Chest Pocket"] && feature["Pockets"]) {
-    lapel_button = feature[`Buttons`].resources[`${feature["Lapels"].codeName}`].neck
-    buttonSegment = feature["Buttons"].codeName.split('+')[0]
-    chestPocket = feature["Chest Pocket"].resources.pocket
-    pockets = feature["Pockets"].resources.pocket
+  if (feature) {
+    lapel_button = feature[5].data.resources[`${feature[3].data.codeName}`].neck
+    buttonSegment = feature[5].data.codeName.split('+')[0]
+    chestPocket = feature[4].data.resources.pocket
+    pockets = feature[6].data.resources.pocket
   }
+
   return (
     <div id="live-preview-desktop">
       <Container>
@@ -28,7 +29,7 @@ function LivePreviewDesktop (props){
           </Col>
         </Row>
         <Row className="row-bottom">
-          {fabric && fabric.color && feature ? (
+          {fabric && fabric.colorName && feature ? (
             <Col className="wrapper-img">
               <img src={espalda_abajo} className="img-preview" alt=''/>
               <img src={espalda_arriba} className="img-preview" alt=''/>
