@@ -46,7 +46,6 @@ const MainSlider = (props) => {
           <div className="section-absolute">
             <Container>
               <div className="item-text">
-                <h6 className="page-title">{t("special-discount")}</h6>
                 {item.contain.title ? <h2 className="title">{item.contain.title}</h2> : null}
                 {item.contain.subtitle ? <p className="subtitle">{item.contain.subtitle}</p> : null }
                 {item.contain.button ? (

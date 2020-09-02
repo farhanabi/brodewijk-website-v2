@@ -48,9 +48,9 @@ function BespokeService() {
             <img className="bespoke-img" src={v.image}></img>
             <p className="bespoke-description">{v.description}</p>
             <h5 className="bespoke-price-label"><b>{t("bespoke-service-section.two-piece-bold")}</b> {t("bespoke-service-section.two-piece-regular")}</h5>
-            <p className="bespoke-price">{t("bespoke-service-section.start-from")} <strike>{v.twoPieceStrike}</strike> {v.twoPiecePrice}</p>
+            <p className="bespoke-price">{t("bespoke-service-section.start-from")} {v.twoPiecePrice}</p>
             <h5 className="bespoke-price-label"><b>{t("bespoke-service-section.three-piece-bold")}</b> {t("bespoke-service-section.three-piece-regular")}</h5>
-            <p className="bespoke-price">{t("bespoke-service-section.start-from")} <strike>{v.threePieceStrike}</strike> {v.threePiecePrice}</p>
+            <p className="bespoke-price">{t("bespoke-service-section.start-from")} {v.threePiecePrice}</p>
             <a href={`${t("bespoke-service-section.wa-link")}%20${v.name}%20bespoke%20suit%20service`}><Button className="bespoke-cta">{t("bespoke-service-section.order-now")}</Button></a>
           </div>
         ))}
