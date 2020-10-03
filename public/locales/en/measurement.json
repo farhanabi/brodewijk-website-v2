@@ -42,7 +42,8 @@
       "knee": "Knee",
       "ankle": "Ankle",
       "hips": "Pants Hips"
-    }
+    },
+    "is-required":"is required"
   },
 
   "save-button": "Save size"

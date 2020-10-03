@@ -12,7 +12,7 @@ const getSuitFabrics = () => {
       const initProduct = res.data.data.product
       const listFabric = res.data.data.fabrics
       const initFabric = listFabric.filter(v => v.selected === true)[0]
-
+    
       return ({ initProduct, listFabric, initFabric })
     })
 }

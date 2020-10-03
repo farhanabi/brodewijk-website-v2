@@ -16,7 +16,8 @@ function WeddingPackageList() {
         "1 Set of Semi Wool Canvassed Suit + Pants + Vest + Shirt + Tie + Monogram",
         "1 Set of Semi Wool Suit + Pants"
       ],
-      "price": "Rp4.625.000"
+      "price": "Rp4.830.000",
+      "save": "Rp500.000"
     },
     {
       "id": 2,
@@ -26,16 +27,18 @@ function WeddingPackageList() {
         "1 Set of Semi Wool Canvassed Suit + Pants + Vest + Shirt + Tie + Monogram",
         "3 Set of Semi Wool Suit + Pants"
       ],
-      "price": "Rp8.800.000"
+      "price": "Rp9.200.000",
+      "save": "Rp500.000"
      },
      {
       "id": 3,
       "title": "Tuxedo Man",
       "image": require("../../assets/images/pricelist-wedding-tuxedo.jpg"),
       "description": [
-        "1 Set of Tuxedo + Pants + Shirt + Bow Tie + Monogram"
+        "2 Set of Tuxedo + Pants + Shirt + Bow Tie + Monogram"
       ],
-      "price": "Rp2.830.000"
+      "price": "Rp5.960.000",
+      "save": "Rp500.000"
      },
      {
       "id": 4,
@@ -45,7 +48,8 @@ function WeddingPackageList() {
         "1 Set of Semi Wool Canvassed Suit + Pants + Shirt + Tie + Monogram",
         "4 Set of Hi Twist Suit + Pants"
       ],
-      "price": "Rp7.760.000"
+      "price": "Rp9.150.000",
+      "save": "Rp500.000"
      }
   ]
   return(
@@ -58,6 +62,7 @@ function WeddingPackageList() {
             <img className="wedding-img" src={v.image} alt={v.title}></img>
             {v.description.map(p => <p className="wedding-description">{p}</p>)}
             <h5 className="wedding-price-label">{v.price}</h5>
+            <h6 className="wedding-price-save">Save {v.save}</h6>
             <a href={`${t("wedding-package-section.wa-link")}%20${v.title}%20wedding%20package`}>
               <Button className="wedding-cta">
                 Order Now

@@ -1,0 +1,58 @@
+#shipping-form-section-desktop {
+  .form-group-wrapper {
+    margin: 10px 0 20px;
+    width: 90%;
+
+    .title {
+      font-family: Open Sans;
+      font-size: 20px;
+      line-height: 27px;
+      letter-spacing: 0.4em;
+      color: #0C172F;
+    }
+
+    .form-group {
+      font-family: Open Sans;
+      
+      label {
+        color: #000000;
+        font-size: 16px;
+      }
+
+      .form-control {
+        border: 1px solid #1C1C1C;
+        border-radius: 0;
+        font-size: 16px;
+
+        &:focus{
+          box-shadow: none;
+          
+          &::placeholder {
+            color: #d1d3d480;
+          }
+        }
+
+        &::placeholder {
+          color: #D1D3D4;
+        }
+      }
+
+      .pass-wrapper {
+        position: relative;
+
+        i {
+          cursor: pointer;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .form-group-wrapper {
+      width: 100%;
+    }
+  }
+}

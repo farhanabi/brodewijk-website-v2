@@ -76,22 +76,22 @@ function Header(props) {
                     </DropdownToggle>
                     <DropdownMenu className={`customize-bar ${props.white ? 'bg-white' : ''}`}>
                       <DropdownItem className="item">
-                        <Link to="/collections">
+                        <Link to="/customize/suit">
                           <Button className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("suit")}</Button>
                         </Link>
                       </DropdownItem>
                       <DropdownItem className="item">
-                        <Link to="/collections">
+                        <Link to="/customize/shirt">
                           <Button className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("shirt")}</Button>
                         </Link>
                       </DropdownItem>
                       <DropdownItem className="item">
-                        <Link to="/collections">
+                        <Link to="/customize/pants">
                           <Button className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("pants")}</Button>
                         </Link>
                       </DropdownItem>
                       <DropdownItem className="item">
-                        <Link to="/collections">
+                        <Link to="/customize/vest">
                           <Button className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("vest")}</Button>
                         </Link>
                       </DropdownItem>
@@ -123,7 +123,7 @@ function Header(props) {
                         </DropdownToggle>
                         <DropdownMenu className={`user-bar ${props.white ? 'bg-white' : ''}`}>
                           <DropdownItem className="item">
-                            <Link to="/my-profile">
+                            <Link to="/profile">
                               <Button className={`btn-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("profile")}</Button>
                             </Link>
                           </DropdownItem>

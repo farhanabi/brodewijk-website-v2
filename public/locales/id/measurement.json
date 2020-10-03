@@ -21,28 +21,36 @@
     },
     "upper-measurement": {
       "title": "Pengukuran Bagian Atas",
-      "front-length": "Panjang Atas",
+      "neck": "Lingkar Leher",
       "shoulder-width": "Lebar Bahu",
-      "sleeve-length": "Panjang Tangan",
+      "biceps": "Lingkar Lengan Atas",
+      "arm-length": "Panjang Lengan",
+      "wrist": "Lingkar Pergelangan Tangan",
+      "torso-length": "Panjang Atas",
       "chest": "Lingkar Dada",
-      "waist": "Lingkar Perut",
+      "stomach": "Lingkar Perut",
+      "waist": "Lingkar Pinggul",
+      
+      "front-length": "Panjang Atas",
+      "sleeve-length": "Panjang Tangan",
       "hips": "Lingkar Pinggul",
       "armpits": "Lingkar Ketiak",
-      "biceps": "Lingkar Lengan Atas",
-      "wrist": "Lingkar Pergelangan Tangan",
       "front-chest": "Lebar Dada Depan",
       "back-chest": "Lebar Dada Belakang"
     },
     "bottom-measurement": {
       "title": "Pengukuran Bawah",
-      "length": "Panjang Celana",
       "waist": "Lingkar Pinggang",
+      "seat": "Lingkar Pinggul",
+      "length": "Panjang Celana",
       "crotch": "Panjang Selangkangan",
       "thigh": "Lingkar Paha",
       "knee": "Lingkar Lutut",
+
       "ankle": "Lingkar Pergelangan Kaki",
       "hips": "Lingkar Pinggul Celana"
-    }
+    },
+    "is-required":"harus diisi"
   },
 
   "save-button": "Save size"

@@ -29,6 +29,10 @@
       "vents": "Vents"
     },
     "price": "Price",
-    "add-to-cart": "Add to Cart"
+    "add-to-cart": "Add to Cart",
+    "order-this-via-wa": {
+      "label": "Order (via WhatsApp)",
+      "link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20want%20to%20order%20suit%20with"
+    }
   }
 }

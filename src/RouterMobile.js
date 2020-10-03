@@ -5,6 +5,7 @@ import * as Guard from 'utils/Guard';
 import PageHome from 'pages/home/Mobile';
 import PageCustomize from 'pages/customize/Mobile';
 import PageCart from 'pages/cart/Mobile';
+import PageShipping from 'pages/shipping/Mobile';
 import PageMeasure from 'pages/MeasureMobile';
 import PageBookAppointment from 'pages/bookAppointment/Mobile';
 import PagePartnership from 'pages/partnership/Mobile';
@@ -14,6 +15,7 @@ import PageUser from 'pages/auth/user/Mobile';
 import PageTnC from 'pages/termsAndConditions/Mobile';
 import PagePrivacy from 'pages/privacyPolicy/Mobile';
 import PageHelp from 'pages/help/Mobile';
+import PageSizeGuide from 'pages/sizeGuide/Mobile';
 import PageAbout from 'pages/about/Mobile';
 import PageContact from 'pages/contact/Mobile';
 import PageLink from 'pages/link/Mobile';
@@ -29,13 +31,15 @@ function RouterMobile (){
     <Switch>
       <Route exact={true} path="/" component={PageHome}/>
       <Route path="/customize" component={PageCustomize}/>
-      <Route path="/cart" component={Guard.onlyLogged(PageCart)}/>
-      <Route path="/measure/:id" component={Guard.onlyLogged(PageMeasure)}/>
+      {/* <Route path="/cart" component={Guard.onlyLogged(PageCart)}/> */}
+      {/* <Route path="/measure/:id" component={Guard.onlyLogged(PageMeasure)}/> */}
+      {/* <Route path="/shipping" component={Guard.onlyLogged(PageShipping)}/> */}
       <Route path="/partnership" component={PagePartnership}/>
       <Route path="/book-appointment" component={PageBookAppointment}/>
       <Route path="/terms-and-conditions" component={PageTnC}/>
       <Route path="/privacy-policy" component={PagePrivacy}/>
       <Route path="/help" component={PageHelp}/>
+      <Route path="/size-guide" component={PageSizeGuide}/>
       <Route path="/about" component={PageAbout}/>
       <Route path="/contact" component={PageContact}/>
       <Route path="/link" component={PageLink}/>

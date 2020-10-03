@@ -1,0 +1,75 @@
+{
+  "title": "SIZE GUIDE",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Size Does Matter",
+      "subtitle": "We provide you the best sizing you’ll ever find. We provide you the customized size and standard size that available for all products. You can also book appointment to get you measured.",
+      "button-1": "SEE OUR SIZE GUIDE",
+      "button-2": "BOOK APPOINTMENT"
+    }
+  },
+  
+  "size-section": {
+    "title": "Size Guide",
+    "subtitle": "Here are our size guide for the standard size of our ready-made product. Just click the related button below",
+    "common": {
+      "height": "Body Height",
+      "width": "Body Width",
+      "neck": "Neck",
+      "chest": "Chest",
+      "waist": "Waist",
+      "shoulder": "Shoulder Width",
+      "jacketLength": "Jacket Length",
+      "sleeve": "Sleeve Length",
+      "sleeveCB": "Sleeve Length (CB)",
+      "hip": "Hip",
+      "thigh": "Thigh",
+      "rising": "Rising Length",
+      "bottomWidth": "Bottom Width",
+      "torsoLength": "Torso Length",
+      "size": "Size",
+      "circ": "Waist Circ."
+    },
+    "categories": {
+      "sizeChart": "Size Chart (in cm)",
+      "bodysize": {
+        "title": "Body Size",
+        "paragraph": "Body Size is your naked body measurement. It will be different with your clothes size since the clothes sizes are vary.",
+        "tables": {
+          "tops": "Body Size - Tops",
+          "bottoms": "Body Size - Bottoms"
+        }
+      },
+      "topwear": {
+        "title": "Top Wear Size",
+        "tables": {
+          "suitJacket": "Suit Jacket",
+          "outer": "Outer",
+          "longSleeveFormal": "Long Sleeve Formal Shirt",
+          "shortSleeveFormal": "Short Sleeve Formal Shirt",
+          "shortSleeveMandarin": "Short Sleeve Mandarin Collar Shirt",
+          "casualShirt": "Casual Shirt",
+          "longSleeveCasualShirt": "Long Sleeve Mandarin Collar Casual Shirt"
+        }
+      },
+      "bottomwear": {
+        "title": "Bottom Wear Size",
+        "tables": {
+          "pants": "Pants"
+        }
+      }
+    }
+  },
+
+  "book-section": {
+    "title": "Can’t find your best fit? Try to Customize!",
+    "subtitle": "Make your bespoke formal wear for any events. Exclusively tailor-made for you, directly measured by our talented tailor. Book an Appointment now!",
+    "button": "BOOK APPOINTMENT"
+  },
+
+  "contact-section": {
+    "title": "Want to Measure yourself?",
+    "subtitle": "Get your own printable measure tape here!",
+    "button-download": "DOWNLOAD"
+  }
+}

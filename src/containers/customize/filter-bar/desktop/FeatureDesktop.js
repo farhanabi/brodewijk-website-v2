@@ -6,7 +6,7 @@ import { TabContent, TabPane, Button, Row, Col, Input } from 'reactstrap';
 function FeatureDesktop (props){
   const { item, index, feature, setFeature, setFeaturePrice } = props
   const [activeTabLining, setActiveTabLining] = useState(1);
-  const [valueMonogram, setValueMonogram] = useState("")
+  const [valueMonogram, setValueMonogram] = useState('')
 
   function toggleTabLining(tab) {
     if (activeTabLining !== tab) setActiveTabLining(tab);
@@ -86,7 +86,7 @@ function FeatureDesktop (props){
   const Monogram = () => {
     return (
       <div className="monogram">
-        <Input type="text" placeholder="monogram" value={valueMonogram} onChange={(e) => changeMonogram(e.target.value)}/>
+        <Input type="text" placeholder="Monogram" value={valueMonogram} onChange={e => changeMonogram(e.target.value)}/>
       </div>
     );
   }
@@ -101,6 +101,7 @@ function FeatureDesktop (props){
     }
     const itemFeature = { name: featureName, data }
     const newFeature = feature.map(obj => obj.name === featureName ? itemFeature : obj)
+    {console.log('newFeature',typeof feature[5].data.resources[`${feature[3].data.codeName}`].neck)}
     const newFeaturePrice = newFeature.map(v => v.data.price).reduce((a, b) => a + b)
 
     setFeature(newFeature)
@@ -110,7 +111,8 @@ function FeatureDesktop (props){
   return (
     <div className="feature-item">
       <Col md={12} className="feature-text">
-        <h5 className="feature-text-name">{item.name}</h5>
+        {item.name === "Monogram" ? null :
+        <h5 className="feature-text-name">{item.name}</h5>}
       </Col>
       <Col md={12} className="feature-options">
         <Row className="mr-0 ml-0">
@@ -129,9 +131,11 @@ function FeatureDesktop (props){
                   </Col>
                 )}
               )
-            ) : (
-              <Monogram/>
-          ))}
+            ) 
+            : <>
+              {/* <Monogram/> */}
+              </>
+          )}
         </Row>
       </Col>
     </div>

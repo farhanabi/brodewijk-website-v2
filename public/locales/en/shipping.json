@@ -1,0 +1,64 @@
+{
+  "title": "Profile & Shipping Information",
+
+  "profile": {
+    "title": "PROFILE",
+    "useSaved": "Use saved profile information",
+    "form": {
+      "full-name": {
+        "label": "Full Name",
+        "placeholder": "Enter receiver’s full name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Put receiver’s active email here"
+      },
+      "phone-number": {
+        "label": "Phone Number",
+        "placeholder": "Put receiver’s active phone number"
+      }
+    }
+  },
+
+  "address": {
+    "title": "ADDRESS",
+    "useSaved": "Use saved address information",
+    "form": {
+      "address": {
+        "label": "Address",
+        "placeholder": "Enter receiver’s address"
+      },
+      "apartment": {
+        "label": "Apartment, Suite, or Company Name (Optional)",
+        "placeholder": "Put receiver’s apartment, suite, or company name"
+      },
+      "city": {
+        "label": "City",
+        "placeholder": "Choose receiver’s city"
+      },
+      "province": {
+        "label": "Province",
+        "placeholder": "Choose receiver’s province"
+      },
+      "postal": {
+        "label": "Postal Code",
+        "placeholder": "Enter receiver’s postal code"
+      },
+      "country": {
+        "label": "Country",
+        "placeholder": "Choose receiver’s country"
+      }
+    }
+  },
+
+  "summary": "SUMMARY",
+  "shipping": "Shipping",
+  "shipping-fee": "Free",
+  "enter-location": "Enter location",
+
+  "proceed": {
+    "text": "Are you sure to proceed to payment?",
+    "btn-back": "Back",
+    "btn-proceed": "Proceed to Payment"
+  }
+}

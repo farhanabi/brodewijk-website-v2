@@ -50,10 +50,15 @@ function Header(props) {
   function handleShowNavbar() {
     setShowNavbar(!showNavbar)
     setShowCustomize(false)
+    setShowProfile(false)
   }
 
   function handleShowCustomize() {
     setShowCustomize(!showCustomize)
+  }
+
+  function handleShowProfile() {
+    setShowProfile(!showProfile)
   }
 
   return(
@@ -63,7 +68,7 @@ function Header(props) {
       <Container>
         <Row className="header-bar">
           <Col xs={2} className="nav-menu">
-            {props.page === "LOG IN" || props.page ===  "SIGN UP" || props.page ===  "MASUK" || props.page === "DAFTAR" || props.page === "MEASURE" || props.page === "UKURAN" ? (
+            {props.page === "LOG IN" || props.page ===  "SIGN UP" || props.page === "MEASURE" || props.page ===  "MASUK" || props.page === "DAFTAR" || props.page === "UKURAN" ? (
               <Button className="btn-outline-black" onClick={props.history.goBack}>
                 <i className="fas fa-arrow-left" />
               </Button>
@@ -102,22 +107,22 @@ function Header(props) {
               <Col xs={12} className="nav-item">
                 <Row className={`nav-list customize ${props.white ? 'bg-white' : ''}`}>
                   <Col xs={12} className="nav-item">
-                    <Link to="/collections">
+                    <Link to="/customize/suit">
                       <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("suit")}</Button>
                     </Link>
                   </Col>
                   <Col xs={12} className="nav-item">
-                    <Link to="/collections">
+                    <Link to="/customize/shirt">
                       <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("shirt")}</Button>
                     </Link>
                   </Col>
                   <Col xs={12} className="nav-item">
-                    <Link to="/collections">
+                    <Link to="/customize/pants">
                       <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("pants")}</Button>
                     </Link>
                   </Col>
                   <Col xs={12} className="nav-item">
-                    <Link to="/collections">
+                    <Link to="/customize/vest">
                       <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("vest")}</Button>
                     </Link>
                   </Col>
@@ -137,24 +142,35 @@ function Header(props) {
             {props.auth !== null && props.user !== null ? (
               <>
               <Col xs={12} className="nav-item">
-                <Link to="/cart">
-                  <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
-                    <i className="fas fa-shopping-cart"/>
-                  </Button>
-                </Link>
-              </Col>
-              <Col xs={12} className="nav-item">
-                <Link to="/profile">
-                  <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("profile")}</Button>
-                </Link>
-              </Col>
-              <Col xs={12} className="nav-item">
-                <Button onClick={() => logout()}
-                  className={`all ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}
-                >
-                  {t("logout-button")}
+                <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`} onClick={handleShowProfile}>
+                  {t("profile")}
                 </Button>
               </Col>
+              {showProfile && (
+                <Col xs={12} className="nav-item">
+                  <Row className={`nav-list customize ${props.white ? 'bg-white' : ''}`}>
+                    <Col xs={12} className="nav-item">
+                      <Link to="/cart">
+                        <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>
+                          {t("cart")} 
+                        </Button>
+                      </Link>
+                    </Col>
+                    <Col xs={12} className="nav-item">
+                      <Link to="/profile">
+                        <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("user-information")}</Button>
+                      </Link>
+                    </Col>
+                    <Col xs={12} className="nav-item">
+                      <Button onClick={() => logout()}
+                          className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}
+                        >
+                        {t("logout-button")}
+                      </Button>
+                    </Col>
+                  </Row>
+                </Col>
+              )}
               </>
             ) : (
               <Col xs={12} className="nav-item">

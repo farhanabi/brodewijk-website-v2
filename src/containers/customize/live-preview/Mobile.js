@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Container, Row, Col, Button } from 'reactstrap';
 import Loading from 'components/Loading';
 import { currencyFormatter } from 'utils/number';
@@ -10,6 +11,8 @@ const espalda_arriba = require('assets/images/interior+espalda_arriba.png')
 
 function LivePreviewMobile(props) {
   const { price, fabric, feature } = props;
+  const { t } = useTranslation("customize");
+  
   let lapel_button = ""
   let buttonSegment = ""
   let chestPocket = ""
@@ -40,8 +43,12 @@ function LivePreviewMobile(props) {
             </Col>
           ) : (<Loading text={true} />)}
           <Col xs={2} className="wrapper-btn">
-            <Button className="btn-cart" title="Add to cart" onClick={() => props.addToCart()}>
-              <img src={imgCart}/>
+            {/* <Button className="btn-cart" title="Add to cart" onClick={() => props.addToCart()}>
+                  <img src={imgCart}/>
+                </Button> */}
+            <Button className="btn-cart" title="Add to cart"
+              href={feature && `${t("detail-box-section.order-this-via-wa.link")} ${t("detail-box-section.features.fabric")}: ${fabric.name} ${fabric.colorName}, ${t("detail-box-section.features.lining")}: ${feature[0].data.name} ${feature[0].data.child.name}, ${t("detail-box-section.features.canvas")}: ${feature[1].data.name}, ${t("detail-box-section.features.shoulder")}: ${feature[2].data.name}, ${t("detail-box-section.features.lapels")}: ${feature[3].data.name}, ${t("detail-box-section.features.chest-pocket")}: ${feature[4].data.name}, ${t("detail-box-section.features.buttons")}: ${feature[5].data.name}, ${t("detail-box-section.features.pockets")}: ${feature[6].data.name}, ${t("detail-box-section.features.vents")}: ${feature[7].data.name}`}>
+                <img src={imgCart}/>
             </Button>
           </Col>
         </Row>

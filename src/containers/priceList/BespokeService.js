@@ -12,28 +12,22 @@ function BespokeService() {
      "name": "Hi-Twist",
      "image": require("../../assets/images/pricelist-bespoke-hitwist.jpg"),
      "description": t("bespoke-service-section.bespoke-card.card-1.description"),
-     "twoPieceStrike": "Rp1.300.000",
-     "twoPiecePrice": "Rp1.170.000",
-     "threePieceStrike": "Rp1.739.000",
-     "threePiecePrice": "Rp1.478.000"
+     "twoPiecePrice": "Rp1.300.000",
+     "threePiecePrice": "Rp1.739.000"
     },
     {
       "name": "Semi Wool",
       "image": require("../../assets/images/pricelist-bespoke-semiwool.jpg"),
       "description": t("bespoke-service-section.bespoke-card.card-2.description"),
-      "twoPieceStrike": "Rp1.895.000",
-      "twoPiecePrice": "Rp1.421.000",
-      "threePieceStrike": "Rp2.366.000",
-      "threePiecePrice": "Rp1.775.000"
+      "twoPiecePrice": "Rp1.985.000",
+      "threePiecePrice": "Rp2.480.000"
      },
      {
       "name": "Wool",
       "image": require("../../assets/images/pricelist-bespoke-wool.jpg"),
       "description": t("bespoke-service-section.bespoke-card.card-3.description"),
-      "twoPieceStrike": "Rp2.685.000",
-      "twoPiecePrice": "Rp2.148.000",
-      "threePieceStrike": "Rp3.340.000",
-      "threePiecePrice": "Rp2.672.000"
+      "twoPiecePrice": "Rp2.685.000",
+      "threePiecePrice": "Rp3.340.000"
      }
   ]
   return(

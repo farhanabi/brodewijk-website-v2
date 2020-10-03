@@ -10,6 +10,8 @@
   "login-button": "SIGN UP / LOGIN",
   "logout-button": "LOGOUT",
   "profile": "PROFILE",
+  "cart": "CART",
+  "user-information": "USER INFORMATION",
 
   "language": "Language",
   
@@ -31,7 +33,7 @@
 
   "contact": {
     "heading": "CONTACT",
-    "address": "Jl. Ganesha No. 15F, Kel. Lebak Siliwangi, Kec. Coblong, Bandung, Jawa Barat 40132",
+    "address": "Jl. MTC Tim. No. A-25, Sekejati, Kec. Buahbatu, Kota Bandung, Jawa Barat 40286",
     "mail": "contact@brodewijk.com",
     "instagram": "@brodewijk.id",
     "whatsapp-only": "+62 8156051373 (WhatsApp only)"

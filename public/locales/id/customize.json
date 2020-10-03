@@ -29,6 +29,10 @@
       "vents": "Vents"
     },
     "price": "Harga",
-    "add-to-cart": "Tambah ke Keranjang"
+    "add-to-cart": "Tambah ke Keranjang",
+    "order-this-via-wa": {
+      "label": "Pesan (via WhatsApp)",
+      "link": "https://api.whatsapp.com/send?phone=628156051373&text=Halo%20Brodewijk!%20Saya%20ingin%20memesan%20jas%20dengan"
+    }
   }
 }

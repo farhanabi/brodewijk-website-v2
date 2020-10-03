@@ -5,6 +5,7 @@ import * as Guard from 'utils/Guard';
 import PageHome from 'pages/home/Desktop';
 import PageCustomize from 'pages/customize/Desktop';
 import PageCart from 'pages/cart/Desktop';
+import PageShipping from 'pages/shipping/Desktop';
 import PageBookAppointment from 'pages/bookAppointment/Desktop';
 import PagePartnership from 'pages/partnership/Desktop';
 import PageLogin from 'pages/auth/login/Desktop';
@@ -13,6 +14,7 @@ import PageUser from 'pages/auth/user/Desktop';
 import PageTnC from 'pages/termsAndConditions/Desktop';
 import PagePrivacy from 'pages/privacyPolicy/Desktop';
 import PageHelp from 'pages/help/Desktop';
+import PageSizeGuide from 'pages/sizeGuide/Desktop';
 import PageAbout from 'pages/about/Desktop';
 import PageContact from 'pages/contact/Desktop';
 import PageLink from 'pages/link/Desktop';
@@ -28,7 +30,8 @@ function RouterDesktop (){
     <Switch>
       <Route exact={true} path="/" component={PageHome}/>
       <Route path="/customize" component={PageCustomize}/>
-      <Route path="/cart" component={Guard.onlyLogged(PageCart)}/>
+      {/* <Route path="/cart" component={Guard.onlyLogged(PageCart)}/> */}
+      {/* <Route path="/shipping" component={Guard.onlyLogged(PageShipping)}/> */}
       <Route path="/login" component={Guard.onlyGuest(PageLogin)}/>
       <Route path="/register" component={Guard.onlyGuest(PageRegister)}/>
       <Route path="/profile" component={Guard.onlyLogged(PageUser)}/>
@@ -37,6 +40,7 @@ function RouterDesktop (){
       <Route path="/terms-and-conditions" component={PageTnC}/>
       <Route path="/privacy-policy" component={PagePrivacy}/>
       <Route path="/help" component={PageHelp}/>
+      <Route path="/size-guide" component={PageSizeGuide}/>
       <Route path="/about" component={PageAbout}/>
       <Route path="/contact" component={PageContact}/>
       <Route path="/link" component={PageLink}/>
