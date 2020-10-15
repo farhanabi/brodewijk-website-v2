@@ -148,6 +148,7 @@ function Footer() {
                     </li>
                   ))}
                   </ul>
+                  <a href="https://www.bridestory.com/brodewijk" title="Brodewijk" target="_blank" rel="dofollow"><img alt="Brodewijk" width="205" height="36" src="https://business.bridestory.com/assets/images/badges/rectangle/big-blackwhite.png" /></a>
                 </div>
               </Col>
             </Row>

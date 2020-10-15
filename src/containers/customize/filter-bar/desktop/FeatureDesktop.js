@@ -20,11 +20,13 @@ function FeatureDesktop (props){
         name: lining.name,
         codeName: lining.code_name,
         resources: lining.resources,
+        description: lining.description,
         price: lining.prices[0].price,
         child: { id: child.id, name: child.name }
       }
     }
     const newFeature = feature.map(obj => obj.name === "Lining" ? newLining : obj)
+    {console.log('newFeature:',newFeature)}
     const newFeaturePrice = newFeature.map(v => v.data.price).reduce((a, b) => a + b)
     setFeature(newFeature)
     setFeaturePrice(newFeaturePrice)
@@ -101,7 +103,6 @@ function FeatureDesktop (props){
     }
     const itemFeature = { name: featureName, data }
     const newFeature = feature.map(obj => obj.name === featureName ? itemFeature : obj)
-    {console.log('newFeature',typeof feature[5].data.resources[`${feature[3].data.codeName}`].neck)}
     const newFeaturePrice = newFeature.map(v => v.data.price).reduce((a, b) => a + b)
 
     setFeature(newFeature)

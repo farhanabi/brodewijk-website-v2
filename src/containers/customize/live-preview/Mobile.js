@@ -21,7 +21,7 @@ function LivePreviewMobile(props) {
     lapel_button = feature[5].data.resources[`${feature[3].data.codeName}`].neck
     buttonSegment = feature[5].data.codeName.split('+')[0]
     chestPocket = feature[4].data.resources.pocket
-    pockets = feature[6].data.resources.pocket
+    pockets = feature[6].data.resources.pockets
   }
   
   return (
@@ -47,7 +47,7 @@ function LivePreviewMobile(props) {
                   <img src={imgCart}/>
                 </Button> */}
             <Button className="btn-cart" title="Add to cart"
-              href={feature && `${t("detail-box-section.order-this-via-wa.link")} ${t("detail-box-section.features.fabric")}: ${fabric.name} ${fabric.colorName}, ${t("detail-box-section.features.lining")}: ${feature[0].data.name} ${feature[0].data.child.name}, ${t("detail-box-section.features.canvas")}: ${feature[1].data.name}, ${t("detail-box-section.features.shoulder")}: ${feature[2].data.name}, ${t("detail-box-section.features.lapels")}: ${feature[3].data.name}, ${t("detail-box-section.features.chest-pocket")}: ${feature[4].data.name}, ${t("detail-box-section.features.buttons")}: ${feature[5].data.name}, ${t("detail-box-section.features.pockets")}: ${feature[6].data.name}, ${t("detail-box-section.features.vents")}: ${feature[7].data.name}`}>
+              href={feature && `${t("detail-box-section.order-this-via-wa.link")} ${t("detail-box-section.features.fabric")}: ${fabric.name} ${fabric.colorName}, ${t("detail-box-section.features.lining")}: ${feature[0].data.name} ${feature[0].data.child.name}, ${t("detail-box-section.features.canvas")}: ${feature[1].data.name}, ${t("detail-box-section.features.shoulder")}: ${feature[2].data.name}, ${t("detail-box-section.features.lapels")}: ${feature[3].data.name}, ${t("detail-box-section.features.chest-pocket")}: ${feature[4].data.name}, ${t("detail-box-section.features.buttons")}: ${feature[5].data.name}, ${t("detail-box-section.features.pockets")}: ${feature[6].data.name}, ${t("detail-box-section.features.vents")}: ${feature[7].data.name}, ${feature[8].data.name}, ${feature[9].data.name}, ${feature[10].data.name}`}>
                 <img src={imgCart}/>
             </Button>
           </Col>

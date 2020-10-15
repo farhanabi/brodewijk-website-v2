@@ -30,6 +30,7 @@ const getSuitFeatures = () => {
           data: { 
             id: initLining.id,
             name: initLining.name, 
+            description: initLining.description,
             codeName: initLining.code_name,
             resources: initLining.resources,
             price: initLining.prices[0].price,

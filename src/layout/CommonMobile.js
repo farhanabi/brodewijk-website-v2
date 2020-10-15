@@ -68,7 +68,6 @@ const CommonLayout = (props) => {
           gtag('config', 'UA-175670833-1');
         `}</script>
 
-
         {/* <!-- Facebook Pixel Code --> */}
         <script>{`
           !function(f,b,e,v,n,t,s)
@@ -84,6 +83,19 @@ const CommonLayout = (props) => {
         `}</script>
         <noscript>{`<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1844940835638001&ev=PageView&noscript=1"/>`}</noscript>
         {/* <!-- End Facebook Pixel Code --> */}
+
+        {/* <!-- Hotjar Tracking Code for www.brodewijk.com --> */}
+        <script>{`
+          (function(h,o,t,j,a,r){
+              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+              h._hjSettings={hjid:2040055,hjsv:6};
+              a=o.getElementsByTagName('head')[0];
+              r=o.createElement('script');r.async=1;
+              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+              a.appendChild(r);
+          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        `}</script>
+
       </Helmet>
       {header === "white" ? (<Header white page={page} />) : (<Header page={page}/>)}
       {props.children}

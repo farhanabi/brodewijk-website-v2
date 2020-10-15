@@ -127,6 +127,7 @@ function Customize (props){
               <LivePreviewDesktop fabric={fabric} feature={feature} />
             </Col>
             <Col md={3}>
+              {console.log('cek',feature)}
               <DetailBox fabric={fabric} price={price} feature={feature} addToCart={submit} />
             </Col>
           </Row>

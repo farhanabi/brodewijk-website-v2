@@ -3,7 +3,7 @@
   "main-slider-section": {
     "slide-1": {
       "title": "Size Does Matter",
-      "subtitle": "We provide you the best sizing you’ll ever find. We provide you the customized size and standard size that available for all products. You can also book appointment to get you measured.",
+      "subtitle": "We provide you the best sizing you’ll ever find. We provide you the customized size and standard size that available for all products. You can also book an appointment to get you measured.",
       "button-1": "SEE OUR SIZE GUIDE",
       "button-2": "BOOK APPOINTMENT"
     }
@@ -11,7 +11,7 @@
   
   "size-section": {
     "title": "Size Guide",
-    "subtitle": "Here are our size guide for the standard size of our ready-made product. Just click the related button below",
+    "subtitle": "Here is our size guide for the standard size of our ready-made product. Just click the related button below",
     "common": {
       "height": "Body Height",
       "width": "Body Width",

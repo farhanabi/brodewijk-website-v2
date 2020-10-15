@@ -3,18 +3,18 @@
   
   "main-slider-section": {
     "slide-1": {
-      "title": "Let Us Come to You & Get You a Premium Wear",
-      "subtitle": "Got no time to measure and choose styles by yourself? Make an appointment with us and we will come to you",
+      "title": "Get Measured & Make It Yours",
+      "subtitle": "Craft your own wear as you like. Make an appointment with us and get a one-on-one service",
       "button-1": "BOOK APPOINTMENT NOW"
     }
   },
 
   "hiw-section": {
     "title": "How it works",
-    "book": "Book your appointment and let our tailor approach you",
-    "pick": "Select your fabrics, styles, and get measured by our talented tailor",
-    "pay": "Pay and we will process your order, you just need to be ready",
-    "finish": "Your order will be ready in 15 business days at maximum"
+    "book": "Book appointment, go to our showroom, and let our tailor measures you.",
+    "pick": "Select your fabrics, styles, and get measured by our talented tailor.",
+    "pay": "Pay and we will process your order, you just need to get prepared.",
+    "finish": "Your order will be ready in 15 business days on average."
   },
 
   "testimoni-section": {
@@ -26,6 +26,12 @@
         "job": "Entrepreneur"
       }
     }
+  },
+
+  "customize-section": {
+    "title": "Or Customize from Home Using Our Feature",
+    "subtitle": "Make your bespoke formal wear for any events anywhere you want. Customize now!",
+    "button": "CUSTOMIZE"
   },
 
   "contact-section": {

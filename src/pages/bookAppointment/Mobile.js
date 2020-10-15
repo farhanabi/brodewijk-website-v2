@@ -7,6 +7,7 @@ import Layout from 'layout/CommonMobile'
 import MainSlider from 'containers/bookAppointment/main-slider/Mobile'
 import HowItWorks from 'containers/bookAppointment/HowItWorks'
 import Testimoni from 'containers/bookAppointment/Testimoni'
+import Customize from 'containers/bookAppointment/Customize'
 import Contact from 'containers/bookAppointment/Contact'
 
 function BookAppointment (){
@@ -17,6 +18,7 @@ function BookAppointment (){
         <MainSlider/>
         <HowItWorks/>
         <Testimoni/>
+        <Customize/>
         <Contact/>
       </div>
     </Layout>

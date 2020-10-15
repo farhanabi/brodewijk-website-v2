@@ -1,0 +1,75 @@
+{
+  "title": "PANDUAN UKURAN",
+  "main-slider-section": {
+    "slide-1": {
+      "title": "Ukuran Sangat Penting",
+      "subtitle": "Kami memberi Anda ukuran khusus dan ukuran standar yang tersedia untuk semua produk. Anda juga dapat membuat janji untuk mengukur tubuh Anda sendiri.",
+      "button-1": "LIHAT PANDUAN UKURAN",
+      "button-2": "BUAT JANJI"
+    }
+  },
+  
+  "size-section": {
+    "title": "Panduan Ukuran",
+    "subtitle": "Berikut adalah panduan ukuran kami untuk ukuran produk standar siap pakai kami. Klik tombol di bawah untuk melihat",
+    "common": {
+      "height": "Tinggi Badan",
+      "width": "Lebar Badan",
+      "neck": "Leher",
+      "chest": "Dada",
+      "waist": "Pinggang",
+      "shoulder": "Lebar Bahu",
+      "jacketLength": "Panjang Jaket",
+      "sleeve": "Panjang Lengan",
+      "sleeveCB": "Panjang Lengan (CB)",
+      "hip": "Panggul",
+      "thigh": "Paha",
+      "rising": "Panjang Selangkangan",
+      "bottomWidth": "Lebar Bawah",
+      "torsoLength": "Panjang Badan Atas",
+      "size": "Ukuran",
+      "circ": "Lingkar Pinggang"
+    },
+    "categories": {
+      "sizeChart": "Paduan Ukuran (dalam cm)",
+      "bodysize": {
+        "title": "Ukuran Badan",
+        "paragraph": "Ukuran Tubuh adalah ukuran tubuh telanjang Anda. Ini akan berbeda dengan ukuran pakaian Anda karena ukuran pakaian akan berbeda-beda.",
+        "tables": {
+          "tops": "Ukuran Tubuh - Atasan",
+          "bottoms": "Ukuran Tubuh - Bawahan"
+        }
+      },
+      "topwear": {
+        "title": "Ukuran Pakaian Atas",
+        "tables": {
+          "suitJacket": "Jas, Blazer, & Jaket",
+          "outer": "Pakaian Luar",
+          "longSleeveFormal": "Kemeja Formal Lengan Panjang",
+          "shortSleeveFormal": "Kemeja Formal Lengan Pendek",
+          "shortSleeveMandarin": "Kemeja Kerah Mandarin Lengan Pendek",
+          "casualShirt": "Kemeja Kasual",
+          "longSleeveCasualShirt": "Kemeja Casual Mandarin Collar Lengan Panjang"
+        }
+      },
+      "bottomwear": {
+        "title": "Ukuran Pakaian Bawah",
+        "tables": {
+          "pants": "Celana"
+        }
+      }
+    }
+  },
+
+  "book-section": {
+    "title": "Ukuran tidak cocok? Coba Kustomisasi!",
+    "subtitle": "Dibuat khusus untuk Anda, diukur langsung oleh penjahit berbakat kami. Buat janji sekarang!",
+    "button": "BUAT JANJI"
+  },
+
+  "contact-section": {
+    "title": "Ingin Mengukur sendiri?",
+    "subtitle": "Dapatkan pita pengukur Anda sendiri yang dapat dicetak di sini!",
+    "button-download": "UNDUH PITA PENGUKUR"
+  }
+}

@@ -15,19 +15,19 @@ function LivePreviewDesktop (props){
     lapel_button = feature[5].data.resources[`${feature[3].data.codeName}`].neck
     buttonSegment = feature[5].data.codeName.split('+')[0]
     chestPocket = feature[4].data.resources.pocket
-    pockets = feature[6].data.resources.pocket
+    pockets = feature[6].data.resources.pockets
   }
 
   return (
     <div id="live-preview-desktop">
       <Container>
-        <Row className="row-top">
+        {/* <Row className="row-top">
           <Col md={{ size: 1, offset: 11 }} className="wrapper-btn">
             <Button className="btn-full" title="Full screen">
               <i className="fas fa-expand"/>
             </Button>
           </Col>
-        </Row>
+        </Row> */}
         <Row className="row-bottom">
           {fabric && fabric.colorName && feature ? (
             <Col className="wrapper-img">

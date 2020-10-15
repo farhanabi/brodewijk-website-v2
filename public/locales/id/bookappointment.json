@@ -3,18 +3,18 @@
 
   "main-slider-section": {
     "slide-1": {
-      "title": "Biar Kami yang Menghampiri Anda",
-      "subtitle": "Tidak punya waktu untuk mengukur dan memilih gaya sendiri? Buat janji dan kami akan datang kepada Anda",
+      "title": "Biar Kami yang Mengukur Anda",
+      "subtitle": "Ingin memilih gaya sendiri sesuai keinginan? Buat janji dan kami akan mengukur Anda",
       "button-1": "ATUR JADWAL PERTEMUAN"
     }
   },
 
   "hiw-section": {
     "title": "Bagaimana cara kerjanya",
-    "book": "Buat janji dan penjahit kami akan mendatangi Anda",
-    "pick": "Pilih kain, fitur, sekaligus diukur oleh penjahit kami yang berbakat",
-    "pay": "Bayar dan kami akan segera memproses pesanan Anda, Anda tinggal menunggu",
-    "finish": "Pesanan Anda akan siap dalam 15 hari kerja"
+    "book": "Buat janji, datang ke showroom kami, dan penjahit kami akan mengukur Anda.",
+    "pick": "Pilih kain, fitur, sekaligus diukur oleh penjahit kami yang berbakat.",
+    "pay": "Bayar dan kami akan segera memproses pesanan Anda, Anda tinggal menunggu.",
+    "finish": "Pesanan Anda akan siap dalam 15 hari kerja (rata-rata)."
   },
 
   "testimoni-section": {
@@ -26,6 +26,12 @@
         "job": "Pengusaha"
       }
     }
+  },
+
+  "customize-section": {
+    "title": "Atau Kustomisasi Menggunakan Fitur Kami",
+    "subtitle": "Buat pakaian formal pesanan Anda untuk acara apa pun di mana pun Anda inginkan. Kustomisasi sekarang!",
+    "button": "KUSTOMISASI"
   },
 
   "contact-section": {

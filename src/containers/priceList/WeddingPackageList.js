@@ -16,7 +16,7 @@ function WeddingPackageList() {
         "1 Set of Semi Wool Canvassed Suit + Pants + Vest + Shirt + Tie + Monogram",
         "1 Set of Semi Wool Suit + Pants"
       ],
-      "price": "Rp4.830.000",
+      "price": "Rp5.781.000",
       "save": "Rp500.000"
     },
     {
@@ -27,7 +27,7 @@ function WeddingPackageList() {
         "1 Set of Semi Wool Canvassed Suit + Pants + Vest + Shirt + Tie + Monogram",
         "3 Set of Semi Wool Suit + Pants"
       ],
-      "price": "Rp9.200.000",
+      "price": "Rp10.611.000",
       "save": "Rp500.000"
      },
      {
@@ -37,7 +37,7 @@ function WeddingPackageList() {
       "description": [
         "2 Set of Tuxedo + Pants + Shirt + Bow Tie + Monogram"
       ],
-      "price": "Rp5.960.000",
+      "price": "Rp7.250.000",
       "save": "Rp500.000"
      },
      {
