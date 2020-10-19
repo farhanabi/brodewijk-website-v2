@@ -12,6 +12,7 @@ import LivePreviewDesktop from 'containers/customize/live-preview/Desktop';
 import { getSuitFabrics } from 'services/fabric';
 import { getSuitFeatures } from 'services/feature';
 import { addToCart } from 'services/cart'
+import Loading from 'components/Loading'
 
 function Customize (props){
   const { t } = useTranslation("customize");
@@ -19,7 +20,7 @@ function Customize (props){
   const [price, setPrice] = useState(0)
   const [product, setProduct] = useState({})
   const [listFabric, setListFabric] = useState([])
-  const [fabric, setFabric] = useState({})
+  const [fabric, setFabric] = useState(null)
   const [fabricPrice, setFabricPrice] = useState(0)
 
   const [listFeature, setListFeature] = useState([])
@@ -33,6 +34,7 @@ function Customize (props){
         const fabric = { 
           id: data.initFabric.id, 
           name: data.initFabric.name, 
+          type: { id: data.initFabric.type.id.toString(), name: data.initFabric.type.name },
           colorId: initFabricColor.id, 
           colorName: initFabricColor.name, 
           path: initFabricColor.path 
@@ -49,7 +51,10 @@ function Customize (props){
   function fetchDataFeatures() {
     getSuitFeatures()
       .then(data => {
-        const initFeaturePrice = data.initFeature.map(v => v.data.price).reduce((a, b) => a + b)
+        const initFeaturePrice = data.initFeature.map(v => {
+          const price = v.data.prices.filter(val => val.fabric_id === fabric.type.id)[0].price
+          return price
+        }).reduce((a, b) => a + b)
         setListFeature(data.listFeature)
         setFeature(data.initFeature)
         setFeaturePrice(initFeaturePrice)
@@ -59,8 +64,11 @@ function Customize (props){
 
   useEffect(() => {
     fetchDataFabric()
-    fetchDataFeatures()
   }, [])
+
+  useEffect(() => {
+    fetchDataFeatures()
+  }, [fabric])
 
   const totalPrice = () => {
     const price = fabricPrice + featurePrice
@@ -113,26 +121,28 @@ function Customize (props){
 
   return (
     <Layout header="white" page={t("title")} footer={false}>
-      <div id="page-customize">
-        <Container fluid>
-          <Row>
-            <Col md={4}>
-              <FilterBar 
-                setFabricPrice={setFabricPrice} setFeaturePrice={setFeaturePrice}
-                listFabric={listFabric} fabric={fabric} setFabric={setFabric} 
-                listFeature={listFeature} feature={feature} setFeature={setFeature}
-              />
-            </Col>
-            <Col md={5}>
-              <LivePreviewDesktop fabric={fabric} feature={feature} />
-            </Col>
-            <Col md={3}>
-              {console.log('cek',feature)}
-              <DetailBox fabric={fabric} price={price} feature={feature} addToCart={submit} />
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      {fabric && listFabric && feature && listFeature ? (
+        <div id="page-customize">
+          <Container fluid>
+            <Row>
+              <Col md={4}>
+                <FilterBar 
+                  setFabricPrice={setFabricPrice} setFeaturePrice={setFeaturePrice}
+                  listFabric={listFabric} fabric={fabric} setFabric={setFabric} 
+                  listFeature={listFeature} feature={feature} setFeature={setFeature}
+                />
+              </Col>
+              <Col md={5}>
+                <LivePreviewDesktop fabric={fabric} feature={feature} />
+              </Col>
+              <Col md={3}>
+                {/* {console.log('cek',feature)} */}
+                <DetailBox fabric={fabric} price={price} feature={feature} addToCart={submit} />
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      ) : <Loading/>}
     </Layout>
   )
 }

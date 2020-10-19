@@ -1,16 +1,20 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import classnames from 'classnames';
-import { TabContent, TabPane, Button, Row, Col, Input } from 'reactstrap';
+import { TabContent, TabPane, Button, Row, Col } from 'reactstrap';
 
 function FeatureMobile (props){
-  const { item, index, feature, setFeature, setFeaturePrice, setPrice } = props
-  const [activeTabLining, setActiveTabLining] = useState(1);
-  const [valueMonogram, setValueMonogram] = useState("")
+  const { item, index, fabric, feature, setFeature, setFeaturePrice } = props
+  const [activeTabLining, setActiveTabLining] = useState(0);
 
   function toggleTabLining(tab) {
     if (activeTabLining !== tab) setActiveTabLining(tab);
   }
+
+  useEffect(() => {
+    let lining = feature[0]
+    setActiveTabLining(lining.data.id)
+  }, [feature])
 
   function changeLining(lining, child) {
     const newLining = {
@@ -20,12 +24,15 @@ function FeatureMobile (props){
         name: lining.name,
         codeName: lining.code_name,
         resources: lining.resources,
-        price: lining.prices[0].price,
+        prices: lining.prices,
         child: { id: child.id, name: child.name }
       }
     }
     const newFeature = feature.map(obj => obj.name === "Lining" ? newLining : obj)
-    const newFeaturePrice = newFeature.map(v => v.data.price).reduce((a, b) => a + b)
+    const newFeaturePrice = newFeature.map(v => {
+      const price = v.data.prices.filter(val => val.fabric_id === fabric.type.id)[0].price
+      return price
+    }).reduce((a, b) => a + b)
     setFeature(newFeature)
     setFeaturePrice(newFeaturePrice)
   }
@@ -49,7 +56,7 @@ function FeatureMobile (props){
               <Row className="mr-0 ml-0">
                 {val.childs.map((v, k) => (
                   <Col xs={6} key={k} 
-                    className={`lining-color ${feature[0].data.child.name === v.name ? "active" : ""}`}
+                    className={`lining-color ${feature[0].data.child.id === v.id ? "active" : ""}`}
                     onClick={() => changeLining(val, v)}
                   >
                     <img className="lining-color-img" src={v.image} alt={v.name} />
@@ -64,60 +71,36 @@ function FeatureMobile (props){
     );
   }
 
-  function changeMonogram (value){
-    const monogram = {
-      name: "Monogram",
-      data: {
-        id: value.length > 0 ? 26 : 25,
-        name: value.length > 0 ? "add" : "none",
-        codeName: null,
-        resources: [],
-        price: 0,
-        value: value
-      }
-    }
-    const newFeature = feature.map(obj => obj.name === "Monogram" ? monogram : obj)
-    const newFeaturePrice = newFeature.map(v => v.data.price).reduce((a, b) => a + b)
-    setValueMonogram(value)
-    setFeature(newFeature)
-    setFeaturePrice(newFeaturePrice)
-  }
-
-  const Monogram = () => {
-    return (
-      <div className="monogram">
-        <Input type="text" placeholder="monogram" value={valueMonogram} onChange={(e) => changeMonogram(e.target.value)}/>
-      </div>
-    );
-  }
-
   function changeFeature(featureName, value) {
     const data = {
       id: value.id,
       name: value.name,
       codeName: value.code_name,
       resources: value.resources,
-      price: value.prices[0].price
+      prices: value.prices
     }
     const itemFeature = { name: featureName, data }
     const newFeature = feature.map(obj => obj.name === featureName ? itemFeature : obj)
-    const newFeaturePrice = newFeature.map(v => v.data.price).reduce((a, b) => a + b)
+    const newFeaturePrice = newFeature.map(v => {
+      const price = v.data.prices.filter(val => val.fabric_id === fabric.type.id)[0].price
+      return price
+    }).reduce((a, b) => a + b)
 
     setFeature(newFeature)
     setFeaturePrice(newFeaturePrice)
   }
 
   return (
-    <div className="feature-item">
-      <Col xs={12} className="feature-text">
-        <h5 className="feature-text-name">{item.name}</h5>
-      </Col>
-      <Col xs={12} className="feature-options">
-        <Row className="mr-0 ml-0">
-          {item.name === "Lining" ? (
-            <Lining item={item}/>
-          ) : (
-            item.type === "option" ? (
+    item.type === "option" ? (
+      <div className="feature-item">
+        <Col xs={12} className="feature-text">
+          <h5 className="feature-text-name">{item.name}</h5>
+        </Col>
+        <Col xs={12} className="feature-options">
+          <Row className="mr-0 ml-0">
+            {item.name === "Lining" ? (
+              <Lining item={item}/>
+            ) : (
               item.options.map((v, k) => {
                 return(
                   <Col xs={4} key={k} 
@@ -129,12 +112,11 @@ function FeatureMobile (props){
                   </Col>
                 )}
               )
-            ) : (
-              <Monogram/>
-          ))}
-        </Row>
-      </Col>
-    </div>
+            )}
+          </Row>
+        </Col>
+      </div>
+    ) : null
   );
 }
 

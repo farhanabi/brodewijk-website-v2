@@ -5,9 +5,12 @@ import { currencyFormatter } from 'utils/number';
 function FabricMobile (props){
   const { item, fabric, setFabric, setFabricPrice } = props
 
-  function changeFabric(fabricId, fabricName, fabricColorId, fabricColorName, fabricPath, price) {
-    setFabric({ id: fabricId, name: fabricName, colorId: fabricColorId, colorName: fabricColorName, path: fabricPath })
-    setFabricPrice(price)
+  function changeFabric(fabric, fabricColor) {
+    setFabric({ 
+        id: fabric.id, name: fabric.name, type: { id: fabric.type.id.toString(), name: fabric.type.name },
+        colorId: fabricColor.id, colorName: fabricColor.name, path: fabricColor.path 
+    })
+    setFabricPrice(fabric.type.base_price)
   }
 
   return (
@@ -21,8 +24,8 @@ function FabricMobile (props){
         <Row className="row-color">
           {item.colors.map((v, k) => (
             <Col xs={6} key={k} 
-              className={`fabric-color-item ${fabric.colorName === v.name ? "color-active" : ""}`}
-              onClick={() => changeFabric(item.id, item.name, v.id, v.name, v.path, item.type.base_price)}
+              className={`fabric-color-item ${fabric.colorId === v.id ? "color-active" : ""}`}
+              onClick={() => changeFabric(item, v)}
             >
               <div className="wrapper-color-item">
                 <img className="fabric-color-img" src={v.image} alt={v.name} />
