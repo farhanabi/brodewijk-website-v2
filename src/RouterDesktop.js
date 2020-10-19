@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import * as Guard from 'utils/Guard';
 
 import PageHome from 'pages/home/Desktop';
-import PageCustomize from 'pages/customize/Desktop';
+import PageCustomizeSuit from 'pages/customize/Desktop';
 import PageCart from 'pages/cart/Desktop';
 import PageShipping from 'pages/shipping/Desktop';
 import PageBookAppointment from 'pages/bookAppointment/Desktop';
@@ -29,7 +29,7 @@ function RouterDesktop (){
   return (
     <Switch>
       <Route exact={true} path="/" component={PageHome}/>
-      <Route path="/customize" component={PageCustomize}/>
+      <Route path="/customize/suit" component={PageCustomizeSuit}/>
       {/* <Route path="/cart" component={Guard.onlyLogged(PageCart)}/> */}
       {/* <Route path="/shipping" component={Guard.onlyLogged(PageShipping)}/> */}
       <Route path="/login" component={Guard.onlyGuest(PageLogin)}/>

@@ -33,7 +33,7 @@ const getSuitFeatures = () => {
             description: initLining.description,
             codeName: initLining.code_name,
             resources: initLining.resources,
-            price: initLining.prices[0].price,
+            prices: initLining.prices,
             child: {
               id: initLining.childs.filter(v => v.selected)[0].id,
               name: initLining.childs.filter(v => v.selected)[0].name
@@ -46,7 +46,7 @@ const getSuitFeatures = () => {
             name: initCanvas.name,
             codeName: initCanvas.code_name,
             resources: initCanvas.resources,
-            price: initCanvas.prices[0].price 
+            prices: initCanvas.prices
           }
         },
         { name: "Shoulder Type",
@@ -55,7 +55,7 @@ const getSuitFeatures = () => {
             name: initShoulder.name,
             codeName: initShoulder.code_name,
             resources: initShoulder.resources,
-            price: initShoulder.prices[0].price 
+            prices: initShoulder.prices 
           }
         },
         { name: "Lapels", 
@@ -64,7 +64,7 @@ const getSuitFeatures = () => {
             name: initLapels.name,
             codeName: initLapels.code_name, 
             resources: initLapels.resources, 
-            price: initLapels.prices[0].price 
+            prices: initLapels.prices
           }
         },
         { name: "Chest Pocket",
@@ -73,7 +73,7 @@ const getSuitFeatures = () => {
             name: initChestPocket.name, 
             codeName: initChestPocket.code_name,
             resources: initChestPocket.resources, 
-            price: initChestPocket.prices[0].price 
+            prices: initChestPocket.prices
           }
         },
         { name: "Buttons",
@@ -82,7 +82,7 @@ const getSuitFeatures = () => {
             name: initButtons.name, 
             codeName: initButtons.code_name, 
             resources: initButtons.resources, 
-            price: initButtons.prices[0].price 
+            prices: initButtons.prices
           }
         },
         { name: "Pockets",
@@ -91,7 +91,7 @@ const getSuitFeatures = () => {
             name: initPockets.name, 
             codeName: initButtons.code_name,
             resources: initPockets.resources, 
-            price: initPockets.prices[0].price 
+            prices: initPockets.prices
           }
         },
         { name: "Vents", 
@@ -100,7 +100,7 @@ const getSuitFeatures = () => {
             name: initVents.name, 
             codeName: initVents.code_name,
             resources: initVents.resources,
-            price: initVents.prices[0].price
+            prices: initVents.prices
           }
         },
         { name: "Pants", 
@@ -109,7 +109,7 @@ const getSuitFeatures = () => {
             name: initPants.name, 
             codeName: initPants.code_name,
             resources: initPants.resources,
-            price: initPants.prices[0].price
+            prices: initPants.prices
           }
         },
         { name: "Vest", 
@@ -118,7 +118,7 @@ const getSuitFeatures = () => {
             name: initVest.name, 
             codeName: initVest.code_name,
             resources: initVest.resources,
-            price: initVest.prices[0].price
+            prices: initVest.prices
           }
         },
         { name: "Shirt", 
@@ -127,7 +127,7 @@ const getSuitFeatures = () => {
             name: initShirt.name, 
             codeName: initShirt.code_name,
             resources: initShirt.resources,
-            price: initShirt.prices[0].price
+            prices: initShirt.prices
           }
         },
         { name: "Tie", 
@@ -136,7 +136,7 @@ const getSuitFeatures = () => {
             name: initTie.name, 
             codeName: initTie.code_name,
             resources: initTie.resources,
-            price: initTie.prices[0].price
+            prices: initTie.prices
           }
         },
         { name: "Monogram", 
@@ -145,7 +145,7 @@ const getSuitFeatures = () => {
             name: initMonogram.name, 
             codeName: initMonogram.code_name,
             resources: initMonogram.resources,
-            price: initMonogram.prices[0].price,
+            prices: initMonogram.prices,
             value: ""
           }
         }

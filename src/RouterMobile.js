@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import * as Guard from 'utils/Guard';
 
 import PageHome from 'pages/home/Mobile';
-import PageCustomize from 'pages/customize/Mobile';
+import PageCustomizeSuit from 'pages/customize/Mobile';
 import PageCart from 'pages/cart/Mobile';
 import PageShipping from 'pages/shipping/Mobile';
 import PageMeasure from 'pages/MeasureMobile';
@@ -30,7 +30,7 @@ function RouterMobile (){
   return (
     <Switch>
       <Route exact={true} path="/" component={PageHome}/>
-      <Route path="/customize" component={PageCustomize}/>
+      <Route path="/customize/suit" component={PageCustomizeSuit}/>
       {/* <Route path="/cart" component={Guard.onlyLogged(PageCart)}/> */}
       {/* <Route path="/measure/:id" component={Guard.onlyLogged(PageMeasure)}/> */}
       {/* <Route path="/shipping" component={Guard.onlyLogged(PageShipping)}/> */}
