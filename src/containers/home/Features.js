@@ -10,23 +10,23 @@ function Features() {
     {
       label: t("features-section.button-suit"),
       image: require('assets/images/suit.jpg'),
-      link: '/customize'
+      link: '/customize/suit'
     },
     {
       label: t("features-section.button-shirt"),
       image: require('assets/images/shirts.jpg'),
-      link: '/customize'
-    },
-    {
-      label: t("features-section.button-vest"),
-      image: require('assets/images/vest.jpg'),
-      link: '/customize'
+      link: '/collections/shirt'
     },
     {
       label: t("features-section.button-pants"),
       image: require('assets/images/pants.jpg'),
-      link: '/customize'
-    }
+      link: '/collections/pants'
+    },
+    {
+      label: t("features-section.button-vest"),
+      image: require('assets/images/vest.jpg'),
+      link: '/customize/vest'
+    },
   ]
 
   return(

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import * as Guard from 'utils/Guard';
 
 import PageHome from 'pages/home/Mobile';
@@ -12,6 +12,9 @@ import PagePartnership from 'pages/partnership/Mobile';
 import PageLogin from 'pages/auth/login/Mobile';
 import PageRegister from 'pages/auth/register/Mobile';
 import PageUser from 'pages/auth/user/Mobile';
+import PageCollectionsSuit from 'pages/collections/suit/Mobile';
+import PageCollectionsShirt from 'pages/collections/shirt/Mobile';
+import PageCollectionsPants from 'pages/collections/pants/Mobile';
 import PageTnC from 'pages/termsAndConditions/Mobile';
 import PagePrivacy from 'pages/privacyPolicy/Mobile';
 import PageHelp from 'pages/help/Mobile';
@@ -31,10 +34,19 @@ function RouterMobile (){
     <Switch>
       <Route exact={true} path="/" component={PageHome}/>
       <Route path="/customize/suit" component={PageCustomizeSuit}/>
+      <Route path="/customize" component={PageCustomizeSuit}>
+        <Redirect to="/customize/suit" />
+      </Route>
       {/* <Route path="/cart" component={Guard.onlyLogged(PageCart)}/> */}
       {/* <Route path="/measure/:id" component={Guard.onlyLogged(PageMeasure)}/> */}
       {/* <Route path="/shipping" component={Guard.onlyLogged(PageShipping)}/> */}
       <Route path="/partnership" component={PagePartnership}/>
+      <Route path="/collections/suit" component={PageCollectionsSuit}/>
+      <Route path="/collections/shirt" component={PageCollectionsShirt}/>
+      <Route path="/collections/pants" component={PageCollectionsPants}/>
+      <Route exact path="/collections" component={PageCollectionsPants}>
+        <Redirect to="/collections/suit" />
+      </Route>
       <Route path="/book-appointment" component={PageBookAppointment}/>
       <Route path="/terms-and-conditions" component={PageTnC}/>
       <Route path="/privacy-policy" component={PagePrivacy}/>

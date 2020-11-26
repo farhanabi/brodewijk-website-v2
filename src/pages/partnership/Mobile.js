@@ -15,7 +15,7 @@ function Partnership (){
     <Layout header="black" page={t("title")} footer={true}>
       <div id="page-partnership">
         <MainSlider/>
-        <HowItWorks/>
+        {/* <HowItWorks/> */}
         <Testimoni/>
         <Contact/>
       </div>

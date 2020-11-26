@@ -14,8 +14,9 @@ const MainSlider = (props) => {
         subtitle: t("main-slider-section.slide-1.subtitle"),
         button: [
           { label: t("main-slider-section.slide-1.button-1"), linkScroll: "bespoke-service-section", icon: "" },
-          { label: t("main-slider-section.slide-1.button-2"), linkScroll: "wedding-package-mobile", icon: "" },
-          { label: t("main-slider-section.slide-1.button-3"), link: t("main-slider-section.slide-1.button-3-link"), newtab: true, icon: "fab fa-whatsapp" }
+          { label: t("main-slider-section.slide-1.button-2"), linkScroll: "shirt-collection-section", icon: "" },
+          { label: t("main-slider-section.slide-1.button-4"), linkScroll: "wedding-package-mobile", icon: "" }
+
         ]
       }
     }
@@ -89,7 +90,7 @@ const MainSlider = (props) => {
         previous={previous}
       >
         {slides}
-      
+
       </Carousel>
     </div>
   );

@@ -19,13 +19,15 @@
         "question-lists":{
           "question-1": {
             "question": "How to buy Brodewijk products?",
-            "answer-row-1": "If you want to buy online, customize your suit in real time, and measure your suit yourself or choose a standard size, then you can order via the Customize feature.",
-            "answer-row-2": "If you want to consult and order your suit directly and take measurements directly by us, then we can come to you according to the schedule that has been booked on the Book Appointment feature.",
-            "answer-row-3": "If you want to order in bulk, such as for the purposes of wedding, corporate, tv shows, business, and others. Then, you can contact us through the Partnership page."
+            "answer-row-1": "We are available on Shopee, Tokopedia, Bridestory, and Website. You can choose the most convenient way to buy our products.",
+            "answer-row-2": "If you want to customize products online, you can go to the Customize page on our website. ",
+            "answer-row-3": "If you want to customize your product directly, you can go to the Book Appointment page on our website.",
+            "answer-row-4": "If you want to order in bulk, such as for the purposes of wedding, corporate, tv shows, business, and others. Then, you can contact us for partnership."
           },
           "question-2": {
             "question": "Does Brodewijk have an offline store?",
-            "answer": "No. We only operate online currently."
+            "answer": "Yes, we have in Bandung. Please check out our location here",
+            "here": "disini"
           },
           "question-3": {
             "question": "Does Brodewijk accept sewing services only and customers bring their own fabrics?",
@@ -41,24 +43,25 @@
           },
           "question-6": {
             "question": "How long does it take to make a suit and accessories?",
-            "answer": "The default is fifteen (15) days from the transaction date and excludes shipping."
+            "answer-1": "On average, the production process will take:",
+            "answer-2": "Suit: 15 days",
+            "answer-3": "Shirt: 5 days",
+            "answer-4": "Pants: 5 days",
+            "answer-5": "Outer: 7 days",
+            "answer-6": "The production process will depend on order quantity, difficulty, and number of fitting."
           },
           "question-7": {
             "question": "I'm in rush, is there express service available?",
             "answer": "Yes, there is. The fastest time to make it is two (2) days, can be done with special conditions including an additional cost of Rp50,000 per reduction in the number of days."
           },
           "question-8": {
-            "question": "Will I be charged extra if I want to be measured directly using the Book Appointment feature?",
-            "answer": "Yes, you will be charged an additional Rp50,000 as travel and service fees."
+            "question": "What is the transaction payment procedure?",
+            "answer-row-1": "Online Transaction: 100% payment is made up front.",
+            "answer-row-2": "Book Appointment & Partnership: Initial 50% down payment and another 50% payment when fitting 1."
           },
           "question-9": {
-            "question": "What is the transaction payment procedure?",
-            "answer-row-1": "Online Customization: 100% payment is made up front.",
-            "answer-row-2": "Book Appointment & Partnership: Initial 50% down payment and another 50% payment when the product is finished"
-          },
-          "question-10": {
             "question": "Can the price listed on the Brodewijk site be negotiated?",
-            "answer": "No. The price is fixed."
+            "answer": "No. The price is fixed, only changed due to promotion."
           }
         }
       },
@@ -67,7 +70,7 @@
         "question-lists":{
           "question-1": {
             "question": "How much will Brodewijk charge for shipping?",
-            "answer": "Not even a single penny. All of purchases from Brodewijk are free shipping."
+            "answer": "Free shipping for Suit products only but not applicable for other products."
           },
           "question-2": {
             "question": "How long does it take to ship the product?",
@@ -79,7 +82,7 @@
           },
           "question-4": {
             "question": "What should I do if I haven't received a receipt number?",
-            "answer": "Please contact us directly via WhatsApp: 08156051373 or e-mail: contact@brodewijk.com"
+            "answer": "Please contact us"
           }
         }
       },

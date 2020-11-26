@@ -86,7 +86,7 @@ function FilterBar(props) {
               </Col>
               <Col xs={12} className="feature-options">
                 <div className="monogram">
-                  <Input type="text" placeholder="monogram" value={valueMonogram} onChange={(e) => setValueMonogram(e.target.value)}/>
+                  <Input type="text" placeholder="Monogram" value={valueMonogram} onChange={(e) => setValueMonogram(e.target.value)}/>
                 </div>
               </Col>
             </div>

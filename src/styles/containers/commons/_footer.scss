@@ -4,6 +4,7 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-color: #1c1c1c;
 	color: #ffffff;
 	font-size: 13px;
 	font-family: Open Sans;
@@ -132,6 +133,7 @@
 @media (min-width: 992px) {
 	.section-footer {
 		background: url('../../../assets/images/bg-footer-desktop.jpg') no-repeat center center; 
+		background-color: #1c1c1c;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;

@@ -16,6 +16,7 @@ function Header(props) {
   const [scrollPosition, setSrollPosition] = useState(0);
   const [showNavbar, setShowNavbar] = useState(false)
   const [showCustomize, setShowCustomize] = useState(false)
+  const [showCollections, setShowCollections] = useState(false)
   const [showProfile, setShowProfile] = useState(false);
 
   const loginUrl = () => {
@@ -50,11 +51,16 @@ function Header(props) {
   function handleShowNavbar() {
     setShowNavbar(!showNavbar)
     setShowCustomize(false)
+    setShowCollections(false)
     setShowProfile(false)
   }
 
   function handleShowCustomize() {
     setShowCustomize(!showCustomize)
+  }
+
+  function handleShowCollections() {
+    setShowCollections(!showCollections)
   }
 
   function handleShowProfile() {
@@ -135,10 +141,31 @@ function Header(props) {
               </Link>
             </Col>
             <Col xs={12} className="nav-item">
-              <Link to="/collections">
-                <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("collections")}</Button>
-              </Link>
+                <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}  onClick={handleShowCollections}>
+                  {t("collections")}
+                </Button>
             </Col>
+            {showCollections && (
+              <Col xs={12} className="nav-item">
+                <Row className={`nav-list customize ${props.white ? 'bg-white' : ''}`}>
+                  <Col xs={12} className="nav-item">
+                    <Link to="/collections/suit">
+                      <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("suit")}</Button>
+                    </Link>
+                  </Col>
+                  <Col xs={12} className="nav-item">
+                    <Link to="/collections/shirt">
+                      <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("shirt")}</Button>
+                    </Link>
+                  </Col>
+                  <Col xs={12} className="nav-item">
+                    <Link to="/collections/pants">
+                      <Button className={`btn-nav-item ${props.white ? 'btn-outline-black' : 'btn-outline-white'}`}>{t("pants")}</Button>
+                    </Link>
+                  </Col>
+                </Row>
+              </Col>
+            )}
             {props.auth !== null && props.user !== null ? (
               <>
               <Col xs={12} className="nav-item">

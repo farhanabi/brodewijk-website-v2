@@ -21,8 +21,8 @@ const CommonLayout = (props) => {
   return (
     <div>
       <Helmet
-        defaultTitle="Brodewijk - Premium Suit Maker"
-        titleTemplate="%s | Brodewijk - Premium Suit Maker"
+        defaultTitle="Brodewijk - Gentlemen's Custom Wear"
+        titleTemplate="%s | Brodewijk - Gentlemen's Custom Wear"
       >
         {(page!='Home') && page && <title>{pageTitle}</title>}
         <meta charset="utf-8" />
@@ -31,17 +31,17 @@ const CommonLayout = (props) => {
         <meta name="theme-color" content="#000000" />
         <meta
           name="description"
-          content="Create Premium Suit with Brodewijk"
+          content="Gentlemen's Custom Wear. Buat jas, blazer, kemeja, dan celana sesuai dengan keinginan sendiri di Brodewijk."
         />
         <meta name="keywords" content="Baju Formal, Bandung, Bikin Jas, Kemeja, Celana, Blazer" />
         <meta name="og:title" content={pageTitle} />
-        <meta name="og:description" content="Create Premium Suit with Brodewijk" />
+        <meta name="og:description" content="Gentlemen's Custom Wear. Buat jas, blazer, kemeja, dan celana sesuai dengan keinginan sendiri di Brodewijk." />
         <meta name="og:type" content="website" />
 
         {/* <!-- Twitter --> */}
         <meta name="twitter:card" content="Summary" />
         <meta name="twitter:title" content={pageTitle} />
-        <meta name="twitter:description" content="Create Premium Suit with Brodewijk" />
+        <meta name="twitter:description" content="Gentlemen's Custom Wear. Buat jas, blazer, kemeja, dan celana sesuai dengan keinginan sendiri di Brodewijk." />
         <meta name="twitter:image" content="/favicon-196.png" />
 
         {/* <!-- generics --> */}

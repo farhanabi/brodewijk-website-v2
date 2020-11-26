@@ -44,7 +44,14 @@ function FAQ() {
         {
           id: 6,
           question: t("faq-section.categories.order.question-lists.question-6.question"),
-          answer: [t("faq-section.categories.order.question-lists.question-6.answer")],
+          answer: [
+            t("faq-section.categories.order.question-lists.question-6.answer-1"),
+            t("faq-section.categories.order.question-lists.question-6.answer-2"),
+            t("faq-section.categories.order.question-lists.question-6.answer-3"),
+            t("faq-section.categories.order.question-lists.question-6.answer-4"),
+            t("faq-section.categories.order.question-lists.question-6.answer-5"),
+            t("faq-section.categories.order.question-lists.question-6.answer-6"),
+          ]
         },
         {
           id: 7,
@@ -54,20 +61,15 @@ function FAQ() {
         {
           id: 8,
           question: t("faq-section.categories.order.question-lists.question-8.question"),
-          answer: [t("faq-section.categories.order.question-lists.question-8.answer")],
+          answer: [
+            t("faq-section.categories.order.question-lists.question-8.answer-row-1"),
+            t("faq-section.categories.order.question-lists.question-8.answer-row-2")
+          ],
         },
         {
           id: 9,
           question: t("faq-section.categories.order.question-lists.question-9.question"),
-          answer: [
-            t("faq-section.categories.order.question-lists.question-9.answer-row-1"),
-            t("faq-section.categories.order.question-lists.question-9.answer-row-2")
-          ],
-        },
-        {
-          id: 10,
-          question: t("faq-section.categories.order.question-lists.question-10.question"),
-          answer: [t("faq-section.categories.order.question-lists.question-10.answer")],
+          answer: [t("faq-section.categories.order.question-lists.question-9.answer")],
         }
       ]
     },

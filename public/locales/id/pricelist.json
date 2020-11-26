@@ -1,14 +1,15 @@
 {
   "title": "PRICE LIST",
   "special-discount": "SPECIAL DISCOUNT",
+  "size-guide": "Size Guide",
   "main-slider-section": {
     "slide-1": {
       "title": "Kualitas tidak akan pernah mengecewakan.",
       "subtitle": "Berikut adalah daftar produk dan paket kami yang disertakan dengan harganya. Anda juga dapat berkonsultasi langsung dengan kami untuk mengetahui lebih lanjut.",
       "button-1": "EXPLORE BESPOKE SERVICE",
-      "button-2": "EXPLORE WEDDING PACKAGE",
-      "button-3": "CONSULT WITH US",
-      "button-3-link": "https://api.whatsapp.com/send?phone=628156051373&text=Halo%20Brodewijk!%20Saya%20ingin%20untuk%berkonsultasi%20mengenai"
+      "button-2": "EXPLORE SHIRT COLLECTION",
+      "button-3": "EXPLORE PANTS COLLECTION",
+      "button-4": "EXPLORE WEDDING PACKAGE"
     }
   },
   
@@ -21,17 +22,56 @@
     "two-piece-regular": "(Suit + Pants)",
     "three-piece-bold": "Three-Piece Suits",
     "three-piece-regular": "(Suit + Pants + Vest)",
-    "order-now": "Order Now",
+    "order-now": "Pesan Sekarang",
     "wa-link": "https://api.whatsapp.com/send?phone=628156051373&text=Halo%20Brodewijk!%20Saya%20tertarik%20untuk%20bertanya%20mengenai",
     "bespoke-card": {
       "card-1": {
-        "description": "Bahan Hi-Twist terbentuk dari serat poliester memiliki tekstur kasar, cenderung lebih tipis dan lentur."
+        "description": "Bahan Hi-Twist terbentuk dari serat poliester memiliki tekstur kasar, cenderung lebih tebal dan kaku."
       },
       "card-2": {
-        "description": "Bahan campuran Wool dan bahan lainnya seperti Cashmere, Poliester, Silk, dan lainnya. Tinggal ketebalannya bervariasi di setiap jenisnya."
+        "description": "Bahan Linen terbentuk dari serat poliester memiliki tekstur kasar, cenderung lebih tipis dan lentur."
       },
       "card-3": {
+        "description": "Bahan campuran Wool dan bahan lainnya seperti Cashmere, Poliester, Silk, dan lainnya. Tinggal ketebalannya bervariasi di setiap jenisnya."
+      },
+      "card-4": {
         "description": "Bahan dengan kandungan Wool lebih dari 90%, relatif lebih tebal dari pada bahan lainnya dan memiliki tekstur kasar."
+      }
+    }
+  },
+
+  "shirt-collection-section": {
+    "title": "Shirt Collection",
+    "subtitle": "Lengkapi penampilan Anda dengan mengenakan koleksi kemeja terbaru kami. Jadilah diri Anda sendiri dengan menyesuaikan kemeja Anda sesuai keinginan Anda.",
+    "shirt-collection-subtitle": "SHIRT COLLECTION",
+    "order-now": "Pesan Sekarang",
+    "wa-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20Saya%20tertarik%20untuk%20tau%20lebih%20lanjut",
+    "standard": "Ukuran Standar",
+    "custom": "Ukuran Custom",
+    "shirt-card": {
+      "card-1": {
+        "description": "Terbuat dari Kain Katun Stretch 2 Way. Fitur yang dapat disesuaikan: Kerah, Manset, dan Saku.",
+        "available": "Tersedia dalam warna Putih"
+      },
+      "card-2": {
+        "description": "Terbuat dari Kain Toyobo, cocok untuk pemakaian sehari-hari. Fitur yang dapat disesuaikan: Kerah, Manset, dan Saku",
+        "available": "Tersedia dalam warna Putih, Abu-abu, Hitam, Navy, Maroon"
+      }
+    }
+  },
+
+  "pants-collection-section": {
+    "title": "Pants Collection",
+    "subtitle": "Be different and stay on top of your looks wearing our latest pants collection.",
+    "pants-collection-subtitle": "PANTS COLLECTION",
+    "order-now": "Pesan Sekarang",
+    "wa-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20Saya%20tertarik%20untuk%20tau%20lebih%20lanjut",
+    "standard": "Ukuran Standar",
+    "custom": "Ukuran Custom",
+    "pants-card": {
+      "card-1": {
+        "description": "Terbuat dari Bahan Semi Wool, sangat nyaman digunakan untuk berbagai acara.",
+        "available": "Tersedia dalam warna Putih dan Abu-abu Tua"
       }
     }
   },

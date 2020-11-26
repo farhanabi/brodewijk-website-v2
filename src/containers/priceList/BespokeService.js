@@ -1,10 +1,9 @@
-import React, {useState} from 'react'
-import { Card, CardHeader, CardBody, Collapse, Container, Row, Col, Button} from 'reactstrap'
+import React from 'react'
+import {  Container, Button} from 'reactstrap'
 import { useTranslation } from 'react-i18next'
 
 function BespokeService() {
 
-  const [toggleQuestion, setToggleQuestion] = useState(0);
 
   const { t } = useTranslation("pricelist");
   const dataBespokeService = [
@@ -16,16 +15,23 @@ function BespokeService() {
      "threePiecePrice": "Rp2.059.000"
     },
     {
+     "name": "Linen",
+     "image": require("../../assets/images/pricelist-bespoke-linen.jpg"),
+     "description": t("bespoke-service-section.bespoke-card.card-2.description"),
+     "twoPiecePrice": "Rp1.545.000",
+     "threePiecePrice": "Rp2.059.000"
+    },
+    {
       "name": "Semi Wool",
       "image": require("../../assets/images/pricelist-bespoke-semiwool.jpg"),
-      "description": t("bespoke-service-section.bespoke-card.card-2.description"),
+      "description": t("bespoke-service-section.bespoke-card.card-3.description"),
       "twoPiecePrice": "Rp2.215.000",
       "threePiecePrice": "Rp2.801.000"
      },
      {
       "name": "Wool",
       "image": require("../../assets/images/pricelist-bespoke-wool.jpg"),
-      "description": t("bespoke-service-section.bespoke-card.card-3.description"),
+      "description": t("bespoke-service-section.bespoke-card.card-4.description"),
       "twoPiecePrice": "Rp2.855.000",
       "threePiecePrice": "Rp3.585.000"
      }
@@ -39,7 +45,7 @@ function BespokeService() {
           <div className="bespoke-section">
             <h6 className="bespoke-suit-label">{t("bespoke-service-section.bespoke-suit-subtitle")}</h6>
             <h5 className="bespoke-title">{v.name}</h5>
-            <img className="bespoke-img" src={v.image}></img>
+            <img className="bespoke-img" alt="" src={v.image}></img>
             <p className="bespoke-description">{v.description}</p>
             <h5 className="bespoke-price-label"><b>{t("bespoke-service-section.two-piece-bold")}</b> {t("bespoke-service-section.two-piece-regular")}</h5>
             <p className="bespoke-price">{t("bespoke-service-section.start-from")} {v.twoPiecePrice}</p>

@@ -1,14 +1,15 @@
 {
   "title": "PRICE LIST",
   "special-discount": "SPECIAL DISCOUNT",
+  "size-guide": "Size Guide",
   "main-slider-section": {
     "slide-1": {
       "title": "Quality will never disappoints",
       "subtitle": "Here are our product and package list that comes with its price. You can also consult with us directly to find out more.",
       "button-1": "EXPLORE BESPOKE SERVICE",
-      "button-2": "EXPLORE WEDDING PACKAGE",
-      "button-3": "CONSULT WITH US",
-      "button-3-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20consult%20with%20you"
+      "button-2": "EXPLORE SHIRT COLLECTION",
+      "button-3": "EXPLORE PANTS COLLECTION",
+      "button-4": "EXPLORE WEDDING PACKAGE"
     }
   },
   
@@ -25,13 +26,52 @@
     "wa-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about",
     "bespoke-card": {
       "card-1": {
-        "description": "Hi-Twist material is formed from polyester fibers that have a coarse texture, tend to be thinner and more flexible."
+        "description": "Hi-Twist material is formed from polyester fibers that have a coarse texture, tend to be thicker and more rigid."
       },
       "card-2": {
-        "description": "Blends of Wool with other materials such as Cashmere, Polyester, Silk, and others. The thickness varies in each type."
+        "description": "Linen material is formed from polyester fibers that have a coarse texture, tend to be thinner and more flexible."
       },
       "card-3": {
+        "description": "Blends of Wool with other materials such as Cashmere, Polyester, Silk, and others. The thickness varies in each type."
+      },
+      "card-4": {
         "description": "This material contains more than 90% Wool, are relatively thicker than other materials and have a coarse texture."
+      }
+    }
+  },
+  
+  "shirt-collection-section": {
+    "title": "Shirt Collection",
+    "subtitle": "Complete your look by wearing our latest shirt collection. Be yourself by customizing your shirt the way you like it.",
+    "shirt-collection-subtitle": "SHIRT COLLECTION",
+    "order-now": "Order Now",
+    "wa-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about",
+    "standard": "Standard Size",
+    "custom": "Custom Size",
+    "shirt-card": {
+      "card-1": {
+        "description": "Made from 2 Way Stretch Cotton Fabric. Customizeable features: Collar, Cuffs, and Pocket.",
+        "available": "Available in White"
+      },
+      "card-2": {
+        "description": "Made from Toyobo Fabrics, suitable for daily use. Customizeable features: Collar, Cuffs, and Pocket",
+        "available": "Available in White, Grey, Black, Navy, Maroon"
+      }
+    }
+  },
+
+  "pants-collection-section": {
+    "title": "Pants Collection",
+    "subtitle": "Be different and stay on top of your looks wearing our latest pants collection.",
+    "pants-collection-subtitle": "PANTS COLLECTION",
+    "order-now": "Order Now",
+    "wa-link": "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about",
+    "standard": "Standard Size",
+    "custom": "Custom Size",
+    "pants-card": {
+      "card-1": {
+        "description": "Made from Semi Wool Fabrics, very comfortable yet suitable for any occassions.",
+        "available": "Available in White and Dark Grey"
       }
     }
   },

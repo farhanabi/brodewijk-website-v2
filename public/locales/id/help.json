@@ -19,13 +19,15 @@
         "question-lists":{
           "question-1": {
             "question": "Bagaimana cara membeli produk Brodewijk?",
-            "answer-row-1": "Apabila Anda ingin membeli secara online, men-custom jas Anda secara real-time, dan mengukur sendiri jasmu/memilih ukuran standar, maka kamu bisa memesan melalui fitur Kustomisasi.",
-            "answer-row-2": "Apabila Anda ingin berkonsultasi dan memesan langsung jas serta melakukan pengukuran langsung oleh kami, maka kami bisa mendatangi kamu sesuai dengan jadwal yang telah di-book pada fitur Buat Janji.",
-            "answer-row-3": "Apabila Anda ingin memesan secara massal/khusus, seperti untuk keperluan Wedding, corporate, tv shows, bisnis, dan lainnya. Maka, Anda bisa mengontak kami melalui halaman Kontak Kami."
+            "answer-row-1": "Kami tersedia di Shopee, Tokopedia, Bridestory, dan Website. Anda bisa memilih cara yang paling mudah untuk membeli produk kami.",
+            "answer-row-2": "Jika Anda ingin men-custom produk melalui online, Anda bisa ke halaman Customize pada website.",
+            "answer-row-3": "Jika Anda ingin men-custom produk secara langsung, Anda bisa pergi ke halaman Book Appointment pada website.",
+            "answer-row-4": "Jika Anda ingin memesan dalam jumlah banyak, seperti untuk tujuan wedding, corporate tv, bisnis, atau lainnya. Maka, Anda bisa menghubungi kami di contact us untuk kerjasama. "
           },
           "question-2": {
             "question": "Apakah Brodewijk memiliki toko offline atau store?",
-            "answer": "Tidak. Untuk saat ini kami hanya beroperasi secara online."
+            "answer": "Ya, di Bandung. Silahkan lihat lokasi kami disini",
+            "here": "disini"
           },
           "question-3": {
             "question": "Apakah Brodewijk menerima jasa jahit saja dengan kain yang dibawa sendiri?",
@@ -41,24 +43,25 @@
           },
           "question-6": {
             "question": "Berapa lama pengerjaan jas dan kelengkapannya?",
-            "answer": "Standar pengerjaan produk kami adalah 15 (lima belas) hari terhitung dari tanggal transaksi dan tidak termasuk pengiriman."
+            "answer-1": "Secara rata-rata, proses produksi akan memakan waktu selama:",
+            "answer-2": "Jas: 15 hari",
+            "answer-3": "Kemeja: 5 hari",
+            "answer-4": "Celana: 5 hari",
+            "answer-5": "Outer: 7 hari",
+            "answer-6": "Proses produksi sangat bergantung pada kuantitas order, tingkat kesulitan, dan banyaknya fitting. "
           },
           "question-7": {
             "question": "Apakah tersedia layanan ekspres?",
             "answer": "Ada. Waktu tercepat pengerjaan adalah 2 (dua) hari, dapat dilakukan dengan kondisi khusus termasuk diantaranya penambahan biaya sebesar Rp50.000 per pengurangan jumlah hari."
           },
           "question-8": {
-            "question": "Apakah saya dikenakan biaya tambahan jika saya ingin diukur langsung/menggunakan fitur Buat Janji?",
-            "answer": "Ya, kamu akan dikenakan biaya tambahan sebesar Rp50.000 sebagai biaya perjalanan dan layanan."
+            "question": "Bagaimana prosedur pembayarannya?",
+            "answer-row-1": "Transaksi online: 100% pembayaran lunas di awal",
+            "answer-row-2": "Book Appointment & Partnership: 50% DP di awal dan 50% pada saat fitting pertama"
           },
           "question-9": {
-            "question": "Bagaimana prosedur pembayarannya?",
-            "answer-row-1": "Kustomisasi: Pembayaran lunas 100% di awal.",
-            "answer-row-2": "Buat Janji & Kemitraan: Pembayaran DP 50% di awal dan pelunasan 50% lainnya pada saat jas selesai dibuat"
-          },
-          "question-10": {
             "question": "Apakah harga yang tertera pada situs Brodewijk dapat dinegosiasikan?",
-            "answer": "Tidak. Harga yang tercantum adalah harga tetap."
+            "answer": "Tidak. Harga sudah tetap, hanya berubah karena promosi."
           }
         }
       },
@@ -67,7 +70,7 @@
         "question-lists":{
           "question-1": {
             "question": "Apakah ada biaya pengiriman?",
-            "answer": "Tidak. Seluruh pembelian berhak atas pengiriman gratis."
+            "answer": "Gratis ongkir hanya untuk produk jas saja dan tidak berlaku untuk produk lainnya "
           },
           "question-2": {
             "question": "Berapa lama waktu yang dibutuhkan untuk pengiriman produk?",
@@ -79,7 +82,7 @@
           },
           "question-4": {
             "question": "Apa yang harus saya lakukan apabila belum mendapatkan nomor resi?",
-            "answer": "Mohon untuk langsung menghubungi kami di WhatsApp: 08156051373 atau e-mail: contact@brodewijk.com"
+            "answer": "Mohon untuk langsung menghubungi kami"
           }
         }
       },

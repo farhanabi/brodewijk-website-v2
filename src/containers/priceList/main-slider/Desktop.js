@@ -13,8 +13,10 @@ const MainSlider = (props) => {
         title: t("main-slider-section.slide-1.title"),
         subtitle: t("main-slider-section.slide-1.subtitle"),
         button: [
-          { label: t("main-slider-section.slide-1.button-1"), linkScroll: "faq-section", icon: "" },
-          { label: t("main-slider-section.slide-1.button-2"), link: "https://api.whatsapp.com/send?phone=628156051373&text=Hi%20Brodewijk!%20I%20am%20interested%20to%20learn%20more%20about%20you", newtab: true, icon: "fab fa-whatsapp" }
+          { label: t("main-slider-section.slide-1.button-1"), linkScroll: "bespoke-service-section", icon: "" },
+          { label: t("main-slider-section.slide-1.button-2"), linkScroll: "shirt-collection-section", icon: "" },
+          { label: t("main-slider-section.slide-1.button-3"), linkScroll: "pants-collection-section", icon: "" },
+          { label: t("main-slider-section.slide-1.button-4"), linkScroll: "wedding-package-mobile", icon: "" }
         ]
         }
     }

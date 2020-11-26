@@ -2,10 +2,12 @@
   "main-slider-section": {
     "title": "Selamat datang! Ada yang bisa kami bantu?",
     "subtitle": "Dibawah ini terdapat beberapa link Brodewijk yang dapat Anda kunjungi. Silakan klik salah satu tombol di bawah ini.",
-    "button-1": "BELANJA MELALUI TOKOPEDIA",
+    "button-1": "SHOPEE",
     "button-2": "PESAN/KONSULTASI SEKARANG",
     "button-2-link": "https://api.whatsapp.com/send?phone=628156051373&text=Halo%20Brodewijk!%20Saya%20tertarik%20untuk%20bertanya%2Dtanya",
-    "button-3": "BUAT PERTEMUAN PENGUKURAN",
-    "button-4": "WEBSITE (VERSI BETA)"
+    "button-3": "BRIDESTORY",
+    "button-4": "WEBSITE",
+    "button-5": "DAFTAR HARGA",
+    "button-6": "TRADEMARK x SHOPEE (DISKON 30%)"
   }
 }

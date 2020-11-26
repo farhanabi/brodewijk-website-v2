@@ -112,6 +112,7 @@ code {
 // import styles
 @import './pages/home';
 @import './pages/customize';
+@import './pages/collections';
 @import './pages/cart';
 @import './pages/shipping';
 @import './pages/notFound';
@@ -147,6 +148,8 @@ code {
 @import './containers/link/main-slider/mobile';
 @import './containers/priceList/main-slider/mobile';
 @import './containers/priceList/bespokeService';
+@import './containers/priceList/shirtCollection';
+@import './containers/priceList/pantsCollection';
 @import './containers/priceList/weddingPackage/mobile';
 @import './containers/priceList/weddingPackageList';
 @import './containers/customize/filterBar/desktop';
@@ -154,6 +157,8 @@ code {
 @import './containers/customize/livePreview/desktop';
 @import './containers/customize/livePreview/mobile';
 @import './containers/customize/detailBox';
+@import './containers/collections/product';
+@import './containers/collections/sidebar';
 @import './containers/cart/listItem/desktop';
 @import './containers/cart/listItem/mobile';
 @import './containers/cart/summary/desktop';
