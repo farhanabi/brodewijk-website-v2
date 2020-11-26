@@ -1,0 +1,147 @@
+#pants-collection-section{
+    padding: 20px 0 70px 0;
+    background: url('../../../assets/images/bg-social-proof-mobile.jpg') no-repeat;
+    background-size: cover;
+    font-family: Open Sans;
+  
+    .title-pants-collection {
+      font-family: Playfair Display;
+      font-weight: normal;
+      color:#0C172F;
+      font-size: 24px;
+      text-align: center;
+      margin: 20px;
+      margin-top: 35px;
+    }
+  
+    .subtitle-pants-collection {
+      color: #58595B;
+      font-size: 14px;
+      text-align: center;
+      margin: 0 auto 30px;
+      width: 85%
+    }
+    
+    .pants-collection {
+      margin-top: 40px;
+
+      .collection-label {
+        font-family: Open Sans;
+        font-weight: normal;
+        color:black;
+        font-size: 14px;
+        text-align: left;
+        letter-spacing: 0.4em;
+      }
+
+      .collection-title {
+        font-family: Playfair Display;
+        font-weight: normal;
+        color:#0C172F;
+        font-size: 38px;
+        text-align: left;
+      }
+
+      .collection-description {
+        font-weight: normal;
+        color:black;
+        font-size: 14px;
+        text-align: left;
+        margin-top: 20px;
+      }
+
+      .collection-price-label {
+        font-size: 16px;
+        color: black;
+      }
+
+      .collection-img {
+        width: 100%;
+        margin: 5px 0;
+      }
+
+      a {
+        color: none;
+        display: grid;
+
+        &.size-guide-button {
+          text-decoration: underline;
+          color: #212529;
+          justify-content: center;
+        }
+        
+        .collection-cta {
+          display: grid;
+          margin: 20px auto;
+          justify-self: center;
+          background-color: #0C172F;
+        }
+      }
+    }
+  
+    .question-card {
+      margin: 5px 0;
+      
+      .question-card-answer {
+        padding: 10px 20px;
+      }
+    }
+  
+    .data-list {
+      margin-top: 20px;
+  
+      .data-item {
+        text-align: center;
+        margin-bottom: 35px;
+  
+        .item-img {
+          height: 97px;
+          margin-bottom: 20px; 
+        }
+  
+        .item-title {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+  
+        .item-text {
+          font-size: 14px;
+          color: #58595B;
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 992px) {
+    #faq-section {
+      background: url('../../../assets/images/bg-faq-desktop.jpg') no-repeat;
+      background-size: cover; 
+  
+      .title-faq {
+        font-size: 32px;
+      }
+  
+      .subtitle-faq {
+        width: 85%;
+      }
+  
+      .category-title {
+        font-size: 24px;
+      }
+  
+      .data-list {
+        .data-item {
+          text-align: left;
+  
+          .item-title {
+            height: 42px;
+          }
+    
+          .item-text {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,40 @@
+#collection-sidebar {
+	display: flex;
+	flex-direction: column;
+
+	.collection-title {
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+	}
+
+	.categories {
+		margin: 20px 0 20px;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 27px;
+
+		letter-spacing: 0.4em;
+	}
+
+	.link {
+		// margin: 2px 0;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: 400;
+		color: black;
+
+		&.active {
+			font-weight: 600;
+
+			&:hover {
+				cursor: default;
+				text-decoration: none;
+			}
+		}
+	}
+
+}

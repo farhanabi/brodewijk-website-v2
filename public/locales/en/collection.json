@@ -1,0 +1,12 @@
+{
+  "title": "Collections",
+  "sidebar": {
+    "title": "CATEGORY",
+    "suit": "Suit",
+    "shirt": "Shirt",
+    "pants": "Pants"
+  },
+  "product": {
+    "view": "View Product"
+  }
+}
